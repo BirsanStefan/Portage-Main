@@ -1,0 +1,92 @@
+body{
+    background-image: url(../images/outdoor-boilers-portage-bg.png);
+    background-size: 100% auto;
+    background-position: top 55px left auto;
+    background-color: #e9e9e9;
+}
+#wrapper{
+	padding-top: 55px;
+}
+#topBar{
+	height: 55px;
+	background: $brown;
+	width: 100%;
+	border-bottom: 11px solid #FFBD00;
+	position: fixed;
+    top: 0;
+    left: 0;
+	z-index: 11;
+}
+.customContainer{
+	width: 1100px;
+	max-width: 100%;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#topBar .customContainer{
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	    -webkit-align-items: center;
+	            align-items: center;
+	height: 100%;
+}
+
+.mainBg,
+.mainPage{
+    min-height: calc(100vh - 175px);
+}
+.mainBg{
+    background-color: #dfdddd;
+    padding: 20px 30px;
+}
+.mainCols {
+    display: flex;
+    margin-top: 20px;
+}
+.rightCol {
+    background: #FFF;
+    width: calc(100% - 350px);
+    padding: 20px;
+}
+
+
+
+// Header Start
+.siteHeader{
+    background: $brown;
+    .placeholder{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        min-height: 255px;
+    }
+}
+
+
+
+// Left Start
+.leftCol {
+    width: 330px;
+    margin-right: 20px;
+    background: #fff;
+    min-height: 500px;
+}
+
+// Left End
+
+
+// Footer Start
+.siteFooter{
+    min-height: 120px;
+    background-color: $brown;
+}
+
+
+// Footer End
