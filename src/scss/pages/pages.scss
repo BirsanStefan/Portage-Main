@@ -1,0 +1,21 @@
+// Section title underlined 
+.sectionTitle {
+    font-size: 21px;
+    letter-spacing: 0px;
+    color: #333333;
+    font-family: "Proxima Nova";
+    font-weight: bold;
+}
+
+.rightCol {
+    position: relative;
+}
+
+.yellowBorder {
+    display: block;
+    width: 256px;
+    height: 4px;
+    background-color: #f9b411;
+    position: absolute;
+    left: 0;
+}
