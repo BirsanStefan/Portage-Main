@@ -1,3 +1,18 @@
-.box {
-    color: red;
+// About Us //
+
+.aboutusImage {
+    object-fit:cover;
+
+    .aboutImg {
+        
+        max-width:100%;
+    }
+    figcaption {
+        font-size: 12px;
+color: #333333;
+font-family: "Proxima Nova";
+font-weight: 300;
+text-align: right;
+margin-top:8px;
+    }
 }

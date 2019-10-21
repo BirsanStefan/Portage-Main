@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+    <div id="wrapper">
+
+        @@include('../partials/globals/topBar.html')
+
+        <div class="mainPage">
+            <div class="customContainer">
+
+                <div class="mainBg">
+                    @@include('../partials/globals/header.html')
+
+                    <div class="mainCols">
+                        @@include('../partials/globals/left.html')
+
+                        <div class="rightCol">
+                                @@include('../partials/components/underlined-title.html', {"iconTitle": "<i class=\"fas fa-tools\"></i>", "textTitle": "Aqua Stat Operation and Replacement " })
+
+                                <div class="italicDescription mt30">
+                                        <p> Portage and Main BL series boilers use a total of two (2) different Johnson Control aqua stats to control the function and operation of your outdoor boiler.  Over the years Portage and Main has used a total of three different models of aqua stats, these include:</p>
+                                </div>
+
+                                <ul>
+                                    <li> Johnson Controls - A419ABC-2C or A421ABC-03 (A419 or A421) is a digital aqua stat and 
+                                            controls most thermostatic functions of the boiler.</li>
+                                    <li> Johnson Controls - A19ABC-12C is a mechanical aqua stat and controls the high limit function, 
+                                            meaning if for some reason the A419 / A421 aqua stat fails, then the high limit acts as a 
+                                            redundancy to shut the blower fan off, to prevent further overheating.  Portage and Main 
+                                            recommends having this mechanical aqua stat dial turned to 190ᵒF.
+                                      </li>
+                                      <li>???</li>
+                                </ul>
+
+                                <div class="textContent mt22">
+                                    <p>
+                                         Before energizing the electrical circuits with power, make sure wiring connections are correct.  Then power, operate and observe the system and A419 / A421 control for at least two complete operating cycles before leaving the installation.</p>
+                                </div>
+
+                                <div class="italicDescription">
+                                    <p>Portage and Main recommends ensuring all settings are programmed to match the factory default settings. Once they are matched, you may to further adjust the SP (SET POINT) and the DIF (differential).  
+                                        </p>
+                                </div>
+
+                                <div class="italicDescription">
+                                        <p>The SP controls the highest operating temperature that the outdoor furnace will achieve, before it shuts the blower motor down. The DIF determines what operating temperature reduction is allowed before the blower starts up to 
+                                                reheat the  boiler back to the SP.  
+                                            </p>
+                                    </div>
+
+                                    <div class="textContent">
+                                        <p>Portage and Main recommends an initial SP of 175 degrees F, and a DIF of 7 to 10 degrees F.  If further assistance is needed to complete programming of the aqua stat, please contact Portage and Main for a copy of the A419 electronic manual. 
+                                            </p>
+                                    </div>
+
+                                    <div class=""></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        @@include('../partials/globals/footer.html')
+
+    </div>
+    @@include('../partials/globals/bottomScripts.html')
+
+    <script src="assets/js/vendor.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>
