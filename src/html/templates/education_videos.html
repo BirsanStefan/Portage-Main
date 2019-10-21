@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    @@include('../partials/head/head.html')
+
+    <body>
+        <div id="wrapper">
+
+            @@include('../partials/globals/topBar.html')
+
+            <div class="mainPage">
+                <div class="customContainer">
+                    <div class="mainBg">
+
+                        @@include('../partials/globals/header.html')
+
+                        <div class="mainCols">
+                            <div class="centerCol">
+                                @@include('../partials/components/quickNavButtons.html',{
+
+                                    "iconQNBBox": '<i class="fa fa-users"></i>',
+
+                                    "qnbBtn1": "Video Learning",
+
+                                    "qnbBtn2": "Installation Diagrams",
+
+                                    "qnbBtn3": "Pad Designs"
+
+                                })
+
+                                @@include('../partials/components/underlined-title.html', {
+
+                                    "iconTitle": '<i class="fas fa-users"></i>',
+                                    "textTitle": "BOILERS 101 - VIDEO LEARNING1"
+                                })
+                            </div>
+                        </div>
+
+                       <div class="youtubeList">
+                            @@loop('../partials/components/youtubeElement.html', [
+                                {
+                                    "iframe": "",
+                                    "text": "LOrem ipsum" 
+                                },
+                                {
+                                    "iframe": "",
+                                    "text": "LOrem ipsum" 
+                                },
+                                {
+                                    "iframe": "",
+                                    "text": "LOrem ipsum" 
+                                }
+                            ])
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+            @@include('../partials/globals/footer.html')
+            
+        </div>
+
+        @@include('../partials/globals/bottomScripts.html')
+
+        <script src="assets/js/vendor.min.js" defer></script>
+        <script src="assets/js/app.js" defer></script>
+    </body>
+</html>
