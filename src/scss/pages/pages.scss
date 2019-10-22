@@ -5,7 +5,7 @@
     font-weight: bold;
     position: relative;
     left: -20px;
-    &:after{
+    &:after {
         content: "";
         display: block;
         width: 256px;
@@ -14,11 +14,12 @@
         position: absolute;
         margin-top: 3px;
     }
-    .iconTitle{
+    .iconTitle {
         margin-left: 5px;
     }
-    .textTitle{
+    .textTitle {
         margin-left: 8px;
+        text-transform: uppercase;
     }
 }
 
@@ -26,6 +27,29 @@
     position: relative;
 }
 
-.yellowBorder {
-    
+.italicDescription {
+    font-size: 18px;
+    color: #333333;
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    text-align: center;
+    font-style:italic;
+}
+.iSmall {
+    @extend .italicDescription; 
+    font-size:15px;
+}
+.textContent {
+    font-size: 15px;
+    color: #1f1f1f;
+    font-family: "Proxima Nova";
+}
+.mt22 {
+    margin-top:22px;
+}
+.mt30 {
+    margin-top:30px;
+}
+.mb78 {
+    margin-bottom:78px;
 }
