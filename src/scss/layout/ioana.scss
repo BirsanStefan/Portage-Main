@@ -1,17 +1,104 @@
 .qnbBox {
-    font-size: 14px;
-    font-weight: bold;
-    color: #333333;
     position: relative;
+    margin-bottom: 40px;
+    text-align: right;
+    &:after{
+        border-bottom: 2px solid #cccccc;
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        padding-bottom: 20px;
+    }
     .iconQNBBox{
         margin-left: 5px;
     }
     .qnbBtn{
-        padding: 10px 25px;
-        border: #f9b411;
-        border-radius: 10px;
+        padding: 5px 25px;
+        border: 1px solid #f9b411;
+        border-radius: 7px;
         margin-left: 20px;
+        text-decoration: none;
+        color: #333333;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .qnbBtn:hover{
+        color: #f9b411;
     }
 }
-.centerCol{
-    
+
+.youtubeList{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.youtubeElement{
+    width: 30%;
+    margin-bottom: 60px;
+    position: relative;
+    .youtubeIframe iframe{
+        max-width: 100%;
+    }
+    .youtubeText{
+        padding: 20px 12px;
+        font-size: 12px;
+        color: #1f1f1f;
+    }
+    .youtubeText p{
+        margin-bottom: 0;
+    }
+}
+.frequentlyAQ{
+    font-weight: 600;
+    font-size: 14;
+    color: #01148a;
+    font-style: italic;
+    width: 100%;
+    text-align: right;
+    margin-right: 10px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+.frequentlyAQ:hover{
+    text-decoration: none;
+    color: #f9b411;
+}
+
+.centerCol {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    min-height: 255px;
+}
+
+@media only screen and (max-width: 768px){
+    .qnbBox {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 601px){
+    .youtubeElement{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .youtubeElement{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        .youtubeText{
+            text-align: center;
+        }
+    }
+}
