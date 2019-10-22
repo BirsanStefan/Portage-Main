@@ -39,7 +39,7 @@
                                     <p>
                                          Before energizing the electrical circuits with power, make sure wiring connections are correct.  Then power, operate and observe the system and A419 / A421 control for at least two complete operating cycles before leaving the installation.</p>
                                 </div>
-
+<hr>
                                 <div class="italicDescription">
                                     <p>Portage and Main recommends ensuring all settings are programmed to match the factory default settings. Once they are matched, you may to further adjust the SP (SET POINT) and the DIF (differential).  
                                         </p>
@@ -56,7 +56,21 @@
                                             </p>
                                     </div>
 
-                                    <div class=""></div>
+                                    <div class="textContent mt30 testDynamic">
+                                        <h5><strong>Setting the A419 Digital Control Set Point Value and Differential Value</strong>
+                                        </h5>
+                                        
+                                            <!-- <h6 class="instructionTitle mt22">To view and adjust Set Point (SP) on the A419, Follow these steps:</h6>
+                                        <ul class="test">
+                                        <li>Press and hold MENU(about 2 seconds) until the display flashes SP(SET POINT).</li>
+                                        <li> Press MENU again to display the existing SP value.</li>
+                                        <li>Press UP or DOWN ARROWS to adjust the SP to the temperature that you wish to use. </li>
+                                        <li>Press MENU again to save the new SP value selected. The display will then return to display the current temperature of the boiler solution.
+                                        </li>
+                                    </ul> -->
+
+                                    <!-- <h6 class="instructionTitle mt22"></h6> -->
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -69,6 +83,36 @@
     </div>
     @@include('../partials/globals/bottomScripts.html')
 
+    <script>
+        var obj = [
+            "test1", "test2"
+        ]
+    var parent = document.getElementsByClassName('testDynamic')[0];
+    console.log(parent);
+
+    function createList() {
+  var ul = document.createElement("ul");
+  ul.setAttribute("class", "testDynamic");
+  return ul;
+}
+
+function createItem() {
+  return document.createElement("li");
+}
+
+
+function renderList(items) {
+  var productList = createList(); // create ul
+  // parse the list
+  items.forEach(item => {
+    var productEl = createItem(); // create li
+    productEl.textContent = item;
+    productList.append(productEl);
+  });
+return productList;
+  }
+  parent.append(renderList(obj));
+    </script>
     <script src="assets/js/vendor.min.js" defer></script>
     <script src="assets/js/app.js" defer></script>
 </body>
