@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+    <div id="wrapper">
+
+        @@include('../partials/globals/topBar.html')
+
+        <div class="mainPage">
+            <div class="customContainer">
+
+                <div class="mainBg">
+                    @@include('../partials/globals/header.html')
+
+                    <div class="mainCols">
+                        @@include('../partials/globals/left.html')
+
+                        <div class="rightCol">
+                                @@include('../partials/components/underlined-title.html', {"iconTitle": "<i class=\"fas fa-map-marker-alt\"></i>", "textTitle": "Aqua Stat Operation and Replacement " })
+
+                                <div class="italicDescription mt30">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                 </div>
+                                 <div class="aboutusImage">
+                                        <img  class="aboutImg" src="./assets/images/map_locations.jpg" alt="">
+                                    </div>
+                                    <div class="textContent mt40">
+                                        
+                                    </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        @@include('../partials/globals/footer.html')
+
+    </div>
+    @@include('../partials/globals/bottomScripts.html')
+
+    <script src="assets/js/vendor.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>
