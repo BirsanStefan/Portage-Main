@@ -1,11 +1,27 @@
 // About Us - START//
 
 .aboutusImage {
-    object-fit:cover;
 
     .aboutImg {
-        
+        display: block;
         max-width:100%;
+        background-position: center;
+        background-size: cover;
+    }
+    .aboutImgDealer {
+        @extend .aboutImg;
+        height:270px;
+        background-image: url("../../../assets/images/map_locations.jpg");
+    }
+    .aboutImgStaffs {
+        @extend .aboutImg;
+        height: 430px;
+        background-image: url("../../../assets/images/portage-main-stuff.jpg");
+    }
+    .aboutImgHistory {
+        @extend .aboutImg;
+        height:272px;
+        background-image: url("../../../assets/images/portage-main-boilers.jpg");
     }
     figcaption {
         font-size: 12px;
@@ -32,3 +48,21 @@ background-color: #dcdcdc;
     margin-left:20px;
 }
 // Aqua stat - END //
+
+// Dealer locations - START//
+.flag {
+    margin-right: 28px;
+    width: 55px;
+    height: 33px;
+}
+.titleLocationText {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 69px;
+    color: #181818;
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+// Dealer locations - END //
