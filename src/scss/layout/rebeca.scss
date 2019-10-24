@@ -8,21 +8,7 @@
         background-position: center;
         background-size: cover;
     }
-    .aboutImgDealer {
-        @extend .aboutImg;
-        height:270px;
-        background-image: url("../../../assets/images/map_locations.jpg");
-    }
-    .aboutImgStaffs {
-        @extend .aboutImg;
-        height: 430px;
-        background-image: url("../../../assets/images/portage-main-stuff.jpg");
-    }
-    .aboutImgHistory {
-        @extend .aboutImg;
-        height:272px;
-        background-image: url("../../../assets/images/portage-main-boilers.jpg");
-    }
+  
     figcaption {
         font-size: 12px;
 color: #333333;
