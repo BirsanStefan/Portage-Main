@@ -30,7 +30,7 @@
 .italicDescription {
     font-size: 18px;
     color: #333333;
-    font-family: "Proxima Nova";
+    font-family: "proxima-nova";
     font-weight: bold;
     text-align: center;
     font-style:italic;
@@ -42,7 +42,7 @@
 .textContent {
     font-size: 15px;
     color: #1f1f1f;
-    font-family: "Proxima Nova";
+    font-family: "proxima-nova";
 }
 .mt22 {
     margin-top:22px;
@@ -58,4 +58,11 @@
 }
 .mb78 {
     margin-bottom:78px;
+}
+.ml20 {
+    margin-left:20px;
+}
+.boldSpanBig {
+    font-size: 17px;
+    font-weight:bold;
 }
