@@ -73,6 +73,8 @@ module.exports = {
     return [
       `./${this.folder.src}/**`,
       `!{${this.folder.src}/images,${this.folder.src}/images/**}`,
+      `{${this.folder.src}/fonts,${this.folder.src}/fonts/**}`,
+      `{${this.folder.src}/plugins,${this.folder.src}/plugins/**}`,
       `!{${this.folder.src}/js,${this.folder.src}/js/**}`,
       `!{${this.folder.src}/html,${this.folder.src}/html/**}`,
       `!{${this.folder.src}/scss,${this.folder.src}/scss/**}`,

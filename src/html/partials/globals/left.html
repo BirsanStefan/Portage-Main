@@ -1,3 +1,93 @@
 <aside class="leftCol">
-   Aici va fi left
+
+	<div class="leftBox">
+		
+		<div class="leftBoxSection">
+			@@include('../partials/components/leftBoxTitle.html', {
+				"icon": "<i class=\"far fa-compass\"></i> ",
+				"textTitle": "Quick Nav" 
+			})
+			<nav class="quickNav">
+				<ul class="quickNavList">
+					<li class="quickNavItem submenuActive">
+						<!-- use .opnesSubmenu class if it has a submenu besides it -->
+						<a href="javascript:void(0);" class="quickNavItemLink opnesSubmenu">Dealers</a>
+						<ul class="quickNavSubmenu" style="display: block;">
+							<li class="quickNavSubmenuItem"><a href="./dealer_locations.html" class="quickNavSubmenuLink">Locations</a></li>
+							<li class="quickNavSubmenuItem"><a href="./purchase_shipping.html" class="quickNavSubmenuLink">purchase & shipping</a></li>
+							<li class="quickNavSubmenuItem"><a href="./faq.html" class="quickNavSubmenuLink">faq</a></li>
+						</ul>
+					</li>
+					<li class="quickNavItem">
+						<a href="javascript:void(0);" class="quickNavItemLink">News / Blog</a>
+					</li>
+					<li class="quickNavItem">
+						<a href="javascript:void(0);" class="quickNavItemLink">Testim</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+
+		<div class="leftBoxSection">
+			@@include('../partials/components/leftBoxTitle.html', {
+				"icon": "<img src=\"./assets/images/network.svg\" alt=\"\">",
+				"textTitle": "follow Portage & main" 
+			})
+
+			<div class="socialMediaIcons">
+				<a href="">
+					<img src="./assets/images/facebook-color.svg" alt="">
+				</a>
+				<a href="">
+					<img src="./assets/images/twitter-color.svg" alt="">
+				</a>
+				<a href="">
+					<img src="./assets/images/youtube-color.svg" alt="">
+				</a>
+				<a href="">
+					<img src="./assets/images/instagram-color.svg" alt="">
+				</a>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="leftBox">
+
+		@@include('../partials/components/leftBoxTitle.html', {
+			"icon": "<i class=\"far fa-newspaper\"></i> ",
+			"textTitle": "Older Posts" 
+		})
+
+		<div class="leftBoxList">
+
+			@@loop('../partials/components/recentItem.html', [
+
+			    {
+			    	"image": "generic1.jpg",
+			    	"date": "Oct 18th, 2019",
+			    	"title": "Headline will go here’ and look like this for the audience"
+			    },
+			    {
+			    	"image": "generic1.jpg",
+			    	"date": "Oct 18th, 2019",
+			    	"title": "Headline will go here’ and look like this for the audience"
+			    },
+			    {
+			    	"image": "generic1.jpg",
+			    	"date": "Oct 18th, 2019",
+			    	"title": "Headline will go here’ and look like this for the audience"
+			    },
+			    {
+			    	"image": "generic1.jpg",
+			    	"date": "Oct 18th, 2019",
+			    	"title": "Headline will go here’ and look like this for the audience"
+			    }
+			
+			])
+			
+		</div>
+	</div>
+
 </aside>

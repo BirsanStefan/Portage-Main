@@ -96,48 +96,50 @@
                     <div class="mainBg">
 
                         <header id="header" class="siteHeader">
-                            <div class="customContainerr">
-                                <div class="logo">
-                                    <a href="/">
-                                        <img src="images/logo.png" alt="">
-                                    </a>
-                                </div>
-       
-                                <nav class="mainNav">
-                                    <ul class="mainMenu">
-                                        <li class="mainMenuElement">
-                                            <a href="#" class="mainMenuElementLink">Who We Are</a>
-                                        </li>
-                                        <li class="mainMenuElement">
-                                            <a href="#" class="mainMenuElementLink">Our Products</a>
-                                        </li>
-                                        <li class="mainMenuElement">
-                                            <a href="#" class="mainMenuElementLink">Education</a>
-                                        </li>
-                                        <li class="mainMenuElement">
-                                            <a href="#" class="mainMenuElementLink">NEWS/BLOG</a>
-                                        </li>
-                                        <li class="mainMenuElement">
-                                            <a href="#" class="mainMenuElementLink">EVENTS</a>
-                                        </li>
-                                        <li class="mainMenuElement">
-                                            <a href="#" class="mainMenuElementLink">CONTACT US</a>
-                                        </li>
-                                    </ul>
-                                </nav>
+
+                            <div class="logoFull">
+                                <a href="/">
+                                    <img src="./assets/images/portage-main-boiler.png" alt="">
+                                </a>
+                            </div>
+   
+                            <nav class="mainNav">
+                                <ul class="mainMenu">
+                                    <li class="mainMenuElement">
+                                        <a href="#" class="mainMenuElementLink"><i class="fas fa-home"></i></a>
+                                    </li>
+                                    <li class="mainMenuElement active">
+                                        <a href="#" class="mainMenuElementLink">Who We Are</a>
+                                    </li>
+                                    <li class="mainMenuElement">
+                                        <a href="#" class="mainMenuElementLink">Our Products</a>
+                                    </li>
+                                    <li class="mainMenuElement">
+                                        <a href="#" class="mainMenuElementLink">Education</a>
+                                    </li>
+                                    <li class="mainMenuElement">
+                                        <a href="#" class="mainMenuElementLink">NEWS/BLOG</a>
+                                    </li>
+                                    <li class="mainMenuElement">
+                                        <a href="#" class="mainMenuElementLink">EVENTS</a>
+                                    </li>
+                                    <li class="mainMenuElement">
+                                        <a href="#" class="mainMenuElementLink">CONTACT US</a>
+                                    </li>
+                                </ul>
 
                                 <div class="searchArea">
                                     <form>
                                         <div class="searchFlex">
                                             <input type="search" class="searchInput" placeholder="Search...">
-                                            <button type="submit">
+                                            <button type="submit" class="searchSubmit">
                                                 <i class="fas fa-search"></i>
                                             </button>
                                         </div>
                                     </form>
                                 </div>
-        
-                            </div>
+                            </nav>
+
                         </header>
                     
                         <div class="mainCols">
@@ -262,13 +264,55 @@
             </div>
 
             <footer id="footer" class="siteFooter">
-
+            	<div class="customContainer">
+            		<div class="footerLeft">
+            			<a href="/">
+            				<img src="./assets/images/logo-white.png" alt="">
+            			</a>
+            			<div class="footerBottom">
+            				<div class="copyRight">
+            					2019 Portage & Main Boilers.   All Rights Reserved
+            				</div>
+            				<div class="footerLinks">
+            					<a href="./privacy_policy.html">Privacy Policy</a>
+            					<a href="./terms.html">Terms & Conditions</a>
+            					<a href="./sitemap.html">Sitemap</a>
+            				</div>
+            			</div>
+            		</div>
+            		<div class="footerRight">
+            			<div class="socialMediaIcons">
+            				<a href="">
+            					<img src="./assets/images/facebook-color.svg" alt="">
+            				</a>
+            				<a href="">
+            					<img src="./assets/images/twitter-color.svg" alt="">
+            				</a>
+            				<a href="">
+            					<img src="./assets/images/youtube-color.svg" alt="">
+            				</a>
+            				<a href="">
+            					<img src="./assets/images/instagram-color.svg" alt="">
+            				</a>
+            			</div>
+            		</div>
+            	</div>
             </footer>
             
         </div>
 
         
         <link media="all" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+
+        <script>
+        	$(".opnesSubmenu").click(function(){
+        		$(this).closest(".quickNavItem").toggleClass("submenuActive");
+        		$(this).next(".quickNavSubmenu").slideToggle();
+        	});
+        </script>
 
         <script src="assets/js/vendor.min.js" defer></script>
         <script src="assets/js/app.js" defer></script>
