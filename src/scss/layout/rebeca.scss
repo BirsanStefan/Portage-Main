@@ -1,23 +1,6 @@
 // About Us - START//
 
-.aboutusImage {
 
-    .aboutImg {
-        display: block;
-        max-width:100%;
-        background-position: center;
-        background-size: cover;
-    }
-  
-    figcaption {
-        font-size: 12px;
-color: #333333;
-font-family: "proxima-nova";
-font-weight: 300;
-text-align: right;
-margin-top:8px;
-    }
-}
 
 // About us -END //
 
@@ -89,3 +72,32 @@ background-color: #dcdcdc;
 }
 
 // Water Sample - END //
+
+
+// Installation parts - START //
+.floatingLeft {
+    float:left;
+    width:50%;
+    text-align:left;
+}
+.floatingRight {
+    float:right;
+    width:50%;
+}
+.clear {
+    clear:both;
+}
+.mail {
+    color:#4545fa;
+}
+.yellowNumber {
+    font-size: 30px;
+    font-weight:bold;
+    letter-spacing: 2px;
+    color: #f9b411;
+    font-family: "Proxima Nova";
+    text-align: center;
+    filter: drop-shadow(0px 1px 0.5px rgba(30,30,30,0.75));
+
+}
+// Installation parts - END //
