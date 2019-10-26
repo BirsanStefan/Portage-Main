@@ -1,18 +1,103 @@
-// About Us //
+// About Us - START//
 
-.aboutusImage {
-    object-fit:cover;
 
-    .aboutImg {
-        
-        max-width:100%;
-    }
-    figcaption {
-        font-size: 12px;
-color: #333333;
-font-family: "Proxima Nova";
-font-weight: 300;
-text-align: right;
-margin-top:8px;
-    }
+
+// About us -END //
+
+// Aqua stat - START //
+
+hr {
+    height: 1px;
+background-color: #dcdcdc;
 }
+.note {
+    font-size:1.25rem;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin-left:20px;
+}
+// Aqua stat - END //
+
+// Dealer locations - START//
+.flag {
+    margin-right: 28px;
+    width: 55px;
+    height: 33px;
+}
+.titleLocationText {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 69px;
+    color: #181818;
+    font-family: "proxima-nova";
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+// Dealer locations - END //
+
+// Water Sample - START //
+
+.italicTitle {
+    font-size:18px;
+    font-family: "proxima-nova";
+    text-align: center;
+    margin-bottom: 35px;
+}
+.footerWS {
+    margin-top:68px;
+}
+.flexDiv {
+    display:flex;
+    justify-content:center;
+
+    .flex40 {
+        width:40%;
+        display:flex;
+        flex-wrap:wrap;
+        &>div {
+            width:100%;
+            
+        }
+        &:nth-child(2) {
+            padding-left:10%;
+        }
+        img {
+            width: 120px;
+            height:130px;
+            display:block;
+        }
+    }
+    
+}
+
+// Water Sample - END //
+
+
+// Installation parts - START //
+.floatingLeft {
+    float:left;
+    width:50%;
+    text-align:left;
+}
+.floatingRight {
+    float:right;
+    width:50%;
+}
+.clear {
+    clear:both;
+}
+.mail {
+    color:#4545fa;
+}
+.yellowNumber {
+    font-size: 30px;
+    font-weight:bold;
+    letter-spacing: 2px;
+    color: #f9b411;
+    font-family: "Proxima Nova";
+    text-align: center;
+    filter: drop-shadow(0px 1px 0.5px rgba(30,30,30,0.75));
+
+}
+// Installation parts - END //

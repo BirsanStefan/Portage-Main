@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    @@include('../partials/head/head.html')
+
+    <body>
+        <div id="wrapper">
+
+            @@include('../partials/globals/topBar.html')
+
+            <div class="mainPage">
+                <div class="customContainer">
+            
+                    <div class="mainBg">
+
+                        @@include('../partials/globals/header.html')
+                    
+                        <div class="mainCols">
+                            <div class="centerCol">
+                                
+                                <!--Top Nav-->
+                                <div class="topNavBtnContent">
+                                    <ul>
+                                        @@loop('../partials/components/topNavBtn.html', [
+
+                                            {
+                                               "topNavBtn": "Ultimizer Wood Series" 
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "Ultimizer Coal Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "EGR Gasification Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "The Stoker Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "The EnviroChip Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "LCB-120 Wood Chip / Wood Pellet Burner"
+                                            }
+                                        ])
+                                    </ul>
+                                </div>
+                                
+                                <!--mainTitle & Download pdf-->
+                                <div class="sectionTitleContent">
+                                    <div class="sectionTitleLeft">
+                                        @@include('../partials/components/underlined-title.html', {
+                    
+                                            "iconTitle": "<img src=\"./assets/images/boilers101.png\">",
+
+                                            "textTitle": "EGR-optimizer wood Gasification Series"
+
+                                        })
+                                    </div>
+                                     
+                                    <div class="sectionTitleRight">
+                                        <a href="#"><img src="./assets/images/pdf-icon.png"></a>
+                                        <a href="#">Download Brochure</a>
+                                    </div>
+                                </div>
+
+                                <!--Heating with biomass...-->
+                                <div class="heatingWithBiomassContent">
+                                    <div class="heatingWithBiomass">
+                                        
+                                        <div class="heatingWithBiomassLeft">
+                                            <div class="italicDescrContent">
+                                                <div class="italicDescription ">Not just a pretty face, this boiler is a heavy weight and is packed with energy saving features.</div> 
+                                                <div class="italicDescription">The EGR Optimizer burns all types of seasoned wood.</div>
+                                            </div>
+                                            <div class="heatingWithBiomasTextContent">
+                                                <div class="heatingWithBiomasText">This gasification boiler is built with some of the same principals as commercial industrial boilers – dry based, sectional design, efficient multi-pass fire tube heat exchanger.</div>
+                                                <div class="heatingWithBiomasText">When you purchase an EGR Optimizer Wood Gasification model, you will burn a lot less wood and get more heat and comfort. You will enjoy a consistent burn that will heat your home, garage and barn all at the same time. Keep the mess and the danger out of your home - all this warmth while enjoying a quick return on your investment.</div> 
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="heatingWithBiomassRight">
+                                            <a href="#"><img src="./assets/images/egz-optimizer.png"></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!--The envirochip series-->
+                                @@include('../partials/components/youtubeText.html', {
+                                    "iframe": "<iframe src=\"https://www.youtube.com/embed/rRbyZ3eD-9M\"  allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+
+                                    "mainTitle": "EGR-Optimizer Wood Gasification Series",
+
+                                    "secondTitle": "Revolutionary Design",
+
+                                    "descriptiona": "The Ultimizer uses a revolutionary design to eliminate the problems associated (until now) with outdoor boilers. ie. smoke, creosote, moisture, corrosion.",
+
+                                    "descriptionb": "The heat retaining refractory lining directs heat back into the burn chamber. This is where heat is extracted from the combustion gases and the smoke is burnt, rather than exiting the chimney. The extra heat generated eliminates creosote and moisture and prevents corrosion.",
+
+                                    "btexta": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &#34;de Finibus Bonorum et Malorum&#34; (The Extremes of Good and Evil) by Cicero, written in 45 BC.",
+
+                                    "btextb": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+
+                                })
+
+                                <!--Portage & Main Envirochip Benefits:-->
+                                <div class="ultimizerBenefitsContent">
+                                    <div class="ultimizerBnftsBorder">
+                                        <div class="ultimizerBenefitsLeft">
+
+                                            <h3>Portage & Main Ultimizer Benefits:</h3>
+
+                                            <div class="ultimizerBnftsLeftContent">
+
+                                                <h4>Extensive Refractory</h4>
+
+                                                <ul class="ultimizerBnftsList">
+                                                    <li>The extensive refractory lining of the burn and reaction chambers absorb the high temperatures produced and promote a clean, hot, dry burn. A high efficiency heat exchanger is required to capture this heat for optimum efficiency.</li>
+                                                </ul>
+
+                                                <h4>Most efficient design of heat exchanger</h4>
+
+                                                <ul class="ultimizerBnftsList">
+                                                    <li>The Portage & Main EGR has not just one, but two high efficiency flue tube heat exchangers. This makes our brand one of the most efficient, most modern gasification units on the market today. Time tested and proven – this type of flue tube heat exchanger was the most efficient design 150 years ago and  is still the most efficient design today.</li>
+                                                    <li>Optimal heat extraction saves the work and cost involved in burning wood.</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="ultimizerBenefitsRight">
+                                            <a href="#">
+                                                <img src="./assets/images/image1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="whatItMeans">
+                                    <div class="whatItMeansBox">
+
+                                        <div class="whatItMeansLeft">
+                                            <div class="biomassCycleText">The Biomass Cycle</div>
+                                            <a href="#"><img src="./assets/images/biomass-cycle.png" alt="biomass-cycle"></a>
+                                        </div>
+
+
+                                        <div class="whatItMeansRight ultimizerBenefitsLeft">
+
+                                            <h3>What it Means for the Environment?</h3>
+
+                                            <div class="italicDescription whatItMeansText">The reports of dwindling fossil fuel supplies and a growing concern for the environment have governments and individuals alike looking for alternative heating options.</div>
+
+                                            <div class="italicDescription whatItMeansText">Portage and Main is proud to introduce the EGR gasification series which addresses the demand for a high efficiency, low emission furnace.</div>
+
+                                            <ul>
+                                                <li>Not just a pretty face, the Optimizer EGR gasification model is a true heavy weight.</li>
+                                                <li>Built with some of the same principals as commercial industrial boilers – dry base, sectional design, efficient multi-pass heat exchanger.</li>
+                                                <li>Packed with energy saving features</li>
+                                                <li>A consistent burn that heats your home and multiple buildings all at the same time.</li>
+                                                <li>Highly efficient – use less wood to give more heat.</li>
+                                                <li>Enjoy a quick return on your investment.</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!--Better than imported oil-->
+                                @@include('../partials/components/betterThanImported.html', {
+                                    "brochureimage": "<img src=\"assets/images/download-brochure.jpg\" alt=\"brochure\">",
+                                    "descriptiona": "The following brochure includes general product information and specification of the coal burning models availabe.",
+                                    "downloadImg": "<img src=\"./assets/images/pdf-icon.png\">",
+
+                                    "downloadText": "Download Brochure",
+
+                                    "descriptionb": "The EGR Optimzer Wood Gasification model burns all types of seasoned dry wood - achieves even more savings for you.",
+                                    "value": "1 (800) 561-0700"
+                                })
+                                
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
+                </div>
+            </div>
+
+            @@include('../partials/globals/footer.html')
+            
+        </div>
+
+        @@include('../partials/globals/bottomScripts.html')
+
+        <script src="assets/js/vendor.min.js" defer></script>
+        <script src="assets/js/app.js" defer></script>
+    </body>
+</html>

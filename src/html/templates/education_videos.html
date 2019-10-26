@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    @@include('../partials/head/head.html')
+
+    <body>
+        <div id="wrapper">
+
+            @@include('../partials/globals/topBar.html')
+
+            <div class="mainPage">
+                <div class="customContainer">
+            
+                    <div class="mainBg">
+
+                        @@include('../partials/globals/header.html')
+                    
+                        <div class="mainCols">
+                            <div class="centerCol">
+                                @@include('../partials/components/quickNavButtons.html',{
+                    
+                                    "iconQNBBox": "<img src=\"./assets/images/Education-Icon.png\">",
+                    
+                                    "qnbBtn1": "Video Learning",
+                    
+                                    "qnbBtn2": "Installation Diagrams",
+                    
+                                    "qnbBtn3": "Pad Designs"
+                    
+                                })
+                    
+                                @@include('../partials/components/underlined-title.html', {
+                    
+                                    "iconTitle": "<img src=\"./assets/images/boilers101.png\">",
+                                    
+                                    "textTitle": "BOILERS 101 - VIDEO LEARNING"
+                                })
+
+                                <!--START 22.10.2019-->
+                                <div class="topDescription">
+                                    <div class="italicDescription">
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                                    <div class="italicDescription"> 
+                                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                                        'Content here, content here', making it look like readable English.
+                                    </div>
+                                </div>
+                                <!--END-->
+
+
+                                <div class="youtubeList">
+                                    @@loop('../partials/components/youtubeElement.html', [
+                                        {
+                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
+                                        },
+                                        {
+                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
+                                        },
+                                        {
+                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
+                                        },
+                                        {
+                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
+                                        },
+                                        {
+                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
+                                        },
+                                        {
+                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
+                                        },
+                                        {
+                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
+                                        },
+                                        {
+                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
+                                        },
+                                        {
+                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
+                                        }
+                                    ])
+                                    
+                                    <a href="#" class="frequentlyAQ">
+                                        &raquo; Frequently Asked Questions
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
+                </div>
+            </div>
+
+            @@include('../partials/globals/footer.html')
+            
+        </div>
+
+        @@include('../partials/globals/bottomScripts.html')
+
+        <script src="assets/js/vendor.min.js" defer></script>
+        <script src="assets/js/app.js" defer></script>
+    </body>
+</html>

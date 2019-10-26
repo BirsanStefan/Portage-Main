@@ -1,0 +1,1364 @@
+/*education_videos.html START*/
+.qnbBox {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: right;
+    &:after{
+        border-bottom: 2px solid #cccccc;
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .iconQNBBox{
+        margin-left: 5px;
+    }
+    .qnbBtn{
+        padding: 5px 25px;
+        border: 1px solid #f9b411;
+        border-radius: 7px;
+        margin-left: 20px;
+        text-decoration: none;
+        color: #333333;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .qnbBtn:hover{
+        color: #f9b411;
+    }
+}
+
+/*RE: START 22.10.2019*/
+.mainTopTitle{
+    padding-top: 15px;
+}
+
+.topDescription{
+    margin-top: 40px;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*RE: END*/
+
+.youtubeList{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.youtubeElement{
+    width: 30%;
+    margin-bottom: 40px;
+    position: relative;
+    .youtubeIframe iframe{
+        width: 540px;
+        height: 300px;
+        max-width: 100%;
+    }
+    .youtubeText{
+        padding: 20px 12px;
+        font-size: 12px;
+        color: #1f1f1f;
+    }
+    .youtubeText p{
+        margin-bottom: 0;
+    }
+}
+.frequentlyAQLink{
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+a.frequentlyAQ{
+    font-weight: 600;
+    font-size: 14;
+    color: #01148a;
+    font-style: italic;
+    width: 100%;
+    margin-right: 10px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    text-align: right;
+}
+.frequentlyAQ:hover{
+    text-decoration: none;
+    color: #f9b411;
+}
+
+.centerCol {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    min-height: 255px;
+}
+
+@media only screen and (max-width: 768px){
+    .qnbBox {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 601px){
+    .youtubeElement{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .youtubeElement{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        .youtubeText{
+            text-align: center;
+        }
+    }
+}
+/*education_videos.html END*/
+
+
+/*terms.html START 22.10.2019*/
+.textBlockContent{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.textBlock{
+    padding: 0 10px;
+    .textBlockTitle h5{
+        font-size: 20px;
+        color: #1f1f1f;
+        font-weight: 600;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .textBlockText p{
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: #1f1f1f;
+    }
+}
+.textBlock .textBlockText p{
+    line-height: 30px;
+}
+#textBlockContent {
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+@media only screen and (max-width: 520px){
+    #textBlock{text-align: center;}
+}
+/*terms.html END*/
+
+
+/*sitemap.html START*/
+.sitemapList{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding-left: 60px;
+}
+.sitemapList a{
+    color: #1f1f1f;
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.sitemapList a:hover{
+    text-decoration: none;
+    color: #f9b411;
+}
+.sitemapList ul{
+    margin-bottom: 35px;
+}
+.sitemapList ul ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+/*sitemap.html END*/
+
+
+/*envirochip_series.html START - 22.10.2019*/
+/*topnav btns*/
+.topNavBtnContent{
+    text-align: center;
+    position: relative;
+}
+.topNavBtnContent ul{
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+.topNavBtnContent ul::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #cccccc;
+    bottom: -15px;
+}
+.topNavBtnContent ul li{
+    display: inline-block;
+    margin-left: 7px;
+    margin-right: 7px;
+    position: relative;
+    font-size: 13px;
+    line-height: 30px;
+}
+.topNavBtnContent li a{
+    color: #000;
+    font-family: 'PrimaNova', sans-serif;
+}
+.topNavBtnContent li a:hover{
+    text-decoration: none;
+    color: #f9b411;
+}
+.topNavBtnContent li a::before{
+    position: absolute;
+    display: block;
+    content: "\2022";
+    left: -9px;
+}
+
+/*mainTitle & Download pdf*/
+.sectionTitleContent{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+.sectionTitleLeft{
+    margin-right: 35px;
+}
+.sectionTitleRight{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+.sectionTitleRight a{
+    color: #1537a6;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'ProximaNova', sans-serif;
+}
+.sectionTitleRight a:hover{
+    text-decoration: none;
+    color: #f9b411;
+}
+.sectionTitleRight a img{
+    margin-right: 10px;
+}
+
+/*Heating with biomass...*/
+.heatingWithBiomassContent{
+    padding-bottom: 20px;
+    position: relative;
+}
+.heatingWithBiomass{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.heatingWithBiomass::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    bottom: 10px;
+    border-bottom: 2px solid #cccccc;
+}
+.heatingWithBiomassLeft{
+    width: 63%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.heatingWithBiomasText{
+    font-size: 15px;
+    font-family: "ProximaNova", sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 30px;
+}
+.heatingWithBiomassRight{
+    width: 35%;
+    text-align: center;
+}
+
+/*youtubeText.html START*/
+.youtubeText{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    position: relative;
+}
+.youtubeTextBox{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+.iframe{
+    width: 48%;
+}
+.iframe iframe{
+    max-width: 100%;
+}
+.text{
+    width: 48%;
+}
+.text h3{
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Cooper Black Std", sans-serif;
+    font-weight: 800;
+}
+.rightBox{
+    padding-left: 15px;
+}
+.rightBox h4{
+    font-size: 16px;
+    color: #333333;
+    font-family: "Proxima Nova",sans-serif;
+    font-weight: bold;
+}
+.rightBox p, .rightBox p, .bottomText p{
+    font-size: 15px;
+    color: #1f1f1f;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+.bottomText{
+    margin-bottom: 25px;
+}
+.bottomText:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: auto;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    border-bottom: 2px solid #cccccc;
+}
+/*youtubeText.html END*/
+
+/*textImage.html START*/
+.textImage{
+    padding: 40px 30px 50px 30px;
+    position: relative;
+}
+.textImageBox{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.textImageBox::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: auto;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-bottom: 2px solid #cccccc;
+}
+.textImageLeft{
+    width: 45%;
+}
+.textImageLeft h3{
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Cooper Black Std", sans-serif;
+    font-weight: 800;
+}
+.textImageLeft ul{
+    padding-left: 40px;
+}
+.textImageLeft a, .textImageLeft em, .textImageLeft span, .specialsPromoRulesL a, .specialsPromoRulesL em, .specialsPromoRulesL span{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    font-style: unset;
+}
+.textImageLeft a:hover, .specialsPromoRulesL a:hover{
+    color: #f9b411;
+    text-decoration: none;
+}
+.textImageRight{
+    width: 45%;
+    text-align: center;
+}
+.textImageRight a{
+    width: 321px;
+    height: 303px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+}
+/*textImage.html END*/
+
+/*Better than imported oil START*/
+.betterThan{
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+.betterThanBox{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.betterThanLeft{
+    width: 45%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.betterThanLLeft{
+    width: 48%;
+    text-align: right;
+}
+.betterThanLBox{
+    width: 45%;
+}
+.betterThanDescr{
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.betterThanRight{
+    width: 50%;
+}
+.betterThanRDescr{
+    font-size: 18px;
+    color: #1f1f1f;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.betterThanRValue{
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Proxima Nova",sans-serif;
+    text-align: center;
+    text-shadow: -1px 1px 0 #000, 
+                 1px 1px 0 #000, 
+                 1px -1px 0 #000, 
+                 -1px -1px 0 #000;
+    font-weight: 800;
+}
+.betterThanRValue a{
+    color: #f9b411;
+}
+.betterThanRValue a:hover{
+    color: #f3aa00;
+    text-decoration: none;
+}
+
+/*Download Brochure*/
+.sectionTitleRight{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+.sectionTitleRight a{
+    color: #1537a6;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'ProximaNova', sans-serif;
+    text-decoration: none;
+}
+.sectionTitleRight a:hover{
+    text-decoration: none;
+    color: #f9b411;
+}
+.sectionTitleRight a img{
+    margin-right: 10px;
+}
+/*Better than imported oil END*/
+/*envirochip_series.html END*/
+
+
+/*lcb-120.html START*/
+.lcb120.subtitle{
+    font-size: 18px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+}
+.lcb120{
+    font-size: 15px;
+    font-family: "ProximaNova",sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+    color: #333333;
+}
+/*lcb-120.html END*/ 
+
+
+/*installation_diagrams.html START - 24.10.2019*/
+/*diagrams.html START*/
+.diagramsContent{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.diagrams{
+    padding: 15px 10px 10px;
+    background: rgb(223, 221, 221);
+    background-image: linear-gradient(rgb(251, 249, 249), rgb(223, 221, 221));
+    width: 31%;
+    margin-bottom: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.diagramsImgPDF{
+    position: relative;
+    text-align: center;
+}
+.diagramsImg{
+    width: 100%;
+}
+.diagramsPDF{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.diagramsBox{
+    padding: 20px 10px 0 10px;
+}
+.diagramsBox h3 a{
+    font-size: 18px;
+    color: #1f1f1f;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+}
+.diagramsBox h3 a:hover{
+    text-decoration: none;
+    color: #f9b411;
+}
+.diagramsText{
+    font-size: 12px;
+    color: #1f1f1f;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+}
+.diagramsButton{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    margin-left: auto;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #f9b411;
+    padding-left: 5px;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+.diagramsButton, .diagramsButton:hover{
+    text-decoration: none;
+}
+.diagramsButton i{
+    width: 20%;
+    font-size: 11px;
+    text-align: center;
+    border-right: 1px solid #b4b4b4;
+    color: #333333;
+}
+.diagramsButton .textButton:hover{
+    color: #f9b411;
+}
+.diagramsButton .textButton{
+    width: 70%;
+    font-size: 14px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 5px;
+}
+/*diagrams.html END*/
+/*installation_diagrams.html END*/
+
+
+/*egr_gasification.html START*/
+.italicDescrContent{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heatingWithBiomasTextContent{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.ultimizerBenefitsContent{
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.ultimizerBnftsBorder{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.ultimizerBnftsBorder::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: auto;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    border-bottom: 2px solid #cccccc;
+}
+.ultimizerBenefitsLeft{
+    width: 50%;
+}
+.ultimizerBenefitsLeft h3{
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Cooper Black Std",sans-serif;
+    font-weight: 800;
+}
+.ultimizerBnftsLeftContent{
+    padding-left: 20px;
+}
+.ultimizerBnftsLeftContent h4{
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+}
+.ultimizerBnftsList li{
+    font-size: 16px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+}
+.ultimizerBenefitsRight{
+    width: 50%;
+}
+div.ultimizerBenefitsRight img{
+    width: 321px;
+    height: 458px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whatItMeans{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+.whatItMeansBox{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.whatItMeansBox::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: auto;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    border-bottom: 2px solid #cccccc;
+}
+.whatItMeansLeft{
+    width: 50%;
+    text-align: center;
+}
+.biomassCycleText{
+    text-align-last: left;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+}
+.whatItMeansRight{
+    width: 50%;
+}
+.italicDescription.whatItMeansText{
+    margin-bottom: 30px;
+}
+.whatItMeansRight ul li{
+    font-size: 16px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+}
+/*egr_gasification.html END*/
+
+/*stoker_series.html START*/
+.stokerSeries{
+    padding-bottom: 40px;
+    position: relative;
+}
+.stokerSeriesContent{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.stokerSeriesContent::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: auto;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    border-bottom: 2px solid #cccccc;
+}
+.stokerSeriesLeft{
+    width: 40%;
+    float: left;
+}
+.italicDescription.width{
+   width: 625px; 
+}
+.centerDescription{
+    text-align: center;
+    font-size: 15px;
+    color: #333333;
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    width: 625px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.leftDescription{
+    font-size: 15px;
+    line-height: 24px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    width: 360px;
+}
+.stokerSeriesRight{
+    float: left;
+    width: 60%;
+}
+
+.stockerBenefits{
+    padding-left: 30px;
+}
+.stockerBenefits h4{
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+.stockerBnftsDescr{
+    margin-left: -18px;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;  
+}
+/*stoker_series.html END*/
+
+
+/*ultimizer_coal_series START 25.10.2019*/
+.heatingWithBiomasText.bold{
+    font-weight: bold;
+}
+.heatingWithBiomasText.bold a{
+    filter: drop-shadow(0px 1px 0.5px rgba(30,30,30,0.75));
+    padding-left: 5px;
+    color: #333333;
+    text-decoration: none;
+}
+.heatingWithBiomasText.bold a:hover{
+    color: #f9b411;
+}
+/*ultimizer_coal_series END*/
+
+
+/*ultimizer_wood_series.html START*/
+.rightBox ul{
+    padding-left: 20px;
+    font-size: 15px;
+}
+.rightBox ul li a{
+    font-size: 16px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+}
+.rightBox ul li a:hover{
+    color: #f9b411;
+    text-decoration: none;
+}
+/*ultimizer_wood_series.html END*/
+
+
+/*specials.html START*/
+.specialsAnotherLine{
+    padding-top: 30px;
+} 
+.specialsAnotherLine h2{
+    font-size: 28px;
+    line-height: 26px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+}
+.specialsAnotherLine h3{
+    font-size: 20px;
+    line-height: 26px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+}
+
+.specialsRightside{
+    float: right;
+}
+.specialText {
+    font-size: 18px;
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+}
+.specialsPromo{
+    font-size: 24px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+}
+
+/*************DE ADAUGAT SOCIAL MEDIA ;)***************/
+.socialMedia{
+    padding-top: 15px;
+}
+/*************DE ADAUGAT SOCIAL MEDIA ;)***************/
+
+
+.specialsAnotherLine h5{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 19px;
+    line-height: 25px;
+    color: #1f1f1f;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+}
+.specialsImg{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.specialsPromoRules{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.specialsPromoRulesL{
+    width: 50%;
+}
+.specialsPromoRulesL h4{
+    font-size: 25px;
+    line-height: 25px;
+    color: #1f1f1f;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.specialsPromoRulesL ul{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.specialsPromoRulesR{
+    width: 50%;
+    text-align: center;
+}
+.specialItalicText{
+    font-size: 14px;
+    line-height: 25px;
+    color: #1f1f1f;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-style: italic;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.betterThanRDescr.specialBTRDa{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.betterThanRDescr.specialBTRDb{
+    padding-bottom: 50px;
+}
+.specialsPromo.bottom{
+    padding-top: 20px;
+}
+/*specials.html END*/
+
+/*testimonials.html START*/
+.iconMessageWrap{
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+/*iconMessage.html START*/
+.iconMessage{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.iconMessL{
+    width: 10%;
+    text-align: center;
+}
+.iconMessR{
+    width: 75%;
+    padding: 35px;
+    border: 2px solid #cccccc;
+    border-radius: 15px;
+    position: relative;
+}
+
+/*triangle START*/
+.iconMessRContent::after{
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #cccccc;
+    transform: rotate(20deg);
+    position: absolute;
+    top: 50px;
+    left: -20px;
+}
+.iconMessRContent::before{
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #cccccc;
+    transform: rotate(160deg);
+    position: absolute;
+    top: 44px;
+    left: -20px;
+}
+/*triangle END*/
+
+
+.iconMessRContent h3, .iconMessRContent a{
+    font-size: 16px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.iconMessRContent a:hover{
+    color: #f9b411;
+    text-decoration: none;
+}
+.textMess{
+    font-size: 16px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+}
+/*iconMessage.html END*/
+
+.testimonialsPag{
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+.pagination{
+    width: 300px;
+    margin-left: auto;
+}
+.pagination li{
+    border: 1px solid #cccccc;
+}
+.pagination li a{
+    display: block;
+    padding: 15px;
+}
+.pagination li a:hover{
+    text-decoration: none;
+}
+/*testimonials.html END*/
+
+/*events.html START - 26.10.2019*/
+.searchBarMenuBox{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background: #eeeeee;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.searchBarL{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.searchBarL input{
+    width: 175px;
+    height: 45px;
+    border-radius: 7px 0 0 7px;
+    background: #fff;
+    border: 1px solid #cccccc;
+    font-weight: bold;
+    font-size: 15px;
+    color: #333333;
+}
+.searchBarL button{
+    height: 45px;
+    border-radius: 0 7px 7px 0;
+    border: 1px solid #cccccc;
+    background: #fff;
+    font-weight: bold;
+    color: #333333;
+}
+.searchBarL a{
+    background: #fff;
+    padding: 10px 5px;
+    height: 45px;
+    border: 1px solid #cccccc;
+    color: #333333;
+    font-weight: 600;
+}
+
+.menuR{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.menuR a, .menuR span{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    font-family: 'ProximaNova',sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    height: 45px;
+}
+.menuR span{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menuR a{
+    background: #fff;
+    padding: 10px 15px;
+    border: 1px solid #cccccc;
+}
+.menuR a.left, .searchBarL a.left{
+    border-radius: 7px 0 0 7px;
+}
+.menuR a.right, .searchBarL a.right{
+    border-radius: 0 7px 7px 0;
+}
+.menuR a:hover, .searchBarL a:hover, .searchBarL button:hover{
+    background: #f3f2f2;
+    text-decoration: none;
+    color: #f9b411;
+}
+.menuR a.active{
+    background: #eeeeee;
+}
+
+.events{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+.events h2{
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 28px;
+    color: #333333;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+/*eventsElement.html START*/
+.eventsElem{
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.eventsElemContent::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: auto;
+    left: 0;
+    right: 0;
+    top: -5px;
+    border-top: 2px solid #cccccc;
+}
+.eventsElemContent{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.eventsElemL{
+    width: 15%;
+}
+.eventsElemR{
+    width: 75%;
+}
+.eventsElemR h3{
+    margin-bottom: 0;
+}
+.eventsElemR h3 a{
+    font-family: 'ProximaNova', sans-serif;
+    color: red;
+    font-size: 22px;
+    font-weight: 600;
+}
+.eventsElemR h3 a:hover{
+    text-decoration: none;
+    color: #f9b411;
+}
+.eventsPeriod{
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #333333;
+}
+.eventsText{
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-family: 'ProximaNova', sans-serif;
+    color: #333333;
+    font-size: 15px;
+}
+a.tag{
+    color: red;
+    font-weight: bold;
+}
+a.tag:hover{
+    text-decoration: none;
+    color: #f9b411;
+}
+
+/*eventsElement.html START*/
+/*events.html END*/
+
+
+/**/

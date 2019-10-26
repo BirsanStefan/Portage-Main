@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    @@include('../partials/head/head.html')
+
+    <body>
+        <div id="wrapper">
+
+            @@include('../partials/globals/topBar.html')
+
+            <div class="mainPage">
+                <div class="customContainer">
+            
+                    <div class="mainBg">
+
+                        @@include('../partials/globals/header.html')
+                    
+                        <div class="mainCols">
+                            <div class="centerCol">
+                                
+                                <!--Top Nav-->
+                                <div class="topNavBtnContent">
+                                    <ul>
+                                        @@loop('../partials/components/topNavBtn.html', [
+
+                                            {
+                                               "topNavBtn": "Ultimizer Wood Series" 
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "Ultimizer Coal Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "EGR Gasification Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "The Stoker Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "The EnviroChip Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "LCB-120 Wood Chip / Wood Pellet Burner"
+                                            }
+                                        ])
+                                    </ul>
+                                </div>
+                                
+                                <!--mainTitle & Download pdf-->
+                                <div class="sectionTitleContent">
+                                    <div class="sectionTitleLeft">
+                                        @@include('../partials/components/underlined-title.html', {
+                    
+                                            "iconTitle": "<img src=\"./assets/images/boilers101.png\">",
+
+                                            "textTitle": "The Wood Ultimizer Series"
+
+                                        })
+                                    </div>
+                                     
+                                    <div class="sectionTitleRight">
+                                        <a href="#"><img src="./assets/images/pdf-icon.png"></a>
+                                        <a href="#">Download Brochure</a>
+                                    </div>
+                                </div>
+
+                                <!--Heating with biomass...-->
+                                <div class="heatingWithBiomassContent">
+                                    <div class="heatingWithBiomass">
+                                        
+                                        <div class="heatingWithBiomassLeft">
+                                            <div class="italicDescription">The Ultimizer wood series is the product of more than</div>
+                                            <div class="italicDescription">40 years of research and development that has earned</div> 
+                                            <div class="italicDescription">Portage & Main Outdoor Boilers the reputation as an industry leader.</div>
+                                            <div class="heatingWithBiomasText">With four sizes available, heating from under 2,000 sq ft to 12,000 sq ft, producing up to 500,000 BTUs.  The Ultimizer can be connected to virtually any existing forced air or hydronic radiant heating system.</div>
+                                            <div class="heatingWithBiomasText bold">For further information please call us toll free: <a href="#">1 (800) 561-0700</a></div>
+                                        </div>
+
+                                        <div class="heatingWithBiomassRight">
+                                            <a href="#"><img src="./assets/images/ultimizer-wood-series.png"></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="youtubeText">
+                                    <div class="youtubeTextBox">
+                                        <div class="iframe">
+                                            <iframe src="https://www.youtube.com/embed/rRbyZ3eD-9M"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+
+                                        <div class="text">
+                                            <h3>Portage & Main Ultimizer Wood Series</h3>
+
+                                            <div class="rightBox">
+                                                <h4>The Ultimizer Wood Series can heat your:</h4>
+                                                <ul>
+                                                    <li><a href="#">home</a></li>
+                                                    <li><a href="#">domestic hot water</a></li>
+                                                    <li><a href="#">other buildings</a></li>
+                                                    <li><a href="#">hot tub</a></li>
+                                                    <li><a href="#">swimming pool and more!</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bottomText">
+                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <!--Portage & Main Envirochip Benefits:-->
+                                @@include('../partials/components/textImage.html', {
+
+                                    "title": "Portage & Main Ultimizer Benefits:",
+
+                                    "linka": "Higher temperatures make complete combustion possible",
+                                    "linkb": "A cleaner and more efficient burn",
+                                    "linkc": "Eliminates creosote, moisture and their damaging effects",
+                                    "linkd": "A dryer, longer-lasting outdoor boiler",
+                                    "linke": "Clean burning efficiency without the extra cost of an EPA gasification boiler",
+                                    "linkf": "An intelligent design means optimized combustion",
+                                    "linkg": "Say something more on this line.",
+                                    "linkh": "Say something more on this line.",
+
+                                    "image": "<img src=\"./assets/images/image.jpg\">"
+
+                                })
+
+                                <!--Better than imported oil-->
+                                @@include('../partials/components/betterThanImported.html', {
+
+                                    "brochureimage": "<img src=\"assets/images/downloadbrochure1.jpg\" alt=\"brochure\">",
+
+                                    "descriptiona": "The following brochure includes general product information and specification of the coal burning models availabe.",
+
+                                    "downloadImg": "<img src=\"./assets/images/pdf-icon.png\">",
+
+                                    "downloadText": "Download Brochure",
+
+                                    "descriptionb": "We have turned up the heat and look forward to providing you with the warmth and satisfaction you have been searching for. Call now!",
+
+                                    "value": "1 (800) 561-0700"
+
+                                })
+                                
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
+                </div>
+            </div>
+
+            @@include('../partials/globals/footer.html')
+            
+        </div>
+
+        @@include('../partials/globals/bottomScripts.html')
+
+        <script src="assets/js/vendor.min.js" defer></script>
+        <script src="assets/js/app.js" defer></script>
+    </body>
+</html>

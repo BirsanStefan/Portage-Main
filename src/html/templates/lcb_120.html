@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    @@include('../partials/head/head.html')
+
+    <body>
+        <div id="wrapper">
+
+            @@include('../partials/globals/topBar.html')
+
+            <div class="mainPage">
+                <div class="customContainer">
+            
+                    <div class="mainBg">
+
+                        @@include('../partials/globals/header.html')
+                    
+                        <div class="mainCols">
+                            <div class="centerCol">
+                                
+                                <div class="topNavBtnContent">
+                                    <ul>
+                                        @@loop('../partials/components/topNavBtn.html', [
+
+                                            {
+                                            "topNavBtn": "Ultimizer Wood Series" 
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "Ultimizer Coal Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "EGR Gasification Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "The Stoker Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "The EnviroChip Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "LCB-120 Wood Chip / Wood Pellet Burner"
+                                            }
+                                        ])
+                                    </ul>
+                                </div>
+
+
+                                <div class="sectionTitleContent">
+                                    <div class="sectionTitleLeft">
+                                        @@include('../partials/components/underlined-title.html', {
+
+                                            "iconTitle": "<img src=\"./assets/images/boilers101.png\">",
+
+                                            "textTitle": "THE LCB 120 CHIP/PELLET BURNER"
+
+                                        })
+                                    </div>
+                                    
+                                    <div class="sectionTitleRight">
+                                        <a href="#"><img src="./assets/images/pdf-icon.png"></a>
+                                        <a href="#">Download Brochure</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="heatingWithBiomassContent">
+                                    <div class="heatingWithBiomass">
+                                        
+                                        <div class="heatingWithBiomassLeft">
+                                            <div class="italicDescription">An EASY to use, Highly Efficient wood chip/pellet burner for the residential market.</div>
+                                            <div class="lcb120 subtitle">The LCB-120 burner is a fully enclosed unit comprising of three parts:</div>
+                                            <div class="lcb120"><strong> Portage & Main Boiler</strong> - The burning unit has a high efficiency, 3-pass fire tube heat exchanger. Rock the turbulators with a handle to make quick work of cleaning the heat exchanger. The LCB-120 utlilizes and automated step floor that moves, ensureing that the burner grates are kept clean. Controls turn the feed system and combustion air on and off according to the water temperature.</div>
+                                            <div class="lcb120"><strong>Automatic Stoker</strong> - Time tested and reliable. Heavy duty 4" diameter auger feed system.  Industrial quality Bonfiglioli gear box drive. Heavy duty Leeson drive motor ( 3-phase, inverted for residential use) </div>
+                                            <div class="lcb120"><strong>Chip Storage Bin</strong> - Fill the 3.5 cubic yard storage bin using a utility tractor or loader. Enjoy constant, controllable heat for five to seven days* between fills.</div>
+                                        </div>
+                                
+                                        <div class="heatingWithBiomassRight">
+                                            <a href="#"><img src="./assets/images/burner.png"></a>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+
+
+                                @@include('../partials/components/youtubeText.html', {
+                                    "iframe": "<iframe src=\"https://www.youtube.com/embed/rRbyZ3eD-9M\"  allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                
+                                    "mainTitle": "The LCB-120 Chip/Pellet Burner",
+                                
+                                    "secondTitle": "Revolutionary Design",
+                                
+                                    "descriptiona": "The Ultimizer uses a revolutionary design to eliminate the problems associated (until now) with outdoor boilers. ie. smoke, creosote, moisture, corrosion.",
+                                
+                                    "descriptionb": "The heat retaining refractory lining directs heat back into the burn chamber. This is where heat is extracted from the combustion gases and the smoke is burnt, rather than exiting the chimney. The extra heat generated eliminates creosote and moisture and prevents corrosion.",
+                                
+                                    "btexta": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &#34;de Finibus Bonorum et Malorum&#34; (The Extremes of Good and Evil) by Cicero, written in 45 BC.",
+                                
+                                    "btextb": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &#34;de Finibus Bonorum et Malorum&#34; (The Extremes of Good and Evil) by Cicero, written in 45 BC."
+                                
+                                })
+
+
+                                @@include('../partials/components/textImage.html', {
+
+                                    "title": "The LCB-120 Benefits:",
+                                
+                                    "linka": "Maximum Output BTU/ HR   120,000",
+                                    "linkb": "Size Total W x D x H (inches)  = 39 x 44 x 77",
+                                    "linkc": "Weight (lbs) = 2000",
+                                    "linkd": "Bin Dimensions W x D x H (inches) = 80 x 60 x 92",
+                                    "linke": "Chimney Size = 5 inch",
+                                    "linkf": "Electrical Requirement = 120 volt",
+                                    "linkg": "Say something more on this line.",
+                                    "linkh": "Say something more on this line.",
+                                
+                                    "image": "<img src=\"./assets/images/image.jpg\">"
+                                
+                                })
+
+                                @@include('../partials/components/betterThanImported.html', {
+                                    "brochureimage": "<img src=\"assets/images/brochure.png\" alt=\"brochure\">",
+                                    "descriptiona": "The following brochure includes general product information and specification of the coal burning models availabe.",
+                                    "downloadImg": "<img src=\"./assets/images/pdf-icon.png\">",
+                                
+                                    "downloadText": "Download Brochure",
+                                
+                                    "descriptionb": "Better than imported oil! Keep your energy dollars circulating in your local economy and support jobs in your local forest products industry.",
+                                    "value": "1 (800) 561-0700"
+                                })
+                                
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
+                </div>
+            </div>
+
+            @@include('../partials/globals/footer.html')
+            
+        </div>
+
+        @@include('../partials/globals/bottomScripts.html')
+
+        <script src="assets/js/vendor.min.js" defer></script>
+        <script src="assets/js/app.js" defer></script>
+    </body>
+</html>

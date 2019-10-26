@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    @@include('../partials/head/head.html')
+
+    <body>
+        <div id="wrapper">
+
+            @@include('../partials/globals/topBar.html')
+
+            <div class="mainPage">
+                <div class="customContainer">
+            
+                    <div class="mainBg">
+
+                        @@include('../partials/globals/header.html')
+                    
+                        <div class="mainCols">
+                            <div class="centerCol">
+                                
+                                <!--Top Nav-->
+                                <div class="topNavBtnContent">
+                                    <ul>
+                                        @@loop('../partials/components/topNavBtn.html', [
+
+                                            {
+                                               "topNavBtn": "Ultimizer Wood Series" 
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "Ultimizer Coal Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "EGR Gasification Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "The Stoker Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "The EnviroChip Series"
+                                            },
+                                        
+                                            {
+                                                "topNavBtn": "LCB-120 Wood Chip / Wood Pellet Burner"
+                                            }
+                                        ])
+                                    </ul>
+                                </div>
+                                
+                                <!--mainTitle & Download pdf-->
+                                <div class="sectionTitleContent">
+                                    <div class="sectionTitleLeft">
+                                        @@include('../partials/components/underlined-title.html', {
+                    
+                                            "iconTitle": "<img src=\"./assets/images/boilers101.png\">",
+
+                                            "textTitle": "THE ENVIROCHIP SERIES"
+
+                                        })
+                                    </div>
+                                     
+                                    <div class="sectionTitleRight">
+                                        <a href="#"><img src="./assets/images/pdf-icon.png"></a>
+                                        <a href="#">Download Brochure</a>
+                                    </div>
+                                </div>
+
+                                <!--Heating with biomass...-->
+                                <div class="heatingWithBiomassContent">
+                                    <div class="heatingWithBiomass">
+                                        
+                                        <div class="heatingWithBiomassLeft">
+                                            <div class="italicDescription">Heating with Biomass made easy. </div>
+                                            <div class="heatingWithBiomasText">Portage & Main Chip Burning Hydronic Boilers give a longer burn time between fills and use less fuel than conventional wood boilers.</div>
+                                            <div class="heatingWithBiomasText">The automated features eliminate daily service and provide heat for residential homes, garages, shops, businesses, farms, green houses, municipal buildings, apartments, resorts, retirement homes, kilns, domestic hot water, swimming pools, hot tubs and more.</div>
+                                            <div class="heatingWithBiomasText">The B500 makes burning biomass attractive and affordable for both residential and commercial properties.</div>
+                                        </div>
+
+                                        <div class="heatingWithBiomassRight">
+                                            <a href="#"><img src="./assets/images/heating-with-biomass.png"></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!--The envirochip series-->
+                                @@include('../partials/components/youtubeText.html', {
+                                    "iframe": "<iframe src=\"https://www.youtube.com/embed/rRbyZ3eD-9M\"  allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+
+                                    "mainTitle": "The EnviroChip Series",
+
+                                    "secondTitle": "Revolutionary Design",
+
+                                    "descriptiona": "The Ultimizer uses a revolutionary design to eliminate the problems associated (until now) with outdoor boilers. ie. smoke, creosote, moisture, corrosion.",
+
+                                    "descriptionb": "The heat retaining refractory lining directs heat back into the burn chamber. This is where heat is extracted from the combustion gases and the smoke is burnt, rather than exiting the chimney. The extra heat generated eliminates creosote and moisture and prevents corrosion.",
+
+                                    "btexta": "The Ultimizer uses a revolutionary design to eliminate the problems associated (until now) with outdoor boilers. ie. smoke, creosote, moisture, corrosion.",
+
+                                    "btextb": "The heat retaining refractory lining directs heat back into the burn chamber. This is where heat is extracted from the combustion gases and the smoke is burnt, rather than exiting the chimney. The extra heat generated eliminates creosote and moisture and prevents corrosion."
+
+                                })
+
+                                <!--Portage & Main Envirochip Benefits:-->
+                                @@include('../partials/components/textImage.html', {
+
+                                    "title": "Portage & Main Envirochip Benefits:",
+
+                                    "linka": "No Fire hazard in your building.",
+                                    "linkb": "Virtually no smoke.",
+                                    "linkc": "The water temperature is electronically controlled with an aquastat.",
+                                    "linkd": "Say something more on this line.",
+                                    "linke": "Say something more on this line.",
+                                    "linkf": "Say something more on this line.",
+                                    "linkg": "Say something more on this line.",
+                                    "linkh": "Say something more on this line.",
+
+                                    "image": "<img src=\"./assets/images/image.jpg\">"
+
+                                })
+
+                                <!--Better than imported oil-->
+                                @@include('../partials/components/betterThanImported.html', {
+                                    "brochureimage": "<img src=\"assets/images/brochure.png\" alt=\"brochure\">",
+                                    "descriptiona": "The following brochure includes general product information and specification of the coal burning models availabe.",
+                                    "downloadImg": "<img src=\"./assets/images/pdf-icon.png\">",
+
+                                    "downloadText": "Download Brochure",
+
+                                    "descriptionb": "Better than imported oil! Keep your energy dollars circulating in your local economy and support jobs in your local forest products industry.",
+                                    "value": "1 (800) 561-0700"
+                                })
+                                
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
+                </div>
+            </div>
+
+            @@include('../partials/globals/footer.html')
+            
+        </div>
+
+        @@include('../partials/globals/bottomScripts.html')
+
+        <script src="assets/js/vendor.min.js" defer></script>
+        <script src="assets/js/app.js" defer></script>
+    </body>
+</html>

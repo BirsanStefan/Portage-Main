@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    @@include('../partials/head/head.html')
+
+    <body>
+        <div id="wrapper">
+
+            @@include('../partials/globals/topBar.html')
+
+            <div class="mainPage">
+                <div class="customContainer">
+            
+                    <div class="mainBg">
+
+                        @@include('../partials/globals/header.html')
+                    
+                        <div class="mainCols">
+                            <div class="centerCol">
+                                
+                                <div class="mainTopTitle">
+                                    @@include('../partials/components/underlined-title.html', {
+            
+                                        "iconTitle": "<img src=\"./assets/images/boilers101.png\">",
+
+                                        "textTitle": "Here’s what are customers are saying"
+
+                                    })
+                                </div>
+                                
+
+
+                                <div class="topDescription">
+                                    <div class="italicDescription">
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                                    <div class="italicDescription"> 
+                                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                                        'Content here, content here', making it look like readable English.
+                                    </div>
+                                </div>
+
+                                <div class="iconMessageWrap">
+                                    @@loop('../partials/components/iconMessage.html', [
+                                        {
+                                            "image": "<img src=\"./assets/images/person-icon.png\">",
+
+                                            "title": "Dan & Marie Tourigny - Ontario, Canada",
+
+                                            "messagea": "We are pleased to provide you our recommendation for the indoor boiler EGR 100 unit. We recently built a new house in Northeastern Ontario and for many years prior to the built we’ve spent numerous hours researching for an indoor wood boiler that would fit all of our expectations and needs to heat our house. EGR delivered! We have the privilege of using the wood boiler for the last 4 months and we find the unit very sturdy, serviceable, practical, efficient and economical. We are very pleased with the service and warranty your company has offered to date. During this winter season, we’ve used approximately one cord per one and a half weeks to heat the house and garage totaling roughly 4000 sq ft. Therefore, as a consumer, the EGR 100 indoor wood boiler unit is definitely meeting all of our needs to date and we truly recommend this model.",
+                                            
+                                            "messageb": "",
+                                            "messagec": "",
+                                            "messaged": ""
+                                        },
+                                        {
+                                            "image": "<img src=\"./assets/images/person-icon2.png\">",
+
+                                            "title": "Mark & Andrea Nyseth - Eleva, Wisconsin",
+
+                                            "messagea": "The P&M BL2840 we purchased from Strawbale Farms is a great unit.",
+                                            "messageb": "This is our third year of running it and the performance has been 100% accurate.",
+                                            "messagec": "We previously owned a Woodmaster 4400 and the P&M is a far better boiler IMO. It burns hotter, cleaner, alot less wood and very easy to maintain. I wish we would have purchased a P&M to start with.",
+                                            "messaged": "It is a very high quality built unit. We are 100% satisfied with our P&M and the great customer service. We would definitely highly recommend a P&M."
+                                        },
+                                        {
+                                            "image": "<img src=\"./assets/images/person-icon3.png\">",
+
+                                            "title": "John Rossman - Somewhere, USA",
+
+                                            "messagea": "I just wanted to say thanks and give you folks some big props! My new Ultimizer BL28-40 is simply an outstanding unit. We've been buring wood in an OWB for 20 years and no other manufacturer comes even close. There's no comparison...(Portage and Main) really has their act together. Alot of other companies out there are full of cr*p, this machine does exactly what they say it does. We expect to use half the wood we used to which means I can spend more time hunting and fishing with my boy!",
+                                            "messageb": "",
+                                            "messagec": "",
+                                            "messaged": ""
+                                        },
+                                        {
+                                            "image": "<img src=\"./assets/images/person-icon4.png\">",
+
+                                            "title": "Al Whitlam - Somewhere, USA",
+
+                                            "messagea": "We got our Portage and Main this year and it does a hell of good job. Had a (different make) before but our P&M is so much more efficient. It's a great design and I would recommend it to anyone. It burns so completely there are hardly any ashes to clean out.",
+                                            "messageb": "",
+                                            "messagec": "",
+                                            "messaged": ""
+                                        }
+                                    ])
+                                </div>
+
+                                <div class="testimonialsPag">
+                                    <ul class="pagination">
+                                        <li><a href="#">&laquo;</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">&raquo;</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
+                </div>
+            </div>
+
+            @@include('../partials/globals/footer.html')
+            
+        </div>
+
+        @@include('../partials/globals/bottomScripts.html')
+
+        <script src="assets/js/vendor.min.js" defer></script>
+        <script src="assets/js/app.js" defer></script>
+    </body>
+</html>
