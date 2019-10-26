@@ -1,3 +1,4 @@
+/*education_videos.html START*/
 .qnbBox {
     position: relative;
     margin-bottom: 40px;
@@ -27,6 +28,12 @@
         color: #f9b411;
     }
 }
+
+/*RE: START 22.10.2019*/
+#topDescription{
+    margin-top: 40px;
+}
+/*RE: END*/
 
 .youtubeList{
     display: -webkit-flex;
@@ -102,3 +109,416 @@
         }
     }
 }
+/*education_videos.html END*/
+
+
+/*terms.html START 22.10.2019*/
+.textBlockContent{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.textBlock{
+    padding: 0 10px;
+    .textBlockTitle h5{
+        font-size: 20px;
+        color: #1f1f1f;
+        font-weight: 600;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .textBlockText p{
+        font-size: 16px;
+        margin-bottom: 0;
+        color: #1f1f1f;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    #textBlock{text-align: center;}
+}
+/*terms.html END*/
+
+
+/*sitemap.html START*/
+.sitemapList{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding-left: 60px;
+}
+.sitemapList a{
+    color: #1f1f1f;
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.sitemapList a:hover{
+    text-decoration: none;
+    color: #f9b411;
+}
+.sitemapList ul{
+    margin-bottom: 35px;
+}
+.sitemapList ul ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+/*sitemap.html END*/
+
+
+/*envirochip_series.html START - 22.10.2019*/
+/*topnav btns*/
+.topNavBtnContent{
+    text-align: center;
+    position: relative;
+}
+.topNavBtnContent ul{
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+.topNavBtnContent ul::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #cccccc;
+    bottom: -15px;
+}
+.topNavBtnContent ul li{
+    display: inline-block;
+    margin-left: 7px;
+    margin-right: 7px;
+    position: relative;
+    font-size: 13px;
+    line-height: 30px;
+}
+.topNavBtnContent li a{
+    color: #000;
+    font-family: 'PrimaNova', sans-serif;
+}
+.topNavBtnContent li a:hover{
+    text-decoration: none;
+    color: #f9b411;
+}
+.topNavBtnContent li a::before{
+    position: absolute;
+    display: block;
+    content: "\2022";
+    left: -9px;
+}
+
+/*mainTitle & Download pdf*/
+.sectionTitleContent{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+.sectionTitleLeft{
+    margin-right: 35px;
+}
+.sectionTitleRight{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+.sectionTitleRight a{
+    color: #1537a6;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'ProximaNova', sans-serif;
+}
+.sectionTitleRight a:hover{
+    text-decoration: none;
+    color: #f9b411;
+}
+.sectionTitleRight a img{
+    margin-right: 10px;
+}
+
+/*Heating with biomass...*/
+.heatingWithBiomassContent{
+    padding-bottom: 40px;
+    position: relative;
+}
+.heatingWithBiomass{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.heatingWithBiomass::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    bottom: 10px;
+    border-bottom: 2px solid #cccccc;
+}
+.heatingWithBiomassLeft{
+    width: 60%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.heatingWithBiomasText{
+    font-size: 15px;
+    font-family: "ProximaNova";
+    text-align: center;
+    padding-top: 20px;
+}
+.heatingWithBiomassRight{
+    width: 35%;
+}
+
+/*youtubeText.html START*/
+.youtubeText{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    position: relative;
+}
+.youtubeTextBox{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+.iframe{
+    width: 48%;
+}
+.iframe iframe{
+    max-width: 100%;
+}
+.text{
+    width: 48%;
+}
+.text h3{
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Cooper Black Std", sans-serif;
+    font-weight: 800;
+}
+.RightBox{
+    padding-left: 15px;
+}
+.RightBox h4{
+    font-size: 16px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+}
+.RightBox p, .RightBox p{
+    font-size: 15px;
+    color: #1f1f1f;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.bottomText{
+    margin-bottom: 25px;
+}
+.bottomText:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: auto;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    border-bottom: 2px solid #cccccc;
+}
+/*youtubeText.html END*/
+
+/*textImage.html START*/
+.textImage{
+    padding: 40px 30px 80px 30px;
+    position: relative;
+}
+.textImageBox{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.textImageBox::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: auto;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-bottom: 2px solid #cccccc;
+}
+.textImageLeft{
+    width: 45%;
+}
+.textImageLeft h3{
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Cooper Black Std", sans-serif;
+    font-weight: 800;
+}
+.textImageLeft ul{
+    padding-left: 30px;
+}
+.textImageLeft a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+}
+.textImageLeft a:hover{
+    color: #f9b411;
+    text-decoration: none;
+}
+.textImageRight{
+    width: 45%;
+    text-align: center;
+}
+.textImageRight img{
+    width: 321px;
+    height: 303px;
+}
+/*textImage.html END*/
+
+/*Better than imported oil START*/
+.betterThan{
+    padding-bottom: 70px;
+    padding-top: 40px;
+}
+.betterThanBox{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.betterThanLeft{
+    width: 45%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.betterThanLLeft{
+    width: 48%;
+    text-align: right;
+}
+.betterThanLBox{
+    width: 45%;
+}
+.betterThanDescr{
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #333333;
+    font-family: "Proxima Nova", sans-serif;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.betterThanRight{
+    width: 50%;
+}
+.betterThanRDescr{
+    font-size: 18px;
+    color: #1f1f1f;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.betterThanRValue{
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #f9b411;
+    font-family: "Proxima Nova",sans-serif;
+    text-align: center;
+    text-shadow: -1px 1px 0 #000, 
+                 1px 1px 0 #000, 
+                 1px -1px 0 #000, 
+                 -1px -1px 0 #000;
+    font-weight: 800;
+}
+
+/*Download Brochure*/
+.sectionTitleRight{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+.sectionTitleRight a{
+    color: #1537a6;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'ProximaNova', sans-serif;
+    text-decoration: none;
+}
+.sectionTitleRight a:hover{
+    text-decoration: none;
+    color: #f9b411;
+}
+.sectionTitleRight a img{
+    margin-right: 10px;
+}
+/*Better than imported oil END*/
+/*envirochip_series.html END*/
