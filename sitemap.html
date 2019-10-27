@@ -41,7 +41,7 @@
     		<meta name="robots" content="index, follow">
 
     	<!-- favicon -->
-    		<link rel="shortcut icon" href="images/favicon.png" />
+    		<link rel="shortcut icon" href="./assets/images/logo-icon.png" />
 
     	<!-- FONTS -->
 
@@ -54,8 +54,9 @@
 
     	<!-- END FONTS -->
 
+    		<link media="all" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     		<!-- Our CSS -->
-    		<link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
        		<link media="all" rel="stylesheet" href="assets/css/styles.min.css">
 
     	<!-- END CSS -->
@@ -69,26 +70,48 @@
                     <div class="topBarContainer">
                         <div class="logo">
                             <a href="/">
-                                <img src="./assets/images/logo.png" alt="">
+                                <img src="./assets/images/logo.png" class="logoDesktop" alt="">
+                                <img src="./assets/images/logo-icon.png" class="logoMobile" alt="">
                             </a>
                         </div>
 
                         <div class="callTopBtn">
-                            Call Toll Free: <a href="tel:1(800)561-0700"> 1 (800) 561-0700 </a>
+                            Call Toll Free: <a href="tel:1800561-0700"> 1 (800) 561-0700 </a>
                         </div>
                     </div>
-        
-                    <div class="mobile-button">
-                        <a href="#menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </a>
+
+                    <div class="mobileButtons">
+
+                        <div class="mobilePhone">
+                            <a href="tel:1800561-0700"> <i class="fas fa-phone"></i> </a>
+                        </div>
+                        <div class="quickNavTrigger" id="quickNavTrigger">
+                            <i class="far fa-compass"></i>
+                        </div>
+                        <div class="mobileButton" id="mobileButton">
+                            <a href="#menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
                     </div>
-        
+
                 </div>
-              </div>
+            </div>
+
+            <div class="topBoxes">
+                <div class="topBoxLeft">
+                    <a href="#"><img src="./assets/images/left-image.jpg" alt=""></a>
+                </div>
+                <div class="topBox">
+                    <a href="#"><img src="./assets/images/top-image.jpg" alt=""></a>
+                </div>
+                <div class="topBoxRight">
+                    <a href="#"><img src="./assets/images/right-image.jpg" alt=""></a>
+                </div>
+            </div>
 
             <div class="mainPage">
                 <div class="customContainer">
@@ -103,7 +126,7 @@
                                 </a>
                             </div>
    
-                            <nav class="mainNav">
+                            <nav class="mainNav" id="mainNav">
                                 <ul class="mainMenu">
                                     <li class="mainMenuElement">
                                         <a href="#" class="mainMenuElementLink"><i class="fas fa-home"></i></a>
@@ -128,7 +151,7 @@
                                     </li>
                                 </ul>
 
-                                <div class="searchArea">
+                                <div class="searchArea" id="searchArea">
                                     <form>
                                         <div class="searchFlex">
                                             <input type="search" class="searchInput" placeholder="Search...">
@@ -226,16 +249,6 @@
             			<a href="/">
             				<img src="./assets/images/logo-white.png" alt="">
             			</a>
-            			<div class="footerBottom">
-            				<div class="copyRight">
-            					2019 Portage & Main Boilers.   All Rights Reserved
-            				</div>
-            				<div class="footerLinks">
-            					<a href="./privacy_policy.html">Privacy Policy</a>
-            					<a href="./terms.html">Terms & Conditions</a>
-            					<a href="./sitemap.html">Sitemap</a>
-            				</div>
-            			</div>
             		</div>
             		<div class="footerRight">
             			<div class="socialMediaIcons">
@@ -253,13 +266,22 @@
             				</a>
             			</div>
             		</div>
+            		<div class="footerBottom">
+            			<div class="copyRight">
+            				2019 Portage & Main Boilers.   All Rights Reserved
+            			</div>
+            			<div class="footerLinks">
+            				<a href="./privacy_policy.html">Privacy Policy</a>
+            				<a href="./terms.html">Terms & Conditions</a>
+            				<a href="./sitemap.html">Sitemap</a>
+            			</div>
+            		</div>
             	</div>
             </footer>
             
         </div>
 
         
-        <link media="all" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
           integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
           crossorigin="anonymous"></script>
@@ -269,6 +291,36 @@
         		$(this).closest(".quickNavItem").toggleClass("submenuActive");
         		$(this).next(".quickNavSubmenu").slideToggle();
         	});
+
+        	$("#mobileButton").click(function(){
+        		$("body").removeClass("quickNavMenuActive");
+        		$("#quickNav").fadeOut();
+        		$("body").toggleClass("mobileMenuActive");
+        		$("#mainNav").fadeToggle();
+        	});
+
+        	$("#quickNavTrigger").click(function(){
+        		$("body").removeClass("mobileMenuActive");
+        		$("#mainNav").fadeOut();
+        		$("body").toggleClass("quickNavMenuActive");
+        		$("#quickNav").fadeToggle();
+        	});
+
+        	$("#wallpaperButton").click(function(){
+        		$("body").toggleClass("topBoxesActive");
+        	});
+
+        	$(window).click(function() {
+        		$("body").removeClass("mobileMenuActive");
+        		$("body").removeClass("quickNavMenuActive");
+        		$("#mainNav").fadeOut();
+        		$("#quickNav").fadeOut();
+        	});
+
+        	$('#mobileButton, #quickNavTrigger, #mainNav, #quickNav').click(function(event){
+        	    event.stopPropagation();
+        	});
+	
         </script>
 
         <script src="assets/js/vendor.min.js" defer></script>

@@ -4,7 +4,7 @@
     color: #333333;
     font-weight: bold;
     position: relative;
-    left: -20px;
+    left: -30px;
     &:after {
         content: "";
         display: block;
@@ -21,6 +21,10 @@
         margin-left: 8px;
         text-transform: uppercase;
     }
+    @media only screen and (max-width: 667px){
+        left: -15px;
+        font-size: 18px;
+    }
 }
 
 .rightCol {
@@ -30,19 +34,22 @@
 .italicDescription {
     font-size: 18px;
     color: #333333;
-    font-family: "proxima-nova";
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     font-style:italic;
+    @media only screen and (max-width: 991px){
+        br{
+            display: none;
+        }
+    }
 }
 .iSmall {
     @extend .italicDescription; 
-    font-size:15px;
+    font-size:14px;
 }
 .textContent {
-    font-size: 15px;
+    font-size: 14px;
     color: #1f1f1f;
-    font-family: "proxima-nova";
 }
 .mt22 {
     margin-top:22px;
@@ -81,7 +88,6 @@
     figcaption {
         font-size: 12px;
         color: #333333;
-        font-family: "proxima-nova";
         font-weight: 300;
         text-align: right;
         margin-top:8px;
