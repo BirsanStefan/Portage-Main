@@ -411,10 +411,12 @@
     	});
 
     	$(window).click(function() {
+		
+    		$(".mobileMenuActive #mainNav").fadeOut();
+    		$(".quickNavMenuActive #quickNav").fadeOut();
+
     		$("body").removeClass("mobileMenuActive");
     		$("body").removeClass("quickNavMenuActive");
-    		$("#mainNav").fadeOut();
-    		$("#quickNav").fadeOut();
     	});
 
     	$('#mobileButton, #quickNavTrigger, #mainNav, #quickNav').click(function(event){

@@ -238,6 +238,7 @@
                                     </div>
     
                                 </div>
+                                <div class="clearfix"></div>
 
                                 <!--Portage & Main Envirochip Benefits:-->
                                 <div class="ultimizerBenefitsContent">
@@ -266,8 +267,7 @@
 
 
                                         <div class="ultimizerBenefitsRight">
-                                            <a href="#">
-                                                <img src="./assets/images/image1.jpg">
+                                            <a href="#"  style="background-image: url(./assets/images/image1.jpg);">
                                             </a>
                                         </div>
                                     </div>
@@ -279,7 +279,9 @@
 
                                         <div class="whatItMeansLeft">
                                             <div class="biomassCycleText">The Biomass Cycle</div>
-                                            <a href="#"><img src="./assets/images/biomass-cycle.png" alt="biomass-cycle"></a>
+                                            <a href="#">
+                                                <img src="./assets/images/biomass-cycle.png" alt="biomass-cycle">
+                                            </a>
                                         </div>
 
 
@@ -411,10 +413,12 @@
         	});
 
         	$(window).click(function() {
+		
+        		$(".mobileMenuActive #mainNav").fadeOut();
+        		$(".quickNavMenuActive #quickNav").fadeOut();
+
         		$("body").removeClass("mobileMenuActive");
         		$("body").removeClass("quickNavMenuActive");
-        		$("#mainNav").fadeOut();
-        		$("#quickNav").fadeOut();
         	});
 
         	$('#mobileButton, #quickNavTrigger, #mainNav, #quickNav').click(function(event){

@@ -53,17 +53,22 @@
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: center;
     margin-top: 40px;
 }
 .youtubeElement{
-    width: 30%;
+    width: calc(33.3% - 30px);
     margin-bottom: 40px;
     position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    .youtubeIframe{
+        height: 180px;
+    }
     .youtubeIframe iframe{
-        width: 540px;
-        height: 300px;
+        width: 100%;
+        height: 180px;
         max-width: 100%;
     }
     .youtubeText{
@@ -73,6 +78,14 @@
     }
     .youtubeText p{
         margin-bottom: 0;
+    }
+    @media only screen and (max-width: 991px){
+        width: calc(50% - 30px);
+    }
+    @media only screen and (max-width: 567px){
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 .frequentlyAQLink{
@@ -101,6 +114,9 @@ a.frequentlyAQ{
     padding: 20px 30px;
     background: #fff;
     min-height: 255px;
+    @media only screen and (max-width: 667px){
+        padding: 20px 15px;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -109,19 +125,19 @@ a.frequentlyAQ{
     }
 }
 @media only screen and (max-width: 601px){
-    .youtubeElement{
+    /* .youtubeElement{
         width: 45%;
-    }
+    } */
 }
 @media only screen and (max-width: 480px){
-    .youtubeElement{
+    /* .youtubeElement{
         width: 85%;
         margin-left: auto;
         margin-right: auto;
         .youtubeText{
             text-align: center;
         }
-    }
+    } */
 }
 /*education_videos.html END*/
 
@@ -356,13 +372,13 @@ a.frequentlyAQ{
 .rightBox h4{
     font-size: 16px;
     color: #333333;
-    font-family: "Proxima Nova",sans-serif;
+    font-family: "proxima-nova",sans-serif;
     font-weight: bold;
 }
 .rightBox p, .rightBox p, .bottomText p{
     font-size: 15px;
     color: #1f1f1f;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 25px;
@@ -429,7 +445,7 @@ a.frequentlyAQ{
     font-size: 15px;
     line-height: 30px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
     font-style: unset;
 }
@@ -496,7 +512,7 @@ a.frequentlyAQ{
     font-size: 11px;
     letter-spacing: 1px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     margin-bottom: 5px;
     font-weight: 400;
 }
@@ -506,7 +522,7 @@ a.frequentlyAQ{
 .betterThanRDescr{
     font-size: 18px;
     color: #1f1f1f;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
     text-align: center;
     font-style: italic;
@@ -515,7 +531,7 @@ a.frequentlyAQ{
 .betterThanRValue{
     font-size: 30px;
     letter-spacing: 2px;
-    font-family: "Proxima Nova",sans-serif;
+    font-family: "proxima-nova",sans-serif;
     text-align: center;
     text-shadow: -1px 1px 0 #000, 
                  1px 1px 0 #000, 
@@ -562,7 +578,7 @@ a.frequentlyAQ{
 .lcb120.subtitle{
     font-size: 18px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
 }
 .lcb120{
@@ -619,7 +635,7 @@ a.frequentlyAQ{
 .diagramsBox h3 a{
     font-size: 18px;
     color: #1f1f1f;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
 }
 .diagramsBox h3 a:hover{
@@ -629,7 +645,7 @@ a.frequentlyAQ{
 .diagramsText{
     font-size: 12px;
     color: #1f1f1f;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
 }
 .diagramsButton{
@@ -672,7 +688,7 @@ a.frequentlyAQ{
     font-size: 14px;
     line-height: 30px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
     font-style: italic;
     padding-left: 5px;
@@ -741,20 +757,20 @@ a.frequentlyAQ{
     font-size: 18px;
     line-height: 30px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
 }
 .ultimizerBnftsList li{
     font-size: 16px;
     line-height: 30px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: 400;
 }
 .ultimizerBenefitsRight{
     width: 50%;
 }
-div.ultimizerBenefitsRight img{
+div.ultimizerBenefitsRight a{
     width: 321px;
     height: 458px;
     display: block;
@@ -804,7 +820,7 @@ div.ultimizerBenefitsRight img{
     font-size: 16px;
     line-height: 30px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
 }
 .whatItMeansRight{
@@ -816,7 +832,7 @@ div.ultimizerBenefitsRight img{
 .whatItMeansRight ul li{
     font-size: 16px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
     line-height: 30px;
 }
@@ -863,7 +879,7 @@ div.ultimizerBenefitsRight img{
     text-align: center;
     font-size: 15px;
     color: #333333;
-    font-family: "Proxima Nova";
+    font-family: "proxima-nova";
     font-weight: bold;
     width: 625px;
     margin-top: 25px;
@@ -873,7 +889,7 @@ div.ultimizerBenefitsRight img{
     font-size: 15px;
     line-height: 24px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     width: 360px;
 }
 .stokerSeriesRight{
@@ -888,7 +904,7 @@ div.ultimizerBenefitsRight img{
     font-size: 18px;
     line-height: 24px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
     margin-top: 40px;
     margin-bottom: 5px;
@@ -899,7 +915,7 @@ div.ultimizerBenefitsRight img{
     letter-spacing: 0px;
     line-height: 24px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;  
 }
 /*stoker_series.html END*/
@@ -930,7 +946,7 @@ div.ultimizerBenefitsRight img{
     font-size: 16px;
     line-height: 30px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
 }
 .rightBox ul li a:hover{
@@ -948,14 +964,14 @@ div.ultimizerBenefitsRight img{
     font-size: 28px;
     line-height: 26px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
 }
 .specialsAnotherLine h3{
     font-size: 20px;
     line-height: 26px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
 }
 
@@ -971,7 +987,7 @@ div.ultimizerBenefitsRight img{
 .specialsPromo{
     font-size: 24px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-style: italic;
     font-weight: bold;
     text-align: right;
@@ -990,7 +1006,7 @@ div.ultimizerBenefitsRight img{
     font-size: 19px;
     line-height: 25px;
     color: #1f1f1f;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
 }
 .specialsImg{
@@ -1023,7 +1039,7 @@ div.ultimizerBenefitsRight img{
     font-size: 25px;
     line-height: 25px;
     color: #1f1f1f;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: bold;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -1040,7 +1056,7 @@ div.ultimizerBenefitsRight img{
     font-size: 14px;
     line-height: 25px;
     color: #1f1f1f;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-weight: 600;
     text-align: center;
     font-style: italic;
@@ -1125,7 +1141,7 @@ div.ultimizerBenefitsRight img{
 .iconMessRContent h3, .iconMessRContent a{
     font-size: 16px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
     text-align: center;
     font-weight: bold;
     margin-bottom: 15px;
@@ -1137,7 +1153,7 @@ div.ultimizerBenefitsRight img{
 .textMess{
     font-size: 16px;
     color: #333333;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "proxima-nova", sans-serif;
 }
 /*iconMessage.html END*/
 
