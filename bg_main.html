@@ -41,7 +41,7 @@
 		<meta name="robots" content="index, follow">
 
 	<!-- favicon -->
-		<link rel="shortcut icon" href="images/favicon.png" />
+		<link rel="shortcut icon" href="./assets/images/logo-icon.png" />
 
 	<!-- FONTS -->
 
@@ -54,8 +54,9 @@
 
 	<!-- END FONTS -->
 
+		<link media="all" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 		<!-- Our CSS -->
-		<link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
    		<link media="all" rel="stylesheet" href="assets/css/styles.min.css">
 
 	<!-- END CSS -->
@@ -65,98 +66,346 @@
     <div id="wrapper">
 
         <div id="topBar">
-            <div class="customContainerr">
-                <div class="logo">
-                    <a href="/">
-                        <img src="images/logo.png" alt="">
-                    </a>
-                </div>
-
-
-                <div class="mobile-button">
-                    <a href="#menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                </div>
-        
-            </div>
-          </div>
-
-        <div class="mainPage">
             <div class="customContainer">
+                <div class="topBarContainer">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="./assets/images/logo.png" class="logoDesktop" alt="">
+                            <img src="./assets/images/logo-icon.png" class="logoMobile" alt="">
+                        </a>
+                    </div>
 
-                <div class="mainBg">
-                    <header id="header" class="siteHeader">
-                        <div class="customContainerr">
-                            <div class="logo">
-                                <a href="/">
-                                    <img src="images/logo.png" alt="">
-                                </a>
-                            </div>
-                            <div class="placeholder">
-                                <h1 style="color: #fff">AICI VA FI HEADER</h1>
-                            </div>
-        
-                            <div class="mobile-button">
-                                <a href="#menu">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </a>
-                            </div>
-        
-                        </div>
-                    </header>
+                    <div class="callTopBtn">
+                        Call Toll Free: <a href="tel:1800561-0700"> 1 (800) 561-0700 </a>
+                    </div>
+                </div>
 
-                    <div class="mainCols">
-                        <aside class="leftCol">
-                           Aici va fi left
-                        </aside>
+                <div class="mobileButtons">
 
-                        <div class="rightCol">
-                            <div class="textContent">
-                               <h4 class="bgMainOutdoor">Welcome to Portage & Main - Outdoor Boilers</h4>
-                               <h6 class="subtitle">...quality and innovation since 1973!</h6>
-
-                               <div class="videoOutodoor">
-                                    <iframe width="470" height="315" src="https://www.youtube.com/embed/FbCHCYkcM3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <div class="bgMainCertificate">
-                                        <a href="#" target="_blank"><img src="./assets/images/made_in_canada.jpg" alt="" style="width:115px; height:82px"></a>
-                                        <a href="#" target="_blank"><img src="./assets/images/epa_certificate.jpg" alt="" style="width:113px; height:116px"></a>
-                                    </div>
-                               </div>
-                               <h4 class="bgMainSubtitle">Innovation and Expertise to Meet Your Heating Needs</h4>
-                               <p>Portage & Main Boilers have been manufactured for over 40 years. We continually strive to be the leading innovators in the outdoor boiler business! Our factory is a state of the art facility that employs the latest manufacturing technology – including computer controlled robotic welders and laser cutting technology.</p>
-                               <p>The Portage & Main range of products include Ultimizer wood and coal models, auto-feed coal/pellet burners, automated wood chip burning systems and a line of EPA approved gasification boilers. </p>
-                               <p>We lead the way in innovation, quality and efficiency, using time tested and proven designs. We have developed the most efficient heat transfer exchangers available in any outdoor boiler on the market today.</p>
-                               <p>Our customers are home owners, farmers, commercial and industrial businesses, schools and municipal authorities. We sell boilers from Alaska to Florida and everywhere in between. Our customers do their research and recognize the value of a clean burning, environmentally friendly boiler that will save them fuel, money and time.</p>
-                            </div>
-
-                            <div class="textContent">
-                                    <h3 class="sectionTitle">
-                                        <span class="iconTitle"><i class="fas fa-quote-left"></i></span>
-                                        <span class="textTitle">Bulletin Board</span>
-                                    </h3>
-                            </div>
-                        </div>
-                        </div>
+                    <div class="mobilePhone">
+                        <a href="tel:1800561-0700"> <i class="fas fa-phone"></i> </a>
+                    </div>
+                    <div class="quickNavTrigger" id="quickNavTrigger">
+                        <i class="far fa-compass"></i>
+                    </div>
+                    <div class="mobileButton" id="mobileButton">
+                        <a href="#menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
                     </div>
                 </div>
 
             </div>
         </div>
 
-        <footer id="footer" class="siteFooter">
+        <div class="topBoxes">
+            <div class="topBoxLeft">
+                <a href="#"><img src="./assets/images/left-image.jpg" alt=""></a>
+            </div>
+            <div class="topBox">
+                <a href="#"><img src="./assets/images/top-image.jpg" alt=""></a>
+            </div>
+            <div class="topBoxRight">
+                <a href="#"><img src="./assets/images/right-image.jpg" alt=""></a>
+            </div>
+        </div>
 
+        <div class="mainPage">
+          <div class="customContainer">
+
+            <div class="mainBg">
+              <header id="header" class="siteHeader">
+
+                  <div class="logoFull">
+                      <a href="/">
+                          <img src="./assets/images/portage-main-boiler.png" alt="">
+                      </a>
+                  </div>
+   
+                  <nav class="mainNav" id="mainNav">
+                      <ul class="mainMenu">
+                          <li class="mainMenuElement">
+                              <a href="#" class="mainMenuElementLink"><i class="fas fa-home"></i></a>
+                          </li>
+                          <li class="mainMenuElement active">
+                              <a href="#" class="mainMenuElementLink">Who We Are</a>
+                          </li>
+                          <li class="mainMenuElement">
+                              <a href="#" class="mainMenuElementLink">Our Products</a>
+                          </li>
+                          <li class="mainMenuElement">
+                              <a href="#" class="mainMenuElementLink">Education</a>
+                          </li>
+                          <li class="mainMenuElement">
+                              <a href="#" class="mainMenuElementLink">NEWS/BLOG</a>
+                          </li>
+                          <li class="mainMenuElement">
+                              <a href="#" class="mainMenuElementLink">EVENTS</a>
+                          </li>
+                          <li class="mainMenuElement">
+                              <a href="#" class="mainMenuElementLink">CONTACT US</a>
+                          </li>
+                      </ul>
+
+                      <div class="searchArea" id="searchArea">
+                          <form>
+                              <div class="searchFlex">
+                                  <input type="search" class="searchInput" placeholder="Search...">
+                                  <button type="submit" class="searchSubmit">
+                                      <i class="fas fa-search"></i>
+                                  </button>
+                              </div>
+                          </form>
+                      </div>
+                  </nav>
+
+              </header>
+
+              <div class="mainCols">
+                <aside class="leftCol">
+
+                	<div class="leftBox">
+		
+                		<div class="leftBoxSection">
+                			<h4 class="leftBoxTitle">
+                				<span class="leftBoxTitleIcon"> <i class="far fa-compass"></i>  </span>
+                				<span class="leftBoxTitleText"> Quick Nav </span>
+                			</h4>
+
+                			<div class="leftBoxTitleDecoration"></div>
+                			<nav class="quickNav" id="quickNav">
+                				<ul class="quickNavList">
+                					<li class="quickNavItem submenuActive">
+                						<!-- use .opnesSubmenu class if it has a submenu besides it -->
+                						<a href="javascript:void(0);" class="quickNavItemLink opnesSubmenu">Dealers</a>
+                						<ul class="quickNavSubmenu" style="display: block;">
+                							<li class="quickNavSubmenuItem"><a href="./dealer_locations.html" class="quickNavSubmenuLink">Locations</a></li>
+                							<li class="quickNavSubmenuItem"><a href="./purchase_shipping.html" class="quickNavSubmenuLink">purchase & shipping</a></li>
+                							<li class="quickNavSubmenuItem"><a href="./faq.html" class="quickNavSubmenuLink">faq</a></li>
+                						</ul>
+                					</li>
+                					<li class="quickNavItem">
+                						<a href="javascript:void(0);" class="quickNavItemLink">News / Blog</a>
+                					</li>
+                					<li class="quickNavItem">
+                						<a href="javascript:void(0);" class="quickNavItemLink">Testim</a>
+                					</li>
+                				</ul>
+                			</nav>
+                		</div>
+
+
+                		<div class="leftBoxSection">
+                			<h4 class="leftBoxTitle">
+                				<span class="leftBoxTitleIcon"> <img src="./assets/images/network.svg" alt=""> </span>
+                				<span class="leftBoxTitleText"> follow Portage & main </span>
+                			</h4>
+
+                			<div class="leftBoxTitleDecoration"></div>
+
+                			<div class="socialMediaIcons">
+                				<a href="">
+                					<img src="./assets/images/facebook-color.svg" alt="">
+                				</a>
+                				<a href="">
+                					<img src="./assets/images/twitter-color.svg" alt="">
+                				</a>
+                				<a href="">
+                					<img src="./assets/images/youtube-color.svg" alt="">
+                				</a>
+                				<a href="">
+                					<img src="./assets/images/instagram-color.svg" alt="">
+                				</a>
+                			</div>
+                		</div>
+		
+                	</div>
+
+                	<div class="leftBox">
+
+                		<h4 class="leftBoxTitle">
+                			<span class="leftBoxTitleIcon"> <i class="far fa-newspaper"></i>  </span>
+                			<span class="leftBoxTitleText"> Older Posts </span>
+                		</h4>
+
+                		<div class="leftBoxTitleDecoration"></div>
+
+                		<div class="leftBoxList">
+
+                			<div class="leftPostItem">
+                				<div class="leftPostItemImage">
+                					<a href="#" class="shine" style="background-image: url(./assets/images/generic1.jpg)" title="Headline will go here’ and look like this for the audience"></a>
+                				</div>
+                				<div class="leftPostItemInfo">
+                					<div class="leftPostItemDate">
+                						<i class="fas fa-calendar-alt"></i> Oct 18th, 2019
+                					</div>
+                					<h5 class="leftPostItemTitle">
+                						<a href="#"> Headline will go here’ and look like this for the audience </a>
+                					</h5>
+                				</div>
+	
+                			</div><div class="leftPostItem">
+                				<div class="leftPostItemImage">
+                					<a href="#" class="shine" style="background-image: url(./assets/images/generic1.jpg)" title="Headline will go here’ and look like this for the audience"></a>
+                				</div>
+                				<div class="leftPostItemInfo">
+                					<div class="leftPostItemDate">
+                						<i class="fas fa-calendar-alt"></i> Oct 18th, 2019
+                					</div>
+                					<h5 class="leftPostItemTitle">
+                						<a href="#"> Headline will go here’ and look like this for the audience </a>
+                					</h5>
+                				</div>
+	
+                			</div><div class="leftPostItem">
+                				<div class="leftPostItemImage">
+                					<a href="#" class="shine" style="background-image: url(./assets/images/generic1.jpg)" title="Headline will go here’ and look like this for the audience"></a>
+                				</div>
+                				<div class="leftPostItemInfo">
+                					<div class="leftPostItemDate">
+                						<i class="fas fa-calendar-alt"></i> Oct 18th, 2019
+                					</div>
+                					<h5 class="leftPostItemTitle">
+                						<a href="#"> Headline will go here’ and look like this for the audience </a>
+                					</h5>
+                				</div>
+	
+                			</div><div class="leftPostItem">
+                				<div class="leftPostItemImage">
+                					<a href="#" class="shine" style="background-image: url(./assets/images/generic1.jpg)" title="Headline will go here’ and look like this for the audience"></a>
+                				</div>
+                				<div class="leftPostItemInfo">
+                					<div class="leftPostItemDate">
+                						<i class="fas fa-calendar-alt"></i> Oct 18th, 2019
+                					</div>
+                					<h5 class="leftPostItemTitle">
+                						<a href="#"> Headline will go here’ and look like this for the audience </a>
+                					</h5>
+                				</div>
+	
+                			</div>
+			
+                		</div>
+                	</div>
+
+                </aside>
+
+                <div class="rightCol">
+                    <div class="textContent">
+                       <h4 class="bgMainOutdoor">Welcome to Portage & Main - Outdoor Boilers</h4>
+                       <h6 class="subtitle">...quality and innovation since 1973!</h6>
+
+                       <div class="videoOutodoor">
+                            <iframe width="470" height="315" src="https://www.youtube.com/embed/FbCHCYkcM3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="bgMainCertificate">
+                                <a href="#" target="_blank"><img src="./assets/images/made_in_canada.jpg" alt="" style="width:115px; height:82px"></a>
+                                <a href="#" target="_blank"><img src="./assets/images/epa_certificate.jpg" alt="" style="width:113px; height:116px"></a>
+                            </div>
+                       </div>
+                       <h4 class="bgMainSubtitle">Innovation and Expertise to Meet Your Heating Needs</h4>
+                       <p>Portage & Main Boilers have been manufactured for over 40 years. We continually strive to be the leading innovators in the outdoor boiler business! Our factory is a state of the art facility that employs the latest manufacturing technology – including computer controlled robotic welders and laser cutting technology.</p>
+                       <p>The Portage & Main range of products include Ultimizer wood and coal models, auto-feed coal/pellet burners, automated wood chip burning systems and a line of EPA approved gasification boilers. </p>
+                       <p>We lead the way in innovation, quality and efficiency, using time tested and proven designs. We have developed the most efficient heat transfer exchangers available in any outdoor boiler on the market today.</p>
+                       <p>Our customers are home owners, farmers, commercial and industrial businesses, schools and municipal authorities. We sell boilers from Alaska to Florida and everywhere in between. Our customers do their research and recognize the value of a clean burning, environmentally friendly boiler that will save them fuel, money and time.</p>
+                    </div>
+
+                    <div class="textContent">
+                            <h3 class="sectionTitle">
+                                <span class="iconTitle"><i class="fas fa-quote-left"></i></span>
+                                <span class="textTitle">Bulletin Board</span>
+                            </h3>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <footer id="footer" class="siteFooter">
+        	<div class="customContainer">
+        		<div class="footerLeft">
+        			<a href="/">
+        				<img src="./assets/images/logo-white.png" alt="">
+        			</a>
+        		</div>
+        		<div class="footerRight">
+        			<div class="socialMediaIcons">
+        				<a href="">
+        					<img src="./assets/images/facebook-color.svg" alt="">
+        				</a>
+        				<a href="">
+        					<img src="./assets/images/twitter-color.svg" alt="">
+        				</a>
+        				<a href="">
+        					<img src="./assets/images/youtube-color.svg" alt="">
+        				</a>
+        				<a href="">
+        					<img src="./assets/images/instagram-color.svg" alt="">
+        				</a>
+        			</div>
+        		</div>
+        		<div class="footerBottom">
+        			<div class="copyRight">
+        				2019 Portage & Main Boilers.   All Rights Reserved
+        			</div>
+        			<div class="footerLinks">
+        				<a href="./privacy_policy.html">Privacy Policy</a>
+        				<a href="./terms.html">Terms & Conditions</a>
+        				<a href="./sitemap.html">Sitemap</a>
+        			</div>
+        		</div>
+        	</div>
         </footer>
 
     </div>
     
-    <link media="all" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+
+    <script>
+    	$(".opnesSubmenu").click(function(){
+    		$(this).closest(".quickNavItem").toggleClass("submenuActive");
+    		$(this).next(".quickNavSubmenu").slideToggle();
+    	});
+
+    	$("#mobileButton").click(function(){
+    		$("body").removeClass("quickNavMenuActive");
+    		$("#quickNav").fadeOut();
+    		$("body").toggleClass("mobileMenuActive");
+    		$("#mainNav").fadeToggle();
+    	});
+
+    	$("#quickNavTrigger").click(function(){
+    		$("body").removeClass("mobileMenuActive");
+    		$("#mainNav").fadeOut();
+    		$("body").toggleClass("quickNavMenuActive");
+    		$("#quickNav").fadeToggle();
+    	});
+
+    	$("#wallpaperButton").click(function(){
+    		$("body").toggleClass("topBoxesActive");
+    	});
+
+    	$(window).click(function() {
+		
+    		$(".mobileMenuActive #mainNav").fadeOut();
+    		$(".quickNavMenuActive #quickNav").fadeOut();
+
+    		$("body").removeClass("mobileMenuActive");
+    		$("body").removeClass("quickNavMenuActive");
+    	});
+
+    	$('#mobileButton, #quickNavTrigger, #mainNav, #quickNav').click(function(event){
+    	    event.stopPropagation();
+    	});
+	
+    </script>
 
     <script src="assets/js/vendor.min.js" defer></script>
     <script src="assets/js/app.js" defer></script>
