@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+    <div id="wrapper">
+
+        @@include('../partials/globals/topBar.html')
+
+        <div class="mainPage">
+            <div class="customContainer">
+
+                <div class="mainBg">
+                    @@include('../partials/globals/header.html')
+
+                    <div class="mainCols">
+                        @@include('../partials/globals/left.html')
+
+                        <div class="rightCol">
+                                @@include('../partials/components/underlined-title.html', { "iconTitle":"<img src=\"./assets/images/pm_icon.jpg\">", "textTitle": "purchase & shipping" })
+
+                                <div class="textContent mt40">
+                                    <h4 class="italicTitle"><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+                                            it to make a type specimen book.</i></h4>
+                                </div>
+                        @@loop('../partials/components/shipping.html', [
+                        { 
+                            "shippingTitle": "Your Purchase",
+                            "shippingText": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+                        },
+                        {
+                            "shippingTitle": "U.S. Customers",
+                            "shippingText": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+                        }
+                        ])
+
+                        <div class="textContent mt30">
+                            <a href="#" target="_blank"><img src="./assets/images/shipping.jpg" alt="" style="max-width:100%"></a>
+                        </div>
+
+                        @@include('../partials/components/shipping.html', {"shippingTitle": "Our Location & Shipping", "shippingText": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."})
+
+                        <div class="textContent mt40">
+                                <h4 class="italicTitle"><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+                                        it to make a type specimen book.</i></h4>
+                                <div class="yellowPhone"><a class="yellowNumber" href="tel:1 (800) 561-0700">1 (800) 561-0700</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        @@include('../partials/globals/footer.html')
+
+    </div>
+    @@include('../partials/globals/bottomScripts.html')
+
+    <script src="assets/js/vendor.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>

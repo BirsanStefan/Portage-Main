@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+    <div id="wrapper">
+
+        @@include('../partials/globals/topBar.html')
+
+        <div class="mainPage">
+            <div class="customContainer">
+
+                <div class="mainBg">
+                    @@include('../partials/globals/header.html')
+
+                    <div class="mainCols">
+                        @@include('../partials/globals/left.html')
+
+                        <div class="rightCol">
+                                @@include('../partials/components/underlined-title.html', { "iconTitle": "<img src=\"./assets/images/pm_icon.jpg\">", "textTitle": "portage & main products" })
+
+                                @@loop('../partials/components/product.html', [
+                                {
+                                    "productName":"The Ultimizer Wood Series",
+                                    "productType":"Ultimizer BL34-44 Shaker",
+                                    "productDescription1":"random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+                                    "productDescription2":"",
+                                    "product":"<img src=\"./assets/images/ultimizer_wood.jpg\">"
+
+                                },
+                                {
+                                    "productName":"The Ultimizer Coal ",
+                                    "productType":"Ultimizer BL28-40 Shaker",
+                                    "productDescription1":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+                                    "productDescription2":"Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+                                    "product":"<img src=\"./assets/images/ultimizer_coal.jpg\">" 
+                                },
+                                {
+                                    "productName":"EGR Gasification ",
+                                    "productType":"Optimizer EGR-25",
+                                    "productDescription1":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+                                    "productDescription2":"Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+                                    "product":"<img src=\"./assets/images/egr_gasification.jpg\">" 
+                                },
+                                {
+                                    "productName":"The Stoker Series",
+                                    "productType":"The Stoker",
+                                    "productDescription1":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+                                    "productDescription2":"",
+                                    "product":"<img src=\"./assets/images/stoker.jpg\">" 
+                                },
+                                {
+                                    "productName":"The EnviroChip Series",
+                                    "productType":"Optimizer EGR-25",
+                                    "productDescription1":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ",
+                                    "productDescription2":"Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+                                    "product":"<img src=\"./assets/images/enviro_chip.jpg\">" 
+                                },
+                                {
+                                    "productName":"The LCB Chip / Pellet Burner",
+                                    "productType":"LCB-120 Burner",
+                                    "productDescription1":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ",
+                                    "productDescription2":"Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+                                    "product":"<img src=\"./assets/images/lcb_chip.jpg\">" 
+                                }
+                                ])
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        @@include('../partials/globals/footer.html')
+
+    </div>
+    @@include('../partials/globals/bottomScripts.html')
+
+    <script src="assets/js/vendor.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>
