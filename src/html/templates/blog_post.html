@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+    <div id="wrapper">
+
+        @@include('../partials/globals/topBar.html')
+
+        <div class="mainPage">
+            <div class="customContainer">
+
+                <div class="mainBg">
+                    @@include('../partials/globals/header.html')
+
+                    <div class="mainCols">
+                        @@include('../partials/globals/left.html')
+
+                        <div class="rightCol">
+                            <article class="textContent">
+                                <a class="back" href="#" target="_blank">back</a>
+                                <h3 class="articleTitle mt22">Another Headline; I’m unsure on whether or not to go full width with this article image</h3>
+                                
+                                <div class="articleImgContainer">
+                                <a class="articleImg1" href="#" target="_blank" style="background-image: url('./assets/images/articleImg1.jpg')"></a>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        @@include('../partials/globals/footer.html')
+
+    </div>
+    @@include('../partials/globals/bottomScripts.html')
+
+    <script src="assets/js/vendor.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>

@@ -17,10 +17,15 @@
     .iconTitle {
         margin-left: 5px;
     }
-    .textTitle {
-        margin-left: 8px;
-        text-transform: uppercase;
-    }
+    
+}
+.textTitle {
+    margin-left: 8px;
+    text-transform: uppercase;
+}
+.capitalized {
+    @extend .textTitle;
+    text-transform: capitalize;
 }
 
 .rightCol {
@@ -43,6 +48,9 @@
     font-size: 15px;
     color: #1f1f1f;
     font-family: "proxima-nova";
+}
+.mt15 {
+    margin-top:15px;
 }
 .mt22 {
     margin-top:22px;

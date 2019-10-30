@@ -18,7 +18,7 @@
                         @@include('../partials/globals/left.html')
 
                         <div class="rightCol">
-                            <div class="textContent">
+                            <div class="textContent smallerText">
                                <h4 class="bgMainOutdoor">Welcome to Portage & Main - Outdoor Boilers</h4>
                                <h6 class="subtitle">...quality and innovation since 1973!</h6>
 
@@ -32,12 +32,59 @@
                                <h4 class="bgMainSubtitle">Innovation and Expertise to Meet Your Heating Needs</h4>
                                <p>Portage & Main Boilers have been manufactured for over 40 years. We continually strive to be the leading innovators in the outdoor boiler business! Our factory is a state of the art facility that employs the latest manufacturing technology – including computer controlled robotic welders and laser cutting technology.</p>
                                <p>The Portage & Main range of products include Ultimizer wood and coal models, auto-feed coal/pellet burners, automated wood chip burning systems and a line of EPA approved gasification boilers. </p>
-                               <p>We lead the way in innovation, quality and efficiency, using time tested and proven designs. We have developed the most efficient heat transfer exchangers available in any outdoor boiler on the market today.</p>
+                               <p>We lead the way in innovation, quality and efficiency, using time tested and proven designs. We have developed the most efficient heat transfer exchangers available in any outdoor boiler on the market today.
+                               </p>
                                <p>Our customers are home owners, farmers, commercial and industrial businesses, schools and municipal authorities. We sell boilers from Alaska to Florida and everywhere in between. Our customers do their research and recognize the value of a clean burning, environmentally friendly boiler that will save them fuel, money and time.</p>
                             </div>
 
                             <div class="textContent">
-                                    @@include('../partials/components/underlined-title.html', { "iconTitle": "<i class=\"fas fa-quote-left\"></i>", "textTitle": "Bulletin Board" })
+                                    <h3 class="sectionTitle">
+                                            <span class="iconTitle capitlized"><i class="fas fa-quote-left"></i></span>
+                                            <span class="textTitle capitalized">Bulletin Board</span>
+                                    </h3>
+                                <div class="board" style="background-image: url('./assets/images/bulletin_board.jpg')">
+                                    
+                                        @@loop('../partials/components/bulletinInfo.html', [
+                                        {
+                                            "bulletinDate":"September 5th - 9th",
+                                            "bulletinTitle":"Great Lakes Logging & Heavy Equipment Expo",
+                                            "infoImg":"<img src=\"./assets/images/pm_icon.jpg\">"
+                                        },
+                                        {
+                                            "bulletinDate":"September 10th - 26th",
+                                            "bulletinTitle":"Farm Science Show @ Ohio State University",
+                                            "infoImg":"<img src=\"./assets/images/pm_icon.jpg\">"
+                                        }
+                                        ])
+                                    <div class="bulletinPhotos">
+                                        <div class="bulletinYear"></div>
+                                        <div class="bulletinPhoto1"></div>
+                                        <div class="bulletinPhoto2"></div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="textContent relativ">
+                                    <h3 class="sectionTitle">
+                                        <span class="iconTitle capitlized"><i class="fas fa-smile"></i></span>
+                                        <span class="textTitle capitalized">Testimonials</span>
+                                        </h3>
+                                    <a class="moreTestimonial" href="#">
+                                        <span><i class="fas fa-caret-right"></i></span>
+                                        <span><i>More</i></span>
+                                    </a>
+
+                                    <div class="flexDiv mt40">
+                                        <div class="testimonialContainer">
+                                        <a class="avatarPhoto" target="_blank"><img src="./assets/images/avatar.png" alt=""></a>
+                                        </div>
+                                        <div class="testimonial">
+                                            <h6 class="testimonialTitle">Mark & Andrea Nyseth - Eleva, Wisconsin</h6>
+                                            <p>The P&M BL2840 we purchased from Strawbale Farms is a great unit.  This is our third year of running it and the performance has been 100% accurate.  We previously owned a Woodmaster 4400 and the P&M is a far better boiler IMO. It burns hotter, cleaner, alot less wood and very easy to maintain. I wish we would have purchased a P&M to start with.
+                                                    It is a very high quality built unit. We are 100% satisfied with our P&M and the great customer service. We would definitely highly recommend a P&M.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         </div>
@@ -49,7 +96,6 @@
 
         @@include('../partials/globals/footer.html')
 
-    </div>
     @@include('../partials/globals/bottomScripts.html')
 
     <script src="assets/js/vendor.min.js" defer></script>
