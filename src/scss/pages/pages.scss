@@ -101,4 +101,8 @@ font-weight: 300;
 text-align: right;
 margin-top:8px;
     }
+    .cCaption {
+        @extend figcaption;
+        text-align:center;
+    }
 }

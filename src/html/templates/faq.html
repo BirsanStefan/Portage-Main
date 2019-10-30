@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+    <div id="wrapper">
+
+        @@include('../partials/globals/topBar.html')
+
+        <div class="mainPage">
+            <div class="customContainer">
+
+                <div class="mainBg">
+                    @@include('../partials/globals/header.html')
+
+                    <div class="mainCols">
+                        @@include('../partials/globals/left.html')
+
+                        <div class="rightCol">
+                            @@include('../partials/components/underlined-title.html', { "iconTitle": "<i class=\"fas fa-question\"></i>", "textTitle": "frequently asked questions" })
+
+                            <div class="textContent mt40">
+                                <h4 class="italicTitle"><i>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                                    </i></h4>
+                                <div class="mb30">
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                                </div>
+
+                                @@loop('../partials/components/faq_accordion.html', [
+                                {
+                                    "faqTitle":"Questions can be asked here in this accordion menu?",
+                                    "faqText1":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites.",
+                                    "faqText2":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites."
+                                },
+                                {
+                                    "faqTitle":"Questions can be asked here in this accordion menu?",
+                                    "faqText1":"",
+                                    "faqText2":""
+                                },
+                                {
+                                    "faqTitle":"Questions can be asked here in this accordion menu?",
+                                    "faqText1":"",
+                                    "faqText2":""
+                                },
+                                {
+                                    "faqTitle":"Questions can be asked here in this accordion menu?",
+                                    "faqText1":"",
+                                    "faqText2":""
+                                },
+                                {
+                                    "faqTitle":"Questions can be asked here in this accordion menu?",
+                                    "faqText1":"",
+                                    "faqText2":""
+                                },
+                                {
+                                    "faqTitle":"Questions can be asked here in this accordion menu?",
+                                    "faqText1":"",
+                                    "faqText2":""
+                                },
+                                {
+                                    "faqTitle":"Questions can be asked here in this accordion menu?",
+                                    "faqText1":"",
+                                    "faqText2":""
+                                },
+                                {
+                                    "faqTitle":"Questions can be asked here in this accordion menu?",
+                                    "faqText1":"",
+                                    "faqText2":""
+                                },
+                                {
+                                    "faqTitle":"Questions can be asked here in this accordion menu?",
+                                    "faqText1":"",
+                                    "faqText2":""
+                                }
+                                ])
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        @@include('../partials/globals/footer.html')
+
+    </div>
+    @@include('../partials/globals/bottomScripts.html')
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}</script>
+    <script src="assets/js/vendor.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>
