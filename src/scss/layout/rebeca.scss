@@ -407,6 +407,12 @@ background-color: #dcdcdc;
 
 // Blog Post - END //
 
+.accordionContainer > button:nth-of-type(even) {
+    background-color:#b4daf7;
+}
+.accordionContainer > button:nth-of-type(odd) {
+    background-color:#fff;
+}
 .accordion {
     height:70px;
     width:100%;
@@ -419,10 +425,23 @@ background-color: #dcdcdc;
     display:flex;
     justify-content: space-between;
     align-items:center;
+    border:none;
 
-    &:nth-child(even) {
-        background-color:#b4daf7;
+    &::after {
+        content:'\02795';
+        border:none;
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
     }
+    &:focus {
+        outline:none;
+        
+    }
+}
+.active::after {
+    content: '\2796';
 }
 .panel {
     padding: 0 18px;
@@ -430,34 +449,34 @@ background-color: #dcdcdc;
     display: none;
     overflow: hidden;
   }
-  .plus {
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    position: relative;
-    display:inline-block;
-    &::after {
-        content: " ";
-        position: absolute;
-        display: block;
-        background-color: #333333;
-        height: 2px;
-        margin-top: -1px;
-        top: 50%;
-        left: 1px;
-        right: 1px;
-        z-index: 9;
-    }
-    &::before {
-        content: " ";
-  position: absolute;
-  display: block;
-  background-color: #333333;
-  width: 2px;
-  margin-left: -1px;
-  left: 50%;
-  top: 1px;
-  bottom: 1px;
-  z-index: 9;
-    }
-  }
+//   .plus {
+//     border-radius: 50%;
+//     width: 10px;
+//     height: 10px;
+//     position: relative;
+//     display:inline-block;
+//     &::after {
+//         content: " ";
+//         position: absolute;
+//         display: block;
+//         background-color: #333333;
+//         height: 2px;
+//         margin-top: -1px;
+//         top: 50%;
+//         left: 1px;
+//         right: 1px;
+//         z-index: 9;
+//     }
+//     &::before {
+//         content: " ";
+//   position: absolute;
+//   display: block;
+//   background-color: #333333;
+//   width: 2px;
+//   margin-left: -1px;
+//   left: 50%;
+//   top: 1px;
+//   bottom: 1px;
+//   z-index: 9;
+//     }
+//   }
