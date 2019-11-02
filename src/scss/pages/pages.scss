@@ -17,22 +17,15 @@
     .iconTitle {
         margin-left: 5px;
     }
-    .textTitle {
-        margin-left: 8px;
-        text-transform: uppercase;
-    }
-    @media only screen and (max-width: 667px){
-        left: -15px;
-        font-size: 18px;
-        .iconTitle{
-            display: inline-block;
-            vertical-align: top;
-        }
-        .textTitle{
-            display: inline-block;
-            width: calc(100% - 50px);
-        }
-    }
+    
+}
+.textTitle {
+    margin-left: 8px;
+    text-transform: uppercase;
+}
+.capitalized {
+    @extend .textTitle;
+    text-transform: capitalize;
 }
 
 .rightCol {
@@ -58,6 +51,9 @@
 .textContent {
     font-size: 14px;
     color: #1f1f1f;
+}
+.mt15 {
+    margin-top:15px;
 }
 .mt22 {
     margin-top:22px;
@@ -106,5 +102,9 @@
         font-weight: 300;
         text-align: right;
         margin-top:8px;
+    }
+    .cCaption {
+        @extend figcaption;
+        text-align:center;
     }
 }
