@@ -694,6 +694,127 @@ background-color: #dcdcdc;
         }
     }
 }
+
+// Blog - START // 
+
+.blogArticle {
+    width: 661px;
+    height: 219px;
+    filter: drop-shadow(0px 1px 0.5px rgba(1,1,1,0.75));
+    background-color: #ffffff;
+    border: 0.25px solid #c2c2c2;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    
+}
+.articleImageContainer {
+    width: 250px;
+    height: 178px;
+}
+.articleContent {
+    width: 56%;
+    height:78%;
+}
+.infoArticle {
+    display:flex;
+    justify-content: space-between;
+}
+.publish, .comments {
+    font-size: 11px;
+    letter-spacing: 0px;
+    color: #dcdcdc;
+    font-style: italic;
+}
+.articleImg {
+    width:250px;
+    height:178px;
+    
+    img {
+        width:100%;
+        height: 100%;
+    }
+}
+.blogArticleTitle {
+    font-size: 22px;
+    line-height: 24px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom:0px;
+}
+.articleBy {
+    font-size: 11px;
+    letter-spacing: 0px;
+    color: #333333;
+}
+.articleText {
+    font-size:13px;
+    margin-top:16px;
+}
+.more {
+    display:block;
+    width:56px;
+    height:10px;
+    border-radius:10%;
+    border: 1px solid #d9fcb2;
+    box-shadow: 2px 2px #9e9a9a;
+    font-size:8px;
+    line-height:10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align:center;
+    color:#333333;
+    position:absolute;
+    right:12px;
+    bottom:8px;
+}
+.articleMore {
+    @extend .more;
+    display:inline-block;
+    position:static;
+}
+
+// Blog - End // 
+
+// Modal - START // 
+.myContent {
+    width:440px;
+    height:430px;
+}
+.close {
+    text-align:right;
+    margin:15px 15px 0 0;
+}
+.myBody {
+    padding: 0 65px 0 65px;
+}
+.modal-body-title {
+    font-size: 16px;
+letter-spacing: 0px;
+line-height: 16px;
+color: #5b5b5b;
+font-weight: bold;
+font-style: italic;
+}
+.modal-form {
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+.modal-img {
+    display:block;
+    width: 305px;
+    height:137px;
+    background-color: #d3d3d3;
+    margin-bottom:20px;
+}
+.modal-note {
+    font-size: 12px;
+    color: #333333;
+    font-style: italic;
+}
+
+// Modal - END // 
+
 //   .plus {
 //     border-radius: 50%;
 //     width: 10px;

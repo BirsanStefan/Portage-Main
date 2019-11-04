@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+    <div id="wrapper">
+
+        @@include('../partials/globals/topBar.html')
+
+        <div class="mainPage">
+            <div class="customContainer">
+
+                <div class="mainBg">
+                    @@include('../partials/globals/header.html')
+
+                    <div class="mainCols">
+                        @@include('../partials/globals/left.html')
+
+                        <div class="rightCol">
+
+                            <div class="whiteBox">
+                                @@include('../partials/components/underlined-title.html', {
+                                    "iconTitle": "<img src=\"./assets/images/gallery-icon.png\" alt=\"\">", 
+                                    "textTitle": "portage and main latest news " 
+                                    })
+                                <div class="italicDescription mt30">
+                                    <p>Portage and Main Outdoor Boilers is named after one of the 
+                                            coldest intersections in the world – the intersection of Portage Avenue and Main Street in Winnipeg, Manitoba, Canada.</p>
+                                </div>
+
+                                <div id="myModal" class="modal fade">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content myContent">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    
+                                                <div class="modal-body myBody">
+                                                    <a class="modal-img" href="#"><img src="./assets/images/someimg.jpg" alt=""></a>
+                                                        <h5 class="modal-body-title">
+                                                                <span class="leftBoxTitleIcon"> <i class="fas fa-newspaper"></i>  </span>
+                                                                <span class="modal-body-title-text"> Sign-Up for our Newsletter </span>
+                                                        </h5>
+                                                        <div class="newsletterText">
+                                                                News, updates, &amp; promotional information.
+                                                        </div>
+                                             
+                                                    <form class="modal-form">
+                                                        <input type="text" class="newsletterInput" placeholder="Enter Email...">
+                                                        <button type="submit" class="blueButton button newsletterSubmit">
+                                                            SUBMIT
+                                                        </button>
+                                                    </form>
+                                                    <div class="modal-note">
+                                                        <p>** We hate spam too!  We’ll take good care of your email & promise not to sell or spam.  You can Un-subscribe to our Newsletter at anytime. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                              
+                                @@loop('../partials/components/blog_articles.html', [
+                                {
+                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-about.jpg\">",
+                                    "date":"March 2nd, 2019",
+                                    "noComm":"18 Comments",
+                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
+                                    "by":"By: P&M Staff Writer",
+                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
+                                },
+                                {
+                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-boilers.jpg\">",
+                                    "date":"March 2nd, 2019",
+                                    "noComm":"18 Comments",
+                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
+                                    "by":"By: P&M Staff Writer",
+                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
+                                },
+                                {
+                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-boilers.jpg\">",
+                                    "date":"March 2nd, 2019",
+                                    "noComm":"18 Comments",
+                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
+                                    "by":"By: P&M Staff Writer",
+                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
+                                },
+                                {
+                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-boilers.jpg\">",
+                                    "date":"March 2nd, 2019",
+                                    "noComm":"18 Comments",
+                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
+                                    "by":"By: P&M Staff Writer",
+                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
+                                },
+                                {
+                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-boilers.jpg\">",
+                                    "date":"March 2nd, 2019",
+                                    "noComm":"18 Comments",
+                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
+                                    "by":"By: P&M Staff Writer",
+                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
+                                },
+                                {
+                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-boilers.jpg\">",
+                                    "date":"March 2nd, 2019",
+                                    "noComm":"18 Comments",
+                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
+                                    "by":"By: P&M Staff Writer",
+                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
+                                },
+                                {
+                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-boilers.jpg\">",
+                                    "date":"March 2nd, 2019",
+                                    "noComm":"18 Comments",
+                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
+                                    "by":"By: P&M Staff Writer",
+                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
+                                }
+                                
+                                ])
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        @@include('../partials/globals/footer.html')
+
+    </div>
+    @@include('../partials/globals/bottomScripts.html')
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
+</body>
+
+</html>
