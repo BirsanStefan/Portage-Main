@@ -21,7 +21,7 @@
                                 <div class="mainTopTitle">
                                     @@include('../partials/components/underlined-title.html', {
             
-                                        "iconTitle": "<img src=\"./assets/images/boilers101.png\">",
+                                        "iconTitle": "<img src=\"./assets/images/boilers101.png\" alt=\"boilers-101\">",
 
                                         "textTitle": "CALENDAR OF EVENTS"
 
@@ -31,10 +31,9 @@
 
                                 <div class="topDescription">
                                     <div class="italicDescription">
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-                                    <div class="italicDescription"> 
-                                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
-                                        'Content here, content here', making it look like readable English.
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                                        'Content here, content here', making it look like readable English.</p>
                                     </div>
                                 </div>
 
@@ -45,17 +44,17 @@
                                         <form action="/action_page.php">
                                             <input type="text" placeholder="search" name="search">
                                         </form>
-                                        <button type="submit">&#215;</button>
-                                        <a href="#" class="left">&#60;</a>
+                                        <button type="submit"><img src="./assets/images/deleteicon.svg" alt=""></button>
+                                        <a href="#" class="left"><img src="./assets/images/leftarrow.svg"></a>
                                         <a href="#">18/08/15</a>
-                                        <a href="#" class="right">&#62;</a>
+                                        <a href="#" class="right"><img src="./assets/images/rightarrow.svg"></a>
                                     </div>
                                     
                                     
                                     <div class="menuR">
                                         <span>Subscribe</span> 
                                         <a href="#" class="left">Pinboard</a>
-                                        <a href="#" class="active">Angenda</a>
+                                        <a href="#" class="active">Agenda</a>
                                         <a href="#" class="right">Monthly</a>
                                     </div>
                                     
@@ -69,49 +68,40 @@
                                         @@loop('../partials/components/eventsElement.html', [
                                     
                                             {
-                                                "image": "<img src=\"./assets/images/events-img.png\">",
+                                                "image": "<a href=\"%\" style=\"background-image: url(./assets/images/events-img.png)\"></a>",
                                                 "title": "Full of Spice Summer Festival - Kew",
                                                 "period": "Sat Aug 15th - Sat 22nd",
                                                 "text": "Full of Spice Summer Festival 2015 23 May - 6 September, 2015 We don't think twice about the peppermill on our dining table or the vanilla in our ice-cream, bu... ",
-                                                "taga": "Festival",
-                                                "tagb": "&#8226; Botany &#8226;",
-                                                "tagc": "Food"
+                                                
+                                                "tags": "<a href=\"#\" class=\"tag\">Festival</a><a href=\"#\" class=\"tag\">Botany</a><a href=\"#\" class=\"tag\">Food</a>"
                                             },
                                             {
-                                                "image": "<img src=\"./assets/images/events-img.png\">",
+                                                "image": "<a href=\"%\" style=\"background-image: url(./assets/images/events-img.png)\"></a>",
                                                 "title": "Sensational Butterflies exhibition - Natural History Museum, London ",
                                                 "period": "Tue Aug 18th",
                                                 "text": "Wander among free-flying moths and butterflies from around the world in our tropical butterfly house in the heart of London. Follow the exhibition trail chartin... ",
-                                                "taga": "Nature",
-                                                "tagb": "&#8226; Science ",
-                                                "tagc": ""
+                                                "tags": "<a href=\"#\" class=\"tag\">Nature</a><a href=\"#\" class=\"tag\">Science</a>"
                                             },
                                             {
-                                                "image": "<img src=\"./assets/images/events-img.png\">",
+                                                "image": "<a href=\"%\" style=\"background-image: url(./assets/images/events-img.png)\"></a>",
                                                 "title": "The Bubble Show",
                                                 "period": "Tue Aug 18th",
                                                 "text": "Our most popular show, this amazing spectacle features bubbles of all sizes going up, down, this way, that way, and all over the place... with a little help from ... ",
-                                                "taga": "",
-                                                "tagb": "",
-                                                "tagc": ""
+                                                "tags": ""
                                             },
                                             {
-                                                "image": "<img src=\"./assets/images/events-img.png\">",
+                                                "image": "<a href=\"%\" style=\"background-image: url(./assets/images/events-img.png)\"></a>",
                                                 "title": "Dino Scene Investigation - Natural History Museum, London ",
                                                 "period": "Tue Aug 18th - 1.00pm - 1.00pm",
                                                 "text": "Dino Scene Investigation Families Gallery activity Handle real fossil specimens and learn a little about the scientists that study them here at the Museum. Sort... ",
-                                                "taga": "Science",
-                                                "tagb": "&#8226; Nature &#8226;",
-                                                "tagc": "History"
+                                                "tags": "<a href=\"#\" class=\"tag\">Science</a><a href=\"#\" class=\"tag\">Nature</a><a href=\"#\" class=\"tag\">History</a>"
                                             },
                                             {
-                                                "image": "<img src=\"./assets/images/events-img.png\">",
+                                                "image": "<a href=\"%\" style=\"background-image: url(./assets/images/events-img.png)\"></a>",
                                                 "title": "Dino Scene Investigation - Natural History Museum, London ",
                                                 "period": "Tue Aug 18th - 1.00pm - 1.00pm",
                                                 "text": "Dino Scene Investigation Families Gallery activity Handle real fossil specimens and learn a little about the scientists that study them here at the Museum. Sort... ",
-                                                "taga": "Science",
-                                                "tagb": "&#8226; Nature &#8226;",
-                                                "tagc": "History"
+                                                "tags": "<a href=\"#\" class=\"tag\">Science</a><a href=\"#\" class=\"tag\">Nature</a><a href=\"#\" class=\"tag\">History</a>"
                                             }
                                         
                                         ])
@@ -133,7 +123,7 @@
 
         @@include('../partials/globals/bottomScripts.html')
 
-        <script src="assets/js/vendor.min.js" defer></script>
-        <script src="assets/js/app.js" defer></script>
+        
+        
     </body>
 </html>

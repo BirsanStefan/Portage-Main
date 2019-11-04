@@ -169,7 +169,7 @@
                             <div class="centerCol">
                                 
                                 <h3 class="sectionTitle">
-                                    <span class="iconTitle"><img src="./assets/images/boilers101.png"></span>
+                                    <span class="iconTitle"><img src="./assets/images/boilers101.png" alt="boilers-101"></span>
                                     <span class="textTitle">PORTAGE & MAIN PROMOTIONS</span>
                                 </h3>
 
@@ -179,30 +179,26 @@
 
                                     <div class="specialsRightside">
 
-                                        <div class="specialsPromo">Promotion Begins: September 30th, 2019</div>
+                                        <div class="specialsPromo left">Promotion Begins: September 30th, 2019</div>
 
 
-<!-- DE ADAUGAT SOCIAL MEDIA ;) -->
-                                        <div class="socialMedia">
-                                            <a href="#" class="socialMediaItem facebook">
-                                                <i class="fab fa-facebook-f"></i>
-                                                facebook
+                                    <!--SOCIAL MEDIA start-->
+                                        <div class="socialButtons">
+                                            <a href="#" class="btn2 fb-btn">
+                                                <i class="fab fa-facebook-f"></i> <span>facebook</span>
                                             </a>
-                                            <a href="#" class="socialMediaItem twitter">
-                                                <i class="fab fa-twitter"></i>
-                                                twitter
+                                            <a href="#" class="btn2 tw-btn">
+                                                <i class="fab fa-twitter"></i> <span>twitter</span>
                                             </a>
-                                            <a href="#" class="socialMediaItem email">
-                                                <i class="fas fa-at"></i>
-                                                email
+                                            <a href="#" class="btn2 email-btn">
+                                                <i class="fas fa-at"></i> <span>email</span>
                                             </a>
-                                            <a href="#" class="socialMediaItem google">
-                                                <i class="fab fa-google-plus-g"></i>
-                                                google
+                                            <a href="#" class="btn2 google-btn">
+                                                <i class="fab fa-google-plus-g"></i> <span>google</span>
                                             </a>
                                         </div>
-<!-- DE ADAUGAT SOCIAL MEDIA ;) -->
-
+                                    <!-- SOCIAL MEDIA end-->
+                                    
 
                                     </div>
                                     
@@ -224,7 +220,10 @@
 
 
                                 <div class="specialsPromoRules">
-                                    <div class="specialsPromoRulesL">
+                                    <div class="specialsPromoRulesL normal">
+                                        <div class="specialsPromoRulesR">
+                                            <img src="./assets/images/promotionalrules.jpg" alt="promo rules">
+                                        </div>
 
                                         <h4>Promotional Rules</h4>
 
@@ -247,9 +246,7 @@
                                             The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
                                         </div>
 
-                                    </div>
-                                    <div class="specialsPromoRulesR">
-                                        <img src="./assets/images/promotionalrules.jpg" alt="promo rules">
+
                                     </div>
                                 </div>
 
@@ -262,7 +259,7 @@
 
                                     <div class="betterThanRDescr specialBTRDa">We have turned up the heat and look forward to providing you with the warmth and satisfaction you have been searching for. Call now!</div>
 
-                                    <div class="betterThanRDescr specialBTRDb">Toll Free: 
+                                    <div class="betterThanRDescr specialBTRDb noItalic">Toll Free: 
                                         <span class="betterThanRValue">
                                             <a href="#">1 (800) 561-0700</a>
                                         </span>
@@ -270,7 +267,7 @@
 
                                 </div>
 
-                                <div class="specialsPromo bottom">Promotion Ends: May 15th, 2020</div>
+                                <div class="specialsPromo bottom right">Promotion Ends: May 15th, 2020</div>
 
                             </div>
                         </div>
@@ -323,6 +320,9 @@
           integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
           crossorigin="anonymous"></script>
 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
         <script>
         	$(".opnesSubmenu").click(function(){
         		$(this).closest(".quickNavItem").toggleClass("submenuActive");
@@ -362,7 +362,5 @@
 	
         </script>
 
-        <script src="assets/js/vendor.min.js" defer></script>
-        <script src="assets/js/app.js" defer></script>
     </body>
 </html>

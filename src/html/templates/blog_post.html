@@ -4,6 +4,9 @@
 @@include('../partials/head/head.html')
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
+
     <div id="wrapper">
 
         @@include('../partials/globals/topBar.html')
@@ -15,58 +18,233 @@
                     @@include('../partials/globals/header.html')
 
                     <div class="mainCols">
-                        @@include('../partials/globals/left.html')
+                        
+                        <aside class="leftCol">
+
+                            <div class="leftBox">
+        
+                                <div class="leftBoxSection">
+                                    <h4 class="leftBoxTitle">
+                                        <span class="leftBoxTitleIcon"> <i class="far fa-compass"></i>  </span>
+                                        <span class="leftBoxTitleText"> Quick Nav </span>
+                                    </h4>
+
+                                    <div class="leftBoxTitleDecoration"></div>
+                                    <nav class="quickNav" id="quickNav">
+                                        <ul class="quickNavList">
+                                            <li class="quickNavItem submenuActive">
+                                                <!-- use .opnesSubmenu class if it has a submenu besides it -->
+                                                <a href="javascript:void(0);" class="quickNavItemLink opnesSubmenu">Dealers</a>
+                                                <ul class="quickNavSubmenu" style="display: block;">
+                                                    <li class="quickNavSubmenuItem"><a href="./dealer_locations.html" class="quickNavSubmenuLink">Locations</a></li>
+                                                    <li class="quickNavSubmenuItem"><a href="./purchase_shipping.html" class="quickNavSubmenuLink">purchase &amp; shipping</a></li>
+                                                    <li class="quickNavSubmenuItem"><a href="./faq.html" class="quickNavSubmenuLink">faq</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="quickNavItem">
+                                                <a href="javascript:void(0);" class="quickNavItemLink">News / Blog</a>
+                                            </li>
+                                            <li class="quickNavItem">
+                                                <a href="javascript:void(0);" class="quickNavItemLink">Testim</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+
+                                <div class="leftBoxSection">
+                                    <h4 class="leftBoxTitle">
+                                        <span class="leftBoxTitleIcon"> <img src="./assets/images/network.svg" alt=""> </span>
+                                        <span class="leftBoxTitleText"> follow Portage &amp; main </span>
+                                    </h4>
+
+                                    <div class="leftBoxTitleDecoration"></div>
+
+                                    <div class="socialMediaIcons">
+                                        <a href="">
+                                            <img src="./assets/images/facebook-color.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="./assets/images/twitter-color.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="./assets/images/youtube-color.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="./assets/images/instagram-color.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="imgAd">
+                                    <a href="#">
+                                        <img src="./assets/images/mock_adsmall.jpg" alt="">
+                                    </a>
+                                </div>
+        
+                            </div>
+
+                            <div class="leftBox">
+
+                                <h4 class="leftBoxTitle">
+                                    <span class="leftBoxTitleIcon"> <i class="far fa-newspaper"></i>  </span>
+                                    <span class="leftBoxTitleText"> Older Posts </span>
+                                </h4>
+
+                                <div class="leftBoxTitleDecoration"></div>
+
+                                <div class="leftBoxList">
+
+                                    <div class="leftPostItem">
+                                        <div class="leftPostItemImage">
+                                            <a href="#" class="shine" style="background-image: url(./assets/images/generic1.jpg)" title="Headline will go here’ and look like this for the audience"></a>
+                                        </div>
+                                        <div class="leftPostItemInfo">
+                                            <div class="leftPostItemDate">
+                                                <i class="fas fa-calendar-alt"></i> Oct 18th, 2019
+                                            </div>
+                                            <h5 class="leftPostItemTitle">
+                                                <a href="#"> Headline will go here’ and look like this for the audience </a>
+                                            </h5>
+                                        </div>
+    
+                                    </div><div class="leftPostItem">
+                                        <div class="leftPostItemImage">
+                                            <a href="#" class="shine" style="background-image: url(./assets/images/generic1.jpg)" title="Headline will go here’ and look like this for the audience"></a>
+                                        </div>
+                                        <div class="leftPostItemInfo">
+                                            <div class="leftPostItemDate">
+                                                <i class="fas fa-calendar-alt"></i> Oct 18th, 2019
+                                            </div>
+                                            <h5 class="leftPostItemTitle">
+                                                <a href="#"> Headline will go here’ and look like this for the audience </a>
+                                            </h5>
+                                        </div>
+    
+                                    </div><div class="leftPostItem">
+                                        <div class="leftPostItemImage">
+                                            <a href="#" class="shine" style="background-image: url(./assets/images/generic1.jpg)" title="Headline will go here’ and look like this for the audience"></a>
+                                        </div>
+                                        <div class="leftPostItemInfo">
+                                            <div class="leftPostItemDate">
+                                                <i class="fas fa-calendar-alt"></i> Oct 18th, 2019
+                                            </div>
+                                            <h5 class="leftPostItemTitle">
+                                                <a href="#"> Headline will go here’ and look like this for the audience </a>
+                                            </h5>
+                                        </div>
+    
+                                    </div><div class="leftPostItem">
+                                        <div class="leftPostItemImage">
+                                            <a href="#" class="shine" style="background-image: url(./assets/images/generic1.jpg)" title="Headline will go here’ and look like this for the audience"></a>
+                                        </div>
+                                        <div class="leftPostItemInfo">
+                                            <div class="leftPostItemDate">
+                                                <i class="fas fa-calendar-alt"></i> Oct 18th, 2019
+                                            </div>
+                                            <h5 class="leftPostItemTitle">
+                                                <a href="#"> Headline will go here’ and look like this for the audience </a>
+                                            </h5>
+                                        </div>
+    
+                                    </div>
+            
+                                </div>
+                            </div>
+
+                            <div class="newsletterBox leftBox">
+        
+                                <h4 class="leftBoxTitle">
+                                    <span class="leftBoxTitleIcon"> <i class="fas fa-newspaper"></i>  </span>
+                                    <span class="leftBoxTitleText"> Sign-Up for our Newsletter </span>
+                                </h4>
+                                <div class="newsletterText">
+                                    News, updates, &amp; promotional information.
+                                </div>
+                                <div class="newsletterForm">
+                                    <input type="text" class="newsletterInput" placeholder="Enter Email...">
+                                    <button type="submit" class="blueButton button newsletterSubmit">
+                                        SUBMIT
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="towerAd">
+                                <a href="#">
+                                    <img src="./assets/images/mockAd.jpg" alt="">
+                                </a>
+                            </div>
+
+                        </aside>
 
                         <div class="rightCol">
-                            <div class="textContent">
-                                <a class="back" href="#" target="_blank">back</a>
-                                <h3 class="articleTitle mt22">Another Headline; I’m unsure on whether or not to go full width with this article image</h3>
+                            <div class="whiteBox">
+                            
+                                <article>
+                                    <div class="textContent">
+                                        <a class="back" href="#" target="_blank">
+                                            <span><i class="fas fa-caret-right"></i></span>
+                                            <span><i>Back</i></span>
+                                        </a>
+                                        <h3 class="articleTitle mt22">Another Headline; I’m unsure on whether or not to go full width with this article image</h3>
+                                        
+                                        <div class="articleImgContainer">
+                                            <a href="#">
+                                                <img src="./assets/images/articleImg1.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="socialButtons">
+                                            <a href="#" class="btn2 fb-btn">
+                                                <i class="fab fa-facebook-f"></i> <span>facebook</span>
+                                            </a>
+                                            <a href="#" class="btn2 tw-btn">
+                                                <i class="fab fa-twitter"></i> <span>twitter</span>
+                                            </a>
+                                            <a href="#" class="btn2 email-btn">
+                                                <i class="fas fa-at"></i> <span>email</span>
+                                            </a>
+                                            <a href="#" class="btn2 google-btn">
+                                                <i class="fab fa-google-plus-g"></i> <span>google</span>
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <span class="blogPostsTitle mb20"><i>By: P&M Staff Writer |  October 9, 2019</i></span>
+                                            <div class="iSmall blogPost text-left">
+                                                <p>What is Lorem Ipsum?</p>
+                                            </div>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        </div>
+
+                                        <div class="mb30">
+                                            <div class="iSmall blogPost text-left">
+                                                <p>Why do we use it?</p>
+                                            </div>
+                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                        </div>
+
+                                        <figure class="generalFig">
+                                            <img class="generalFigImg" src="./assets/images/articlePlaceholder.jpg" alt="">
+                                            <figcaption class="cCaption">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</figcaption>
+                                        </figure>
+                                        <div class="mt40">
+                                            <p>
+                                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                                        </div>
+                                        <div class="mt30">
+                                            <div class="iSmall blogPost text-left">
+                                                <p>Where can I get some?</p>
+                                            </div>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
+                                        </div>
+                                    </div>
+                                </article>
+                                <div class="facebookComment">
+                                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
+                                </div>
                                 
-                                <div class="articleImgContainer">
-                                <a class="articleImg1" href="#" target="_blank" style="background-image: url('./assets/images/articleImg1.jpg')"></a>
-                                </div>
-
-                                <div class="socials">
-                                <a href="#" target="_blank">fb</a>
-                                <a href="#" target="_blank">twitter</a>
-                                <a href="#" target="_blank">email</a>
-                                <a href="#" target="_blank">gmail</a>
-                                </div>
-
-                                <div>
-                                    <span class="blogPostsTitle mb20"><i>By: P&M Staff Writer |  October 9, 2019</i></span>
-                                    <div class="iSmall blogPost">
-                                        <p>What is Lorem Ipsum?</p>
-                                    </div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                </div>
-
-                                <div class="mb30">
-                                    <div class="iSmall blogPost">
-                                        <p>Why do we use it?</p>
-                                    </div>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                                </div>
-
-                                <figure class="generalFig">
-                                    <img class="generalFigImg" src="./assets/images/articlePlaceholder.jpg" alt="">
-                                    <figcaption class="cCaption">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</figcaption>
-                                </figure>
-                                <div class="mt40">
-                                <p>
-                                     The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                                     </div>
-                                <div class="mt30">
-                                    <div class="iSmall blogPost">
-                                        <p>Where can I get some?</p>
-                                    </div>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-
-                                    <div class="someFacebook"> FACEBOOK MESS</div>
-                                </div>
-                                </div>
-                            </article>
-
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,8 +257,8 @@
     </div>
     @@include('../partials/globals/bottomScripts.html')
 
-    <script src="assets/js/vendor.min.js" defer></script>
-    <script src="assets/js/app.js" defer></script>
+    
+    
 </body>
 
 </html>

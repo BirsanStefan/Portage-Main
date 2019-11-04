@@ -19,7 +19,7 @@
                             <div class="centerCol">
                                 @@include('../partials/components/quickNavButtons.html',{
                     
-                                    "iconQNBBox": "<img src=\"./assets/images/Education-Icon.png\">", 
+                                    "iconQNBBox": "<img src=\"./assets/images/Education-Icon.png\" alt=\"boilers-101\">", 
                     
                                     "qnbBtn1": "Video Learning",
                     
@@ -39,60 +39,64 @@
 
                                 <div class="topDescription">
                                     <div class="italicDescription">
-                                        The below diagrams are availble for download in pdf format & are for illustrative purposes only.</div>
-                                    <div class="italicDescription">
-                                        When in doubt or unsure, seek professional advice before proceeding.</div>
-                                    <div class="italicDescription">
-                                        Call for clarification or ask your local plumber.</div>
+                                        <p>The below diagrams are availble for download in pdf format & are for illustrative purposes only.</p>
+                                        <p>When in doubt or unsure, seek professional advice before proceeding.</p>
+                                        <p>Call for clarification or ask your local plumber.</p>
+                                    </div>
                                 </div>
 
 
                                 <div class="diagramsContent">
                                     @@loop('../partials/components/diagrams.html', [
                                         {
-                                            "underimage": "<img src=\"./assets/images/pad_design1.jpg\">",
+                                            "underimage": "<a href=\"#\" style=\"background-image: url(./assets/images/pad_design1.jpg)\"></a>",
+
+                                            "overimage": "<a href=\"#\" style=\"background-image: url(./assets/images/pdf-icon.png);\"></a>",
+
+                                            "title": "<a href=\"#\" title=\"Ultimizer BL28-40\">Ultimizer BL28-40</a>",
+
+                                            "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+
+                                            "playbutton": "<i class=\"fas fa-play\"></i>",
+
+                                            "textbutton": "Download"
+                                        },
+                                        {
+                                            "underimage": "<a href=\"#\" style=\"background-image: url(./assets/images/pad_design1.jpg)\"></a>",
                                             "overimage": "<img src=\"./assets/images/pdf-icon.png\">",
-                                            "title": "Ultimizer BL28-40",
+                                            "title": "<a href=\"#\" title=\"Ultimizer BL34-44\">Ultimizer BL34-44</a>",
                                             "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
                                             "playbutton": "<i class=\"fas fa-play\"></i>",
                                             "textbutton": "Download"
                                         },
                                         {
-                                            "underimage": "<img src=\"./assets/images/pad_design1.jpg\">",
-                                            "overimage": "<img src=\"./assets/images/pdf-icon.png\">",
-                                            "title": "Ultimizer BL34-44",
-                                            "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
-                                            "playbutton": "<i class=\"fas fa-play\"></i>",
-                                            "textbutton": "Download"
-                                        },
-                                        {
-                                            "underimage": "<img src=\"./assets/images/pad_design1.jpg\">",
-                                            "overimage": "<img src=\"./assets/images/pdf-icon.png\">",
-                                            "title": "Ultimizer BL40-44",
+                                            "underimage": "<a href=\"#\" style=\"background-image: url(./assets/images/pad_design1.jpg)\"></a>",
+                                            "overimage": "<a href=\"#\" style=\"background-image: url(./assets/images/pdf-icon.png);\"></a>",
+                                            "title": "<a href=\"#\" title=\"Ultimizer BL40-44\">Ultimizer BL40-44</a>",
                                             "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old",
                                             "playbutton": "<i class=\"fas fa-play\"></i>",
                                             "textbutton": "Download"
                                         },
                                         {
-                                            "underimage": "<img src=\"./assets/images/pad_design2.jpg\">",
-                                            "overimage": "<img src=\"./assets/images/pdf-icon.png\">",
-                                            "title": "Ultimizer Pad Option",
+                                            "underimage": "<a href=\"#\" style=\"background-image: url(./assets/images/pad_design2.jpg)\"></a>",
+                                            "overimage": "<a href=\"#\" style=\"background-image: url(./assets/images/pdf-icon.png);\"></a>",
+                                            "title": "<a href=\"#\" title=\"Ultimizer Pad Option\">Ultimizer Pad Option</a>",
                                             "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old",
                                             "playbutton": "<i class=\"fas fa-play\"></i>",
                                             "textbutton": "Download"
                                         },
                                         {
-                                            "underimage": "<img src=\"./assets/images/pad_design3.jpg\">",
-                                            "overimage": "<img src=\"./assets/images/pdf-icon.png\">",
-                                            "title": "Ultimizer Shaker Grate ",
+                                            "underimage": "<a href=\"#\" style=\"background-image: url(./assets/images/pad_design3.jpg)\"></a>",
+                                            "overimage": "<a href=\"#\" style=\"background-image: url(./assets/images/pdf-icon.png);\"></a>",
+                                            "title": "<a href=\"#\" title=\"Ultimizer Shaker Grate\">Ultimizer Shaker Grate</a>",
                                             "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old",
                                             "playbutton": "<i class=\"fas fa-play\"></i>",
                                             "textbutton": "Download"
                                         },
                                         {
-                                            "underimage": "<img src=\"./assets/images/pad_design4.jpg\">",
+                                            "underimage": "<a href=\"#\" style=\"background-image: url(./assets/images/pad_design1.jpg)\"></a>",
                                             "overimage": "",
-                                            "title": "Optimizer EGR-250",
+                                            "title": "<a href=\"#\" title=\"Optimizer EGR-250\">Optimizer EGR-250</a>",
                                             "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old",
                                             "playbutton": "<i class=\"fas fa-play\"></i>",
                                             "textbutton": "Download"
@@ -120,8 +124,5 @@
         </div>
 
         @@include('../partials/globals/bottomScripts.html')
-
-        <script src="assets/js/vendor.min.js" defer></script>
-        <script src="assets/js/app.js" defer></script>
     </body>
 </html>

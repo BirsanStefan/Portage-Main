@@ -21,7 +21,7 @@
                                 <div class="mainTopTitle">
                                     @@include('../partials/components/underlined-title.html', {
             
-                                        "iconTitle": "<img src=\"./assets/images/boilers101.png\">",
+                                        "iconTitle": "<img src=\"./assets/images/boilers101.png\" alt=\"boilers-101\">",
 
                                         "textTitle": "Here’s what are customers are saying"
 
@@ -32,17 +32,16 @@
 
                                 <div class="topDescription">
                                     <div class="italicDescription">
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-                                    <div class="italicDescription"> 
-                                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
-                                        'Content here, content here', making it look like readable English.
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                        <p>
+                                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
                                     </div>
                                 </div>
 
                                 <div class="iconMessageWrap">
                                     @@loop('../partials/components/iconMessage.html', [
                                         {
-                                            "image": "<img src=\"./assets/images/person-icon.png\">",
+                                            "image": "<a href=\"%\" style=\"background-image: url(./assets/images/serveimage.jpeg)\"></a>",
 
                                             "title": "Dan & Marie Tourigny - Ontario, Canada",
 
@@ -53,7 +52,7 @@
                                             "messaged": ""
                                         },
                                         {
-                                            "image": "<img src=\"./assets/images/person-icon2.png\">",
+                                            "image": "<a href=\"%\" style=\"background-image: url(./assets/images/person-icon2.png)\"></a>",
 
                                             "title": "Mark & Andrea Nyseth - Eleva, Wisconsin",
 
@@ -63,7 +62,7 @@
                                             "messaged": "It is a very high quality built unit. We are 100% satisfied with our P&M and the great customer service. We would definitely highly recommend a P&M."
                                         },
                                         {
-                                            "image": "<img src=\"./assets/images/person-icon3.png\">",
+                                            "image": "<a href=\"%\" style=\"background-image: url(./assets/images/person-icon3.png)\"></a>",
 
                                             "title": "John Rossman - Somewhere, USA",
 
@@ -73,7 +72,7 @@
                                             "messaged": ""
                                         },
                                         {
-                                            "image": "<img src=\"./assets/images/person-icon4.png\">",
+                                            "image": "<a href=\"%\" style=\"background-image: url(./assets/images/person-icon4.png)\"></a>",
 
                                             "title": "Al Whitlam - Somewhere, USA",
 
@@ -83,19 +82,17 @@
                                             "messaged": ""
                                         }
                                     ])
-                                </div>
 
-                                <div class="testimonialsPag">
                                     <ul class="pagination">
-                                        <li><a href="#">&laquo;</a></li>
-                                        <li><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">&raquo;</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">&laquo; </a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">&raquo; </a></li>
                                     </ul>
                                 </div>
+
+                                
 
                             </div>
                         </div>
@@ -111,7 +108,5 @@
 
         @@include('../partials/globals/bottomScripts.html')
 
-        <script src="assets/js/vendor.min.js" defer></script>
-        <script src="assets/js/app.js" defer></script>
     </body>
 </html>
