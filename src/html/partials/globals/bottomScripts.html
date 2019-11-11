@@ -7,23 +7,18 @@
 
 
 <script>
-	$(".opnesSubmenu").click(function(){
+	$(".opensSubmenu").click(function(){
 		$(this).closest(".quickNavItem").toggleClass("submenuActive");
-		$(this).next(".quickNavSubmenu").slideToggle();
 	});
 
 	$("#mobileButton").click(function(){
 		$("body").removeClass("quickNavMenuActive");
-		$("#quickNav").fadeOut();
 		$("body").toggleClass("mobileMenuActive");
-		$("#mainNav").fadeToggle();
 	});
 
 	$("#quickNavTrigger").click(function(){
 		$("body").removeClass("mobileMenuActive");
-		$("#mainNav").fadeOut();
 		$("body").toggleClass("quickNavMenuActive");
-		$("#quickNav").fadeToggle();
 	});
 
 	$("#wallpaperButton").click(function(){
@@ -32,8 +27,8 @@
 
 	$(window).click(function() {
 		
-		$(".mobileMenuActive #mainNav").fadeOut();
-		$(".quickNavMenuActive #quickNav").fadeOut();
+		// $(".mobileMenuActive #mainNav").fadeOut();
+		// $(".quickNavMenuActive #quickNav").fadeOut();
 
 		$("body").removeClass("mobileMenuActive");
 		$("body").removeClass("quickNavMenuActive");

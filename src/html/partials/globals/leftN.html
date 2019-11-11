@@ -1,0 +1,111 @@
+<aside class="leftCol">
+
+	<div class="leftBox">
+
+		<div id="quickNav">
+			<div class="leftBoxSection">
+				@@include('../partials/components/leftBoxTitle.html', {
+					"icon": "<img src=\"./assets/images/compass.svg\" alt=\"\"> ",
+					"textTitle": "Quick Nav" 
+				})
+				<nav class="quickNav">
+					<ul class="quickNavList">
+						<li class="quickNavItem submenuActive">
+							<!-- use .opensSubmenu class if it has a submenu besides it -->
+							<a href="javascript:void(0);" class="quickNavItemLink opensSubmenu">Dealers</a>
+							<ul class="quickNavSubmenu">
+								<li class="quickNavSubmenuItem"><a href="./dealer_locations.html" class="quickNavSubmenuLink">Locations</a></li>
+								<li class="quickNavSubmenuItem"><a href="./purchase_shipping.html" class="quickNavSubmenuLink">purchase & shipping</a></li>
+								<li class="quickNavSubmenuItem"><a href="./faq.html" class="quickNavSubmenuLink">faq</a></li>
+							</ul>
+						</li>
+						<li class="quickNavItem">
+							<a href="./blog.html" class="quickNavItemLink">News / Blog</a>
+						</li>
+						<li class="quickNavItem">
+							<a href="./testimonials.html;" class="quickNavItemLink">Testim</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="leftBoxSection">
+				@@include('../partials/components/leftBoxTitle.html', {
+					"icon": "<img src=\"./assets/images/network.svg\" alt=\"\">",
+					"textTitle": "follow Portage & main" 
+				})
+
+				<div class="socialMediaIcons">
+					<a href="">
+						<img src="./assets/images/facebook-color.svg" alt="">
+					</a>
+					<a href="">
+						<img src="./assets/images/twitter-color.svg" alt="">
+					</a>
+					<a href="">
+						<img src="./assets/images/youtube-color.svg" alt="">
+					</a>
+					<a href="">
+						<img src="./assets/images/instagram-color.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="leftBox">
+
+		@@include('../partials/components/leftBoxTitle.html', {
+			"icon": "<img src=\"./assets/images/news.svg\" alt=\"\">",
+			"textTitle": "Recent Posts" 
+		})
+
+		<div class="leftBoxList">
+
+			@@loop('../partials/components/recentItem.html', [
+
+			    {
+			    	"image": "generic1.jpg",
+			    	"date": "Oct 18th, 2019",
+			    	"title": "Headline will go here’ and look like this for the audience"
+			    },
+			    {
+			    	"image": "generic1.jpg",
+			    	"date": "Oct 18th, 2019",
+			    	"title": "Headline will go here’ and look like this for the audience"
+			    },
+			    {
+			    	"image": "generic1.jpg",
+			    	"date": "Oct 18th, 2019",
+			    	"title": "Headline will go here’ and look like this for the audience"
+			    },
+			    {
+			    	"image": "generic1.jpg",
+			    	"date": "Oct 18th, 2019",
+			    	"title": "Headline will go here’ and look like this for the audience"
+			    }
+			
+			])
+			
+		</div>
+	</div>
+
+	<div class="newsletterBox leftBox">
+	
+	    <h4 class="leftBoxTitle">
+	        <span class="leftBoxTitleIcon"> <i class="fas fa-newspaper"></i>  </span>
+	        <span class="leftBoxTitleText"> Sign-Up for our Newsletter </span>
+	    </h4>
+	    <div class="newsletterText">
+	        News, updates, &amp; promotional information.
+	    </div>
+	    <div class="newsletterForm">
+	        <input type="text" class="newsletterInput" placeholder="Enter Email...">
+	        <button type="submit" class="blueButton button newsletterSubmit">
+	            SUBMIT
+	        </button>
+	    </div>
+	</div>
+
+</aside>

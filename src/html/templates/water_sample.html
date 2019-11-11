@@ -15,12 +15,15 @@
                     @@include('../partials/globals/header.html')
 
                     <div class="mainCols">
-                        @@include('../partials/globals/left.html')
+                        @@include('../partials/globals/leftSideMenu.html')
 
                         <div class="rightCol">
                             <div class="whiteBox">
-                            
-                                @@include('../partials/components/underlined-title.html', { "iconTitle": "<i class=\"fas fa-tint\"></i>", "textTitle": "water sample" })
+
+                                @@include('../partials/components/underlined-title.html', {
+                                    "iconTitle": "<img src=\"./assets/images/water.svg\" alt=\"\">", 
+                                    "textTitle": "Water sample " 
+                                    })
 
                                 <div class="textContent mt30">
                                     <h4 class="italicTitle"><i>Instructions for Siphoning and Submitting a Water Sample</i></h4>
@@ -45,10 +48,10 @@
                                 </p>
                                 <p class="ml20"><i>
                                     ** Please allow approximately four weeks for your sample to be recieved and processed. We will test the water and send you the analysis, via email or mail, if you do not have an email address. </i></p>
-                                <p>Should you have any questions in regards to submitting a sample or regarding your results, please e-mail us at <a href="mailto:info@portageandmainboilers.com">info@portageandmainboilers.com</a> or call us toll free <span class="boldSpanBig">1-800-561-0700.</span></p>
+                                <p>Should you have any questions in regards to submitting a sample or regarding your results, please e-mail us at <a class="blueLink" href="mailto:info@portageandmainboilers.com">info@portageandmainboilers.com</a> or call us toll free <span class="boldSpanBig">1-800-561-0700.</span></p>
                                 </div>
 
-                                <div class="textContent footerWS">
+                                <div class="textContent footerWS mb30">
                                     <p>Water Samples can be sent to:</p>
                                     <div class="flexDiv">
                                         

@@ -15,7 +15,7 @@
                     @@include('../partials/globals/header.html')
 
                     <div class="mainCols">
-                        @@include('../partials/globals/left.html')
+                        @@include('../partials/globals/leftN.html')
 
                         <div class="rightCol">
 
@@ -24,100 +24,188 @@
                                     "iconTitle": "<img src=\"./assets/images/gallery-icon.png\" alt=\"\">", 
                                     "textTitle": "portage and main latest news " 
                                     })
-                                <div class="italicDescription mt30">
+                                <div class="italicDescription mt30 mb30">
                                     <p>Portage and Main Outdoor Boilers is named after one of the 
                                             coldest intersections in the world – the intersection of Portage Avenue and Main Street in Winnipeg, Manitoba, Canada.</p>
                                 </div>
 
-                                <div id="myModal" class="modal fade">
-                                        <div class="modal-dialog modal-dialog-centered">
-                                            <div class="modal-content myContent">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                                    
-                                                <div class="modal-body myBody">
-                                                    <a class="modal-img" href="#"><img src="./assets/images/someimg.jpg" alt=""></a>
-                                                        <h5 class="modal-body-title">
-                                                                <span class="leftBoxTitleIcon"> <i class="fas fa-newspaper"></i>  </span>
-                                                                <span class="modal-body-title-text"> Sign-Up for our Newsletter </span>
-                                                        </h5>
-                                                        <div class="newsletterText">
-                                                                News, updates, &amp; promotional information.
-                                                        </div>
-                                             
-                                                    <form class="modal-form">
-                                                        <input type="text" class="newsletterInput" placeholder="Enter Email...">
-                                                        <button type="submit" class="blueButton button newsletterSubmit">
-                                                            SUBMIT
-                                                        </button>
-                                                    </form>
-                                                    <div class="modal-note">
-                                                        <p>** We hate spam too!  We’ll take good care of your email & promise not to sell or spam.  You can Un-subscribe to our Newsletter at anytime. </p>
-                                                    </div>
+                                <div class="blogList">
+                                    
+                                    <div class="blogArticle mb20">
+                                        <div class="articleImageContainer">
+                                            <a class="articleImg shine" href="./blog_post.html" target="_blank" style="background-image: url(./assets/images/portage-main-about.jpg);"></a>
+                                        </div>
+                                        <div class="articleContent">
+                                            <div class="infoArticle">
+                                                <div class="publish">
+                                                <span class="publishDate"><img src="./assets/images/calendar.jpg"></span>
+                                                <span class="date">March 2nd, 2019</span>
                                                 </div>
+                                                <div class="comments">
+                                                <span class="comment"><i class="fas fa-comments"></i></span>
+                                                <span class="comm">18 Comments</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="blogArticleTitle"><a href="#">Headline will go here and will look like this for the audience.</a></h4>
+                                            <span class="articleBy"><i>By: P&amp;M Staff Writer</i></span>
+                                            <div class="articleText">
+                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable... <a class="more articleMore" href="./blog_post.html" target="_blank">read more</a></p>
+
                                             </div>
                                         </div>
                                     </div>
-                              
-                                @@loop('../partials/components/blog_articles.html', [
-                                {
-                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-about.jpg\">",
-                                    "date":"March 2nd, 2019",
-                                    "noComm":"18 Comments",
-                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
-                                    "by":"By: P&M Staff Writer",
-                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
-                                },
-                                {
-                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-boilers.jpg\">",
-                                    "date":"March 2nd, 2019",
-                                    "noComm":"18 Comments",
-                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
-                                    "by":"By: P&M Staff Writer",
-                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
-                                },
-                                {
-                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-boilers.jpg\">",
-                                    "date":"March 2nd, 2019",
-                                    "noComm":"18 Comments",
-                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
-                                    "by":"By: P&M Staff Writer",
-                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
-                                },
-                                {
-                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-boilers.jpg\">",
-                                    "date":"March 2nd, 2019",
-                                    "noComm":"18 Comments",
-                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
-                                    "by":"By: P&M Staff Writer",
-                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
-                                },
-                                {
-                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-boilers.jpg\">",
-                                    "date":"March 2nd, 2019",
-                                    "noComm":"18 Comments",
-                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
-                                    "by":"By: P&M Staff Writer",
-                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
-                                },
-                                {
-                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-boilers.jpg\">",
-                                    "date":"March 2nd, 2019",
-                                    "noComm":"18 Comments",
-                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
-                                    "by":"By: P&M Staff Writer",
-                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
-                                },
-                                {
-                                    "blogArticleImage":"<img src=\"./assets/images/portage-main-boilers.jpg\">",
-                                    "date":"March 2nd, 2019",
-                                    "noComm":"18 Comments",
-                                    "blogArticleTitle":"Headline will go here and will look like this for the audience.",
-                                    "by":"By: P&M Staff Writer",
-                                    "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..."
-                                }
-                                
-                                ])
+                                    <div class="blogArticle mb20">
+                                        <div class="articleImageContainer">
+                                            <a class="articleImg shine" href="./blog_post.html" target="_blank" style="background-image: url(./assets/images/portage-main-boilers.jpg);"></a>
+                                        </div>
+                                        <div class="articleContent">
+                                            <div class="infoArticle">
+                                                <div class="publish">
+                                                <span class="publishDate"><img src="./assets/images/calendar.jpg"></span>
+                                                <span class="date">March 2nd, 2019</span>
+                                                </div>
+                                                <div class="comments">
+                                                <span class="comment"><i class="fas fa-comments"></i></span>
+                                                <span class="comm">18 Comments</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="blogArticleTitle"><a href="#">Headline will go here and will look like this for the audience.</a></h4>
+                                            <span class="articleBy"><i>By: P&amp;M Staff Writer</i></span>
+                                            <div class="articleText">
+                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable... <a class="more articleMore" href="./blog_post.html" target="_blank">read more</a></p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blogArticle mb20">
+                                        <div class="articleImageContainer">
+                                            <a class="articleImg shine" href="./blog_post.html" target="_blank" style="background-image: url(./assets/images/portage-main-boilers.jpg);"></a>
+                                        </div>
+                                        <div class="articleContent">
+                                            <div class="infoArticle">
+                                                <div class="publish">
+                                                <span class="publishDate"><img src="./assets/images/calendar.jpg"></span>
+                                                <span class="date">March 2nd, 2019</span>
+                                                </div>
+                                                <div class="comments">
+                                                <span class="comment"><i class="fas fa-comments"></i></span>
+                                                <span class="comm">18 Comments</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="blogArticleTitle"><a href="#">Headline will go here and will look like this for the audience.</a></h4>
+                                            <span class="articleBy"><i>By: P&amp;M Staff Writer</i></span>
+                                            <div class="articleText">
+                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable... <a class="more articleMore" href="./blog_post.html" target="_blank">read more</a></p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blogArticle mb20">
+                                        <div class="articleImageContainer">
+                                            <a class="articleImg shine" href="./blog_post.html" target="_blank" style="background-image: url(./assets/images/portage-main-boilers.jpg);"></a>
+                                        </div>
+                                        <div class="articleContent">
+                                            <div class="infoArticle">
+                                                <div class="publish">
+                                                <span class="publishDate"><img src="./assets/images/calendar.jpg"></span>
+                                                <span class="date">March 2nd, 2019</span>
+                                                </div>
+                                                <div class="comments">
+                                                <span class="comment"><i class="fas fa-comments"></i></span>
+                                                <span class="comm">18 Comments</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="blogArticleTitle"><a href="#">Headline will go here and will look like this for the audience.</a></h4>
+                                            <span class="articleBy"><i>By: P&amp;M Staff Writer</i></span>
+                                            <div class="articleText">
+                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable... <a class="more articleMore" href="./blog_post.html" target="_blank">read more</a></p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blogArticle mb20">
+                                        <div class="articleImageContainer">
+                                            <a class="articleImg shine" href="./blog_post.html" target="_blank" style="background-image: url(./assets/images/portage-main-boilers.jpg);"></a>
+                                        </div>
+                                        <div class="articleContent">
+                                            <div class="infoArticle">
+                                                <div class="publish">
+                                                <span class="publishDate"><img src="./assets/images/calendar.jpg"></span>
+                                                <span class="date">March 2nd, 2019</span>
+                                                </div>
+                                                <div class="comments">
+                                                <span class="comment"><i class="fas fa-comments"></i></span>
+                                                <span class="comm">18 Comments</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="blogArticleTitle"><a href="#">Headline will go here and will look like this for the audience.</a></h4>
+                                            <span class="articleBy"><i>By: P&amp;M Staff Writer</i></span>
+                                            <div class="articleText">
+                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable... <a class="more articleMore" href="./blog_post.html" target="_blank">read more</a></p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blogArticle mb20">
+                                        <div class="articleImageContainer">
+                                            <a class="articleImg shine" href="./blog_post.html" target="_blank" style="background-image: url(./assets/images/portage-main-boilers.jpg);"></a>
+                                        </div>
+                                        <div class="articleContent">
+                                            <div class="infoArticle">
+                                                <div class="publish">
+                                                <span class="publishDate"><img src="./assets/images/calendar.jpg"></span>
+                                                <span class="date">March 2nd, 2019</span>
+                                                </div>
+                                                <div class="comments">
+                                                <span class="comment"><i class="fas fa-comments"></i></span>
+                                                <span class="comm">18 Comments</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="blogArticleTitle"><a href="#">Headline will go here and will look like this for the audience.</a></h4>
+                                            <span class="articleBy"><i>By: P&amp;M Staff Writer</i></span>
+                                            <div class="articleText">
+                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable... <a class="more articleMore" href="./blog_post.html" target="_blank">read more</a></p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blogArticle mb20">
+                                        <div class="articleImageContainer">
+                                            <a class="articleImg shine" href="./blog_post.html" target="_blank" style="background-image: url(./assets/images/portage-main-boilers.jpg);"></a>
+                                        </div>
+                                        <div class="articleContent">
+                                            <div class="infoArticle">
+                                                <div class="publish">
+                                                <span class="publishDate"><img src="./assets/images/calendar.jpg"></span>
+                                                <span class="date">March 2nd, 2019</span>
+                                                </div>
+                                                <div class="comments">
+                                                <span class="comment"><i class="fas fa-comments"></i></span>
+                                                <span class="comm">18 Comments</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="blogArticleTitle"><a href="#">Headline will go here and will look like this for the audience.</a></h4>
+                                            <span class="articleBy"><i>By: P&amp;M Staff Writer</i></span>
+                                            <div class="articleText">
+                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable... <a class="more articleMore" href="./blog_post.html" target="_blank">read more</a></p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul class="pagination">
+                                        <li class="page-item"><a class="page-link" href="#">&laquo; </a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">&raquo; </a></li>
+                                    </ul>
+
+                                </div>
+                             
                             </div>
+
+                           
 
                         </div>
                     </div>
@@ -126,18 +214,56 @@
             </div>
         </div>
 
+        <!-- The Modal -->
+        <div class="modal fade" id="newsletterModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    
+                    <!-- Modal body -->
+                    <div class="modal-body myBody">
+                        <a class="modal-img" href="#"><img src="./assets/images/someimg.jpg" alt=""></a>
+                            <h5 class="modal-body-title">
+                                    <span class="leftBoxTitleIcon"> <i class="fas fa-newspaper"></i>  </span>
+                                    <span class="modal-body-title-text"> Sign-Up for our Newsletter </span>
+                            </h5>
+                            <div class="newsletterText">
+                                    News, updates, &amp; promotional information.
+                            </div>
+                 
+                        <form class="modal-form">
+                            <input type="text" class="newsletterInput" placeholder="Enter Email...">
+                            <button type="submit" class="blueButton button newsletterSubmit">
+                                SUBMIT
+                            </button>
+                        </form>
+                        <div class="modal-note">
+                            <p>** We hate spam too!  We’ll take good care of your email & promise not to sell or spam.  You can Un-subscribe to our Newsletter at anytime. </p>
+                        </div>
+                    </div>
+                    
+                  
+                </div>
+            </div>
+        </div>
+  
+
         @@include('../partials/globals/footer.html')
 
     </div>
     @@include('../partials/globals/bottomScripts.html')
 
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
-	$(document).ready(function(){
-		$("#myModal").modal('show');
-	});
+
+	$('#newsletterModal').modal({
+      // show: true
+    });
+
 </script>
 </body>
 

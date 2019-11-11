@@ -1,0 +1,57 @@
+<aside class="leftCol">
+
+	<div class="leftBox">
+
+		<div id="quickNav">
+			<div class="leftBoxSection">
+				@@include('../partials/components/leftBoxTitle.html', {
+					"icon": "<img src=\"./assets/images/compass.svg\" alt=\"\"> ",
+					"textTitle": "Quick Nav" 
+				})
+				<nav class="quickNav">
+					<ul class="quickNavList">
+						<li class="quickNavItem submenuActive">
+							<!-- use .opensSubmenu class if it has a submenu besides it -->
+							<a href="javascript:void(0);" class="quickNavItemLink opensSubmenu">Dealers</a>
+							<ul class="quickNavSubmenu">
+								<li class="quickNavSubmenuItem"><a href="./dealer_locations.html" class="quickNavSubmenuLink">Locations</a></li>
+								<li class="quickNavSubmenuItem"><a href="./purchase_shipping.html" class="quickNavSubmenuLink">purchase & shipping</a></li>
+								<li class="quickNavSubmenuItem"><a href="./faq.html" class="quickNavSubmenuLink">faq</a></li>
+							</ul>
+						</li>
+						<li class="quickNavItem">
+							<a href="./blog.html" class="quickNavItemLink">News / Blog</a>
+						</li>
+						<li class="quickNavItem">
+							<a href="./testimonials.html;" class="quickNavItemLink">Testim</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="leftBoxSection">
+				@@include('../partials/components/leftBoxTitle.html', {
+					"icon": "<img src=\"./assets/images/network.svg\" alt=\"\">",
+					"textTitle": "follow Portage & main" 
+				})
+
+				<div class="socialMediaIcons">
+					<a href="">
+						<img src="./assets/images/facebook-color.svg" alt="">
+					</a>
+					<a href="">
+						<img src="./assets/images/twitter-color.svg" alt="">
+					</a>
+					<a href="">
+						<img src="./assets/images/youtube-color.svg" alt="">
+					</a>
+					<a href="">
+						<img src="./assets/images/instagram-color.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+</aside>

@@ -55,7 +55,6 @@
 	<!-- END FONTS -->
 
 		<link media="all" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 		<!-- Our CSS -->
    		<link media="all" rel="stylesheet" href="assets/css/styles.min.css">
@@ -73,12 +72,13 @@
       <div id="topBar">
           <div class="customContainer">
               <div class="topBarContainer">
-                  <div class="logo">
+                  <h2 class="logo">
                       <a href="/">
-                          <img src="./assets/images/logo.png" class="logoDesktop" alt="">
-                          <img src="./assets/images/logo-icon.png" class="logoMobile" alt="">
+                          <!-- <img src="./assets/images/logo.png" class="logoDesktop" alt=""> -->
+                          <img src="./assets/images/logo-icon.png" alt="">
+                          <span>Portage & Main - Outdoor Boilers</span>
                       </a>
-                  </div>
+                  </h2>
 
                   <div class="callTopBtn">
                       Call Toll Free: <a href="tel:1800561-0700"> 1 (800) 561-0700 </a>
@@ -122,7 +122,7 @@
         <div class="customContainer">
 
           <div class="mainBg">
-            <header id="header" class="siteHeader">
+            <header id="header" class="siteHeader" style="background-image: url(./assets/images/header-image.jpg);">
 
                 <div class="logoFull">
                     <a href="/">
@@ -132,26 +132,26 @@
    
                 <nav class="mainNav" id="mainNav">
                     <ul class="mainMenu">
-                        <li class="mainMenuElement">
-                            <a href="#" class="mainMenuElementLink"><i class="fas fa-home"></i></a>
-                        </li>
-                        <li class="mainMenuElement active">
-                            <a href="#" class="mainMenuElementLink">Who We Are</a>
+                        <li class="mainMenuElement homeButton active">
+                            <a href="/" class="mainMenuElementLink"><i class="fas fa-home"></i></a>
                         </li>
                         <li class="mainMenuElement">
-                            <a href="#" class="mainMenuElementLink">Our Products</a>
+                            <a href="./about_us.html" class="mainMenuElementLink">Who We Are</a>
                         </li>
                         <li class="mainMenuElement">
-                            <a href="#" class="mainMenuElementLink">Education</a>
+                            <a href="./products.html" class="mainMenuElementLink">Our Products</a>
                         </li>
                         <li class="mainMenuElement">
-                            <a href="#" class="mainMenuElementLink">NEWS/BLOG</a>
+                            <a href="./education_videos.html" class="mainMenuElementLink">Education</a>
                         </li>
                         <li class="mainMenuElement">
-                            <a href="#" class="mainMenuElementLink">EVENTS</a>
+                            <a href="./blog.html" class="mainMenuElementLink">NEWS/BLOG</a>
                         </li>
                         <li class="mainMenuElement">
-                            <a href="#" class="mainMenuElementLink">CONTACT US</a>
+                            <a href="./events.html" class="mainMenuElementLink">EVENTS</a>
+                        </li>
+                        <li class="mainMenuElement">
+                            <a href="./contact_us.html" class="mainMenuElementLink">CONTACT US</a>
                         </li>
                     </ul>
 
@@ -257,9 +257,9 @@
                     <nav class="quickNav" id="quickNav">
                       <ul class="quickNavList">
                         <li class="quickNavItem submenuActive">
-                          <!-- use .opnesSubmenu class if it has a submenu besides it -->
-                          <a href="javascript:void(0);" class="quickNavItemLink opnesSubmenu">Dealers</a>
-                          <ul class="quickNavSubmenu" style="display: block;">
+                          <!-- use .opensSubmenu class if it has a submenu besides it -->
+                          <a href="javascript:void(0);" class="quickNavItemLink opensSubmenu">Dealers</a>
+                          <ul class="quickNavSubmenu">
                             <li class="quickNavSubmenuItem"><a href="./dealer_locations.html" class="quickNavSubmenuLink">Locations</a></li>
                             <li class="quickNavSubmenuItem"><a href="./purchase_shipping.html" class="quickNavSubmenuLink">purchase &amp; shipping</a></li>
                             <li class="quickNavSubmenuItem"><a href="./faq.html" class="quickNavSubmenuLink">faq</a></li>
@@ -417,15 +417,15 @@
                     <div class="board">
                     
                       <div class="bulletinInfo">
-                          <span class="bulletinDate">September 5th - 9th</span>
-                          <div class="bulletinTitle"><a href="#">Great Lakes Logging & Heavy Equipment Expo</a></div>
+                          <div class="bulletinDate">September 5th - 9th</div>
+                          <h3 class="bulletinTitle"><a href="#">Great Lakes Logging & Heavy Equipment Expo</a></h3>
                           <a class="infoImg" href="#" target="_blank" style="background-image: url(./assets/images/generic1.jpg);"></a>
-                          <a class="more" href="#" target="_blank">read more</a>
+                          <a class="more bulletInfoMore" href="#" target="_blank">read more</a>
                       </div><div class="bulletinInfo">
-                          <span class="bulletinDate">September 10th - 26th</span>
-                          <div class="bulletinTitle"><a href="#">Farm Science Show @ Ohio State University</a></div>
+                          <div class="bulletinDate">September 10th - 26th</div>
+                          <h3 class="bulletinTitle"><a href="#">Farm Science Show @ Ohio State University</a></h3>
                           <a class="infoImg" href="#" target="_blank" style="background-image: url(./assets/images/generic1.jpg);"></a>
-                          <a class="more" href="#" target="_blank">read more</a>
+                          <a class="more bulletInfoMore" href="#" target="_blank">read more</a>
                       </div>
                       <div class="bulletinPhotos">
                           <div class="bulletinYear">2019</div>
@@ -595,23 +595,18 @@
 
 
     <script>
-    	$(".opnesSubmenu").click(function(){
+    	$(".opensSubmenu").click(function(){
     		$(this).closest(".quickNavItem").toggleClass("submenuActive");
-    		$(this).next(".quickNavSubmenu").slideToggle();
     	});
 
     	$("#mobileButton").click(function(){
     		$("body").removeClass("quickNavMenuActive");
-    		$("#quickNav").fadeOut();
     		$("body").toggleClass("mobileMenuActive");
-    		$("#mainNav").fadeToggle();
     	});
 
     	$("#quickNavTrigger").click(function(){
     		$("body").removeClass("mobileMenuActive");
-    		$("#mainNav").fadeOut();
     		$("body").toggleClass("quickNavMenuActive");
-    		$("#quickNav").fadeToggle();
     	});
 
     	$("#wallpaperButton").click(function(){
@@ -620,8 +615,8 @@
 
     	$(window).click(function() {
 		
-    		$(".mobileMenuActive #mainNav").fadeOut();
-    		$(".quickNavMenuActive #quickNav").fadeOut();
+    		// $(".mobileMenuActive #mainNav").fadeOut();
+    		// $(".quickNavMenuActive #quickNav").fadeOut();
 
     		$("body").removeClass("mobileMenuActive");
     		$("body").removeClass("quickNavMenuActive");

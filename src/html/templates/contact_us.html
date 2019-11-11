@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+    <div id="wrapper">
+
+        @@include('../partials/globals/topBar.html')
+
+        <div class="mainPage">
+            <div class="customContainer">
+
+                <div class="mainBg">
+                    @@include('../partials/globals/header.html')
+
+                    <div class="mainCols">
+                        @@include('../partials/globals/left.html')
+
+                        <div class="rightCol">
+                            <div class="whiteBox contactBox">
+                                
+                                <div class="mainTopTitle">
+                                    @@include('../partials/components/underlined-title.html', {"iconTitle": "<img src=\"./assets/images/phone-icon.svg\" alt=\"phone\">", "textTitle": "NOW WE'RE TALKING" })
+                                </div>
+                                
+
+                                <div class="logoDescrWrap">
+                                    <div class="logoDescrBox">
+                                        <div class="logodescrLeft">
+                                            <a href="#"><img src="./assets/images/logo_contact_us.png" alt="logo"></a>
+                                        </div>
+                                        <div class="logoDescrRight">
+                                            <div class="italicDescription heatingWithBiomasText bold logoDescrP">
+                                                <p>Our professional and courteous staff at Portage and Main Boilers are ready to assist you with any questions you may have. </p>
+                                                <p>Please call toll free <a href="#">1 (800) 561-0700</a> or use our handy form below.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="contactUsAddressWrap">
+                                    <div class="mAddressBox">
+                                        <div class="contactUsMailAddr contactUsTitle">
+                                            <h3><span class="biggerLetter">M</span>AILING ADDRESS</h3>
+                                            <p>Heat Smart Plus Inc</p>
+                                            <p>RR3, Stn Main</p>
+                                            <p>Prince Albert</p>
+                                            <p>SK</p>
+                                            <p>S6V 5R1</p>
+                                            <p>Canada</p>
+                                        </div>
+                                        <div class="contactUsCInfo contactUsTitle">
+                                            <h3><span class="biggerLetter">C</span>ONTACT INFO</h3>
+                                            <p>Toll Free: 1-800-561-0700</p>
+                                            <p>Phone: (306) 922-1722</p>
+                                            <p>Fax: (306) 922-1662</p>
+                                            <a href="#">info@portageandmainboilers.com</a>
+                                        </div>
+                                        <div class="contactUsSocial">
+                                            <h3><span class="biggerLetter">S</span>OCIAL</h3>
+                                            <div class="socialMediaIcons">
+                                                <a href="">
+                                                    <img src="./assets/images/facebook-color.svg" alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img src="./assets/images/twitter-color.svg" alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img src="./assets/images/youtube-color.svg" alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img src="./assets/images/instagram-color.svg" alt="">
+                                                </a>
+                                            </div>
+
+                                            <div class="socialButtons">
+                                                <a href="#" class="btn2 fb-btn">
+                                                    <i class="fab fa-facebook-f"></i> <span>Like us on Facebook</span>
+                                                </a>
+                                                <a href="#" class="btn2 tw-btn">
+                                                    <i class="fab fa-twitter"></i> <span>Follow us on Twitter</span>
+                                                </a>
+                                                <a href="#" class="btn2 email-btn">
+                                                    <i class="fab fa-youtube"></i> <span>Watch us on Youtube</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="physicalAddrBox">
+                                        <div class="physicalAddr">
+                                            <h3>PHYSICAL ADDRESS / COURIER DELIVERY ADDRESS</h3>
+                                            <p>Heat Smart Plus Inc</p>
+                                            <p>Highway 11 North, 1 Mile South Highway 2</p>
+                                            <p>Prince Albert</p>
+                                            <p>SK</p>
+                                            <p>S6V 5R1</p>
+                                        </div>
+                                        <div class="physicalAddrImg">
+                                            <a href="#"><img src="./assets/images/contact_us_img.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="letsGetConn">
+                                    @@include('../partials/components/underlined-title.html', {"iconTitle": "<img src=\"./assets/images/mail-icon.svg\" alt=\"mail\">", "textTitle": "LET'S GET CONNECTED" })
+                                </div>
+                                
+                                <div class="contactUsForm">
+
+                                    
+
+
+                                    <div class="contactUsSmallItalic">
+                                        <p>** Please allow 24 hours for us to respond.</p>
+                                        <p>** Please ensure that we are on your email safe list, otherwise check your junk folder for response.</p>
+                                    </div>
+                                    <form action="">
+                                        <div class="contactUsInput">
+                                            <div class="formPData">
+                                                <div class="formFlex">
+
+                                                    <div class="contactUsInputContent pdata">
+                                                        <label for="fname">First Name <span>*</span></label><br>
+                                                        <input type="text" id="fname" name="firstname" class="contactUsFormLItem italic">
+                                                    </div>
+
+                                                    <div class="contactUsInputContent pdata">
+                                                        <label for="lname">Last Name <span>*</span></label><br>
+                                                        <input type="text" id="lname" name="lastname" class="contactUsFormLItem italic">
+                                                    </div>
+
+                                                    <div class="contactUsInputContent pdata">
+                                                        <label for="email">Email <span>*</span></label><br>
+                                                        <input type="text" id="email" name="email" class="contactUsFormLItem italic">
+                                                    </div>
+
+                                                    <div class="contactUsInputContent pdata">
+                                                        <label for="phone">Your phone number <span>*</span></label><br>
+                                                        <input type="text" id="phone" name="phone" class="contactUsFormLItem italic">
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="formOPData">
+                                                <div class="formFlex">
+                                        
+                                                    <div class="contactUsInputContent opdata">
+                                                        <label for="closest">Closest City or Town <span>*</span></label><br>
+                                                        
+                                                        <input type="text" id="closest" name="phone" class="contactUsFormLItem italic">
+
+                                                    </div>
+
+                                                    <div class="contactUsInputContent opdata">
+                                                        <label for="postal">Zip/Postal Code <span>*</span></label><br>
+                                                        <input type="text" id="postal" name="phone" class="contactUsFormLItem italic">
+                                                    </div>
+                                        
+                                                    <div class="contactUsInputContent opdata">
+                                                        <label for="msg">Message <span>*</span></label><br>
+                                                        <textarea id="msg" rows="4" cols="50" name="comment" form="usrform"></textarea> 
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="selectOptionBox">
+                                        
+                                            <div class="selectOptLeft">
+                                                <p>Best method to reach you?</p>
+                                                <div class="radioOpt">
+                                                    <label>
+                                                        <input type="radio" name="bestMethod" value="Phone">
+                                                        <span>Phone</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="bestMethod" value="Email">
+                                                        <span>Email</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="selectOptRight">
+                                                <p>Best time of day to reach you?</p>
+                                                <div class="radioOpt">
+                                                    <label>
+                                                        <input type="radio" name="bestTime" value="Morning">
+                                                        <span>Morning</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="bestTime" value="Afternoon">
+                                                        <span>Afternoon</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+
+
+                                        <div class="notarobotSubmit">
+                                            <div class="notarobot">
+                                                <img src="./assets/images/recaptcha.png" alt="">
+                                            </div>
+                                            <div class="submit">
+                                                <input type="submit" value="SUBMIT">
+                                            </div>
+                                        </div>
+                                    </form>
+
+
+                                    <div class="contactUsSmallItalic">
+                                        <p>**Your information is kept in the strictest confidence. It is used to identify your heating needs and gives us a clearer picture on how to serve you better. Your privacy is always respected and you will not receive solicitation or any other unnecessary contact from Portage and Main.</p>
+                                    </div>
+
+                                    <div class="contactUsCallTollFree">
+                                        <div class="betterThanRValue">
+                                            <a href="#">Call Toll Free: 1 (800) 561-0700</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        @@include('../partials/globals/footer.html')
+
+    </div>
+    @@include('../partials/globals/bottomScripts.html')
+
+    
+    
+</body>
+
+</html>

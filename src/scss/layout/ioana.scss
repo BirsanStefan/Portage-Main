@@ -6,6 +6,13 @@
     @media only screen and (max-width: 667px){
         padding: 20px 15px;
     }
+    .sectionTitle{
+        left: -30px;
+        .iconTitle{
+            padding-left: 30px;
+            margin-left: 0;
+        }
+    }
 }
 
 /*education_videos.html START*/
@@ -29,7 +36,7 @@
         margin-left: 5px;
     }
     .qnbBtn{
-        padding: 5px 25px;
+        padding: 0 25px;
         border: 1px solid #f9b411;
         border-radius: 7px;
         margin-left: 20px;
@@ -39,6 +46,10 @@
         font-weight: bold;
         transition: all .25s linear;
         line-height: 30px;
+        min-width: 148px;
+        display: inline-block;
+        text-align: center;
+        &.active,
         &:hover{
             background: #f9b411;
             color: #2c231f;
@@ -54,7 +65,19 @@
     }
 }
 
-
+.ytClickToOpenModal{
+    position: relative;
+    &:after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+}
 
 .youtubeList{
     display: -webkit-flex;
@@ -78,6 +101,18 @@
         margin-right: 15px;
         .youtubeIframe{
             height: 180px;
+            position: relative;
+            cursor: pointer;
+            &:after{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 99;
+            }
         }
         .youtubeIframe iframe{
             width: 100%;
@@ -169,13 +204,13 @@ a.frequentlyAQ {
         .textBlockTitle h5{
             font-size: 19px;
             color: #1f1f1f;
-            font-weight: bold;
+            font-weight: 600;
             margin-top: 25px;
             line-height: 24px;
             margin-bottom: 10px;
         }
-        .textBlockText p{
-            font-size: 16px;
+        .textBlockText{
+            font-size: 17px;
             margin-bottom: 15px;
             color: #1f1f1f;
             line-height: 25px;
@@ -184,6 +219,9 @@ a.frequentlyAQ {
     @media only screen and (max-width: 420px) {
         text-align: center;
     }
+}
+.textPage{
+
 }
 /*terms.html END*/
 
@@ -219,6 +257,7 @@ a.frequentlyAQ {
 /*topnav btns*/
 .topNavBtnContent{
     position: relative;
+    text-align: center;
     ul{
         padding-left: 0;
         margin-bottom: 40px;
@@ -235,22 +274,27 @@ a.frequentlyAQ {
         }
         li{
             display: inline-block;
-            margin-left: 7px;
-            margin-right: 7px;
+            margin-left: 5px;
+            margin-right: 5px;
             position: relative;
-            font-size: 13px;
+            font-size: 14px;
             line-height: 30px;
             a{
                 color: #000;
-                padding: 4px;
+                padding: 4px 2px;
                 border-radius: 5px;
-                font-family: 'PrimaNova', sans-serif;
                 transition: all .25s linear;
+                font-weight: 500;
+                letter-spacing: 0.07px;
                 &::before{
                     position: absolute;
                     display: block;
                     content: "\2022";
-                    left: -9px;
+                    left: -7px;
+                    top: -1px;
+                }
+                &:hover{
+                    color: $yellow;
                 }
             }
             &:first-child a::before{
@@ -278,7 +322,12 @@ a.frequentlyAQ {
     align-items: flex-start;
     justify-content: left;
     .sectionTitleLeft{
-        margin-right: 35px;
+        margin-right: 75px;
+        .sectionTitle{
+            .textTitle{
+                font-size: 24px;
+            }
+        }
     }
     .sectionTitleRight{
         display: -webkit-flex;
@@ -296,7 +345,7 @@ a.frequentlyAQ {
             border-radius: 5px;
             transition: all .25s linear;
             img{
-                margin-right: 10px;
+                margin-right: 3px;
             }
         }
     }
@@ -339,10 +388,15 @@ a.frequentlyAQ {
             width: 63%;
             margin-top: 40px;
             margin-bottom: 40px;
+            .italicDescrContent{
+                margin-bottom: 10px;
+            }
             .heatingWithBiomasText {
                 text-align: center;
-                padding-top: 20px;
+                padding-top: 10px;
                 color: #333333;
+                line-height: 1.2;
+                font-weight: 500;
             }
             .heatingWithBiomasText p{
                 margin-bottom: 20px;
@@ -367,6 +421,8 @@ a.frequentlyAQ {
         .heatingWithBiomassRight{
             width: 35%;
             text-align: center;
+            margin-top: -25px;
+            margin-bottom: 20px;
             @media only screen and (max-width: 1044px) {
                 width: 35%;
                 text-align: center;
@@ -456,7 +512,14 @@ a.frequentlyAQ {
                     line-height: 30px;
                     color: #333333;
                     font-family: "Cooper Black Regular", sans-serif;
-                    font-weight: 800;
+                    position: relative;
+                    left: -15px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                    @media only screen and (max-width: 991px) {
+                        position: static;
+                    }
                 }
                 h4{
                     font-size: 18px;
@@ -504,36 +567,38 @@ a.frequentlyAQ {
         line-height: 30px;
         color: #333333;
         font-family: "Cooper Black Regular", sans-serif;
-        font-weight: 800;
+        font-weight: 400;
     }
 }
-
-.iframe{
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 15px;
-    font-size: 0;
-    @media only screen and (max-width: 1026px) {
-        margin-right: 20px;
-        margin-bottom: 30px;
-    }
-    @media only screen and (max-width: 991px) {
-        margin-right: 0;
-        float: none;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 25px;
-    }
-    @media only screen and (max-width: 767px) {
-        margin-bottom: 40px;
-    }
-    iframe{
-        max-width: 100%;
-        height: 300px;
-        width: 540px;
-        border: none;
+.rightBox{
+    .iframe{
+        float: left;
+        margin-right: 50px;
+        margin-bottom: 15px;
+        font-size: 0;
+        @media only screen and (max-width: 1026px) {
+            margin-right: 20px;
+            margin-bottom: 30px;
+        }
+        @media only screen and (max-width: 991px) {
+            margin-right: 0;
+            float: none;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        @media only screen and (max-width: 767px) {
+            margin-bottom: 40px;
+        }
+        iframe{
+            max-width: 100%;
+            height: 300px;
+            width: 510px;
+            border: none;
+        }
     }
 }
+    
 /*youtubeText.html END*/
 
 /*textImage.html START*/
@@ -583,7 +648,7 @@ a.frequentlyAQ {
                 line-height: 30px;
                 color: #333333;
                 font-family: "Cooper Black Regular", sans-serif;
-                font-weight: 800;
+                font-weight: 400;
                 @media only screen and (max-width: 420px) {
                     text-align: center;
                 }
@@ -592,13 +657,23 @@ a.frequentlyAQ {
                 padding-left: 40px;
                 @media only screen and (max-width: 420px) {
                     padding-left: 20px;
+                    li{
+                        margin-bottom: 5px;
+                        *{
+                            padding-left: 0;
+                            line-height: 1.3;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                        
+                    }
                 }
             }
             a, em, span {
                 text-decoration: none;
                 font-size: 18px;
                 color: #333333;
-                font-weight: bold;
+                font-weight: 500;
                 font-style: normal;
                 line-height: 30px;
                 padding: 4px;
@@ -656,29 +731,13 @@ a.frequentlyAQ {
     padding-bottom: 50px;
     padding-top: 40px;
     .betterThanBox{
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
         display: flex;
-        -webkit-flex-wrap: wrap;
-        -moz-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        -o-flex-wrap: wrap;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;
         .betterThanLeft{
             width: 45%;
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
             display: flex;
-            -webkit-flex-wrap: wrap;
-            -moz-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-            -o-flex-wrap: wrap;
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-evenly;
@@ -698,7 +757,8 @@ a.frequentlyAQ {
                     letter-spacing: 1px;
                     color: #333333;
                     margin-bottom: 5px;
-                    font-weight: 400;
+                    font-weight: 500;
+                    line-height: 1.3;
                 }
                 .sectionTitleRight{
                     display: -webkit-flex;
@@ -707,13 +767,13 @@ a.frequentlyAQ {
                     display: -o-flex;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
                     a{
                         color: #1537a6;
                         font-size: 14px;
                         font-weight: 400;
                         text-decoration: none;
                         padding: 4px;
+                        padding-left: 0;
                         border-radius: 5px;
                         transition: all .25s linear;
                         img{
@@ -770,6 +830,13 @@ a.frequentlyAQ {
             color: #f9b411;
             text-decoration: none;
             background: #2c231f;
+        }
+    }
+    @media only screen and (max-width: 667px) {
+        display: block;
+        width: 100%;
+        a{
+            font-size: 22px!important;
         }
     }
 }
@@ -878,6 +945,7 @@ a.frequentlyAQ {
                 i{
                     border-right: 1px solid #b4b4b4;
                     color: #f9b411;
+
                 }
             }
             i{
@@ -887,6 +955,8 @@ a.frequentlyAQ {
                 border-right: 1px solid #b4b4b4;
                 color: #2c231f;
                 transition: all .25s linear;
+                position: relative;
+                top: -1px;
             }
             .textButton{
                 width: 80%;
@@ -994,7 +1064,7 @@ a.frequentlyAQ {
                 line-height: 30px;
                 color: #333333;
                 font-family: "Cooper Black Regular", sans-serif;
-                font-weight: 800;
+                font-weight: 400;
                 @media only screen and (max-width: 991px) {
                     text-align: center;
                 }
@@ -1008,14 +1078,15 @@ a.frequentlyAQ {
                     font-size: 18px;
                     line-height: 30px;
                     color: #333333;
-                    font-weight: bold;
+                    font-weight: 600;
                 }
                 .ultimizerBnftsList{
                     li{
                         font-size: 16px;
                         line-height: 24px;
                         color: #333333;
-                        font-weight: 400;
+                        font-weight: 500;
+                        margin-bottom: 20px;
                     }
                 }
             }
@@ -1103,7 +1174,8 @@ a.frequentlyAQ {
                 font-size: 18px;
                 line-height: 30px;
                 color: #333333;
-                font-weight: 800;
+                font-family: "Cooper Black Regular", sans-serif;
+                font-weight: 400;
                 @media only screen and (max-width: 420px){
                     text-align: center;
                 }
@@ -1114,8 +1186,10 @@ a.frequentlyAQ {
             }
             ul li{
                 font-size: 16px;
+                line-height: 1.5;
+                margin-bottom: 10px;
                 color: #333333;
-                font-weight: bold;
+                font-weight: 600;
             }
         }
     }
@@ -1274,14 +1348,29 @@ a.frequentlyAQ {
 .rightBox ul{
     padding-left: 20px;
     font-size: 15px;
-    li a{
-        font-size: 16px;
-        line-height: 30px;
-        color: #333333;
-        font-weight: bold;
-        transition: all .25s linear;
-        padding: 4px;
-        border-radius: 5px;
+    list-style-type: none;
+    padding-left: 0;
+    li{
+        &:before{
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            background: #333333;
+            border-radius: 50%;
+            position: relative;
+            top: -3px;
+            margin-right: 3px;
+        }
+        a{
+            font-size: 16px;
+            line-height: 30px;
+            color: #333333;
+            font-weight: 400;
+            transition: all .25s linear;
+            padding: 4px;
+            border-radius: 5px;
+        }
     }
 }
 /*ultimizer_wood_series.html END*/
@@ -1297,7 +1386,7 @@ a.frequentlyAQ {
         font-size: 28px;
         line-height: 26px;
         color: #333333;
-        font-weight: bold;
+        font-weight: 600;
         margin-bottom: 10px;
         @media only screen and (max-width: 1023px) {
             margin-bottom: 30px;
@@ -1420,10 +1509,10 @@ a.frequentlyAQ {
         font-size: 19px;
         line-height: 25px;
         color: #1f1f1f;
-        font-weight: bold;
+        font-weight: 600;
     }
     .specialText {
-        font-size: 19px;
+        font-size: 18px;
         font-weight: 400;
         color: #333333;
     }
@@ -1438,7 +1527,7 @@ a.frequentlyAQ {
 
 
 .specialText {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 400;
     color: #333333;
 }
@@ -1571,54 +1660,72 @@ span.betterThanRValue{
     padding-bottom: 15px;
     /*iconMessage.html START*/
     .iconMessage{
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
         display: flex;
-        -webkit-flex-wrap: wrap;
-        -moz-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        -o-flex-wrap: wrap;
         flex-wrap: wrap;
-        justify-content: space-evenly;
         padding-top: 25px;
         padding-bottom: 25px;
+        padding-left: 25px;
+        @media only screen and (max-width: 667px) {
+            padding-left: 0;
+        }
         .iconMessL{
-            width: 10%;
+            width: 94px;
+            height: 94px;
             text-align: center;
+            position: relative;
             @media only screen and (max-width: 767px) {
                 padding-top: 11px;
-                width: 20%;
             }
-            @media only screen and (max-width: 567px) {
+            @media only screen and (max-width: 667px) {
                 width: 100%;
                 margin-bottom: 20px;
+                padding-left: 0;
             }
             a{
-                width: 95px;
+                width: 94px;
                 max-width: 100%;
-                height: 95px;
+                height: 94px;
                 border-radius: 50%;
                 display: block;
                 background-size: cover;
                 background-position: center;
                 text-decoration: none;
                 margin-left: auto;
-                margin-right: auto;
-                @media only screen and (max-width: 567px) {
+                margin-right: auto;                
+                @media only screen and (max-width: 667px) {
                     margin: initial;
+                }
+            }
+            &:after{
+                content: "";
+                display: block;
+                position: absolute;
+                background: #fff;
+                width: 2px;
+                height: 5px;
+                right: -42px;
+                top: 46px;
+                z-index: 99;
+                @media only screen and (max-width: 667px) {
+                    right: auto;
+                    left: 76px;
+                    width: 10px;
+                    height: 2px;
+                    top: 139px;
                 }
             }
         }
         .iconMessR{
-            width: 75%;
+            width: calc(100% - 180px);
+            margin-left: 40px;
             padding: 35px;
             border: 2px solid #cccccc;
             border-radius: 15px;
             position: relative;
-            @media only screen and (max-width: 567px) {
+            @media only screen and (max-width: 667px) {
                 width: 100%;
+                margin-left: 0;
+                margin-top: 25px;
             }
             @media only screen and (max-width: 420px) {
                 text-align: center;
@@ -1635,7 +1742,7 @@ span.betterThanRValue{
                     position: absolute;
                     top: 47px;
                     left: -20px;
-                    @media only screen and (max-width: 567px) {
+                    @media only screen and (max-width: 667px) {
                         content: " ";
                         display: block;
                         width: 24px;
@@ -1657,7 +1764,7 @@ span.betterThanRValue{
                     position: absolute;
                     top: 43px;
                     left: -20px;
-                    @media only screen and (max-width: 567px) {
+                    @media only screen and (max-width: 667px) {
                         content: " ";
                         display: block;
                         width: 30px;
@@ -1701,12 +1808,19 @@ span.betterThanRValue{
 .pagination{
     justify-content: flex-end;
 }
+.testimonialsList{
+    .pagination{
+        padding-right: 50px;
+        margin-top: 30px;
+    }
+}
 .testimonialsPag{
     padding-bottom: 15px;
     padding-top: 10px;
     .pagination{
         width: 300px;
         margin-left: auto;
+        padding-right: 30px;
         li{
             border: 1px solid #cccccc;
             a{
@@ -2043,3 +2157,530 @@ a.tag:first-child{
 }
 /*eventsElement.html END*/
 /*events.html END*/
+
+
+/******************** CONTACT US*******************/
+/*contact_us.html START - 4.11.2019*/
+
+.logoDescrWrap{
+    position: relative;
+    .logoDescrBox{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            border-bottom: 2px solid #dbdbdb;
+            width: 100%;
+            bottom: -10px;
+        }
+        .logodescrLeft{
+            width: 30%;
+            text-align: center;
+            @media only screen and (max-width: 520px){
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+        .logoDescrRight{
+            width: 65%;
+            @media only screen and (max-width: 520px){
+                width: 100%;
+            }
+            .logoDescrP p{
+                margin-bottom: 20px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+
+.contactUsAddressWrap{
+    position: relative;
+    width: 100%;
+    .mAddressBox{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 50px;
+        @media only screen and (max-width: 767px){
+            justify-content: center;
+        }
+        .contactUsMailAddr{
+            width: 25%;
+            @media only screen and (max-width: 767px){
+                width: 45%;
+                margin-left: 35px;
+            }
+            @media only screen and (max-width: 575px){
+                width: 40%;
+                margin-left: 35px;
+            }
+            @media only screen and (max-width: 520px){
+                width: 100%;
+                margin-left: 0;
+                text-align: center;
+                padding-bottom: 35px;
+            }
+            
+            p{
+                font-size: 16px;
+                color: #333333;
+                font-weight: normal;
+                margin-bottom: 0;
+            }
+        }
+        .contactUsTitle h3{
+            .biggerLetter{
+                font-size: 18px;
+            }
+            font-size: 15px;
+            color: #333333;
+            font-weight: normal;
+            margin-bottom: 25px;
+            @media only screen and (max-width: 520px){
+                margin-bottom: 15px;
+            }
+        }
+
+        .contactUsCInfo{
+            width: 35%;
+            @media only screen and (max-width: 767px){
+                width: 45%;
+            }
+            @media only screen and (max-width: 575px){
+                width: 48%;
+            }
+            @media only screen and (max-width: 520px){
+                width: 100%;
+                text-align: center;
+            }
+            
+            p{
+                font-size: 18px;
+                color: #333333;
+                font-weight: normal;
+                margin-bottom: 0;
+            }
+            a{
+                font-size: 15px;
+                color: blue;
+                font-weight: normal;
+                margin-bottom: 0;
+                padding: 4px 4px 4px 0;
+                border-radius: 5px;
+                &:hover{
+                    color: #f9b411;
+                    background: #2c231f;
+                }
+            }
+        }
+
+        .contactUsSocial{
+            width: 25%;
+            @media only screen and (max-width: 767px){
+                width: 100%;
+                padding-top: 20px;
+            }
+            @media only screen and (max-width: 520px){
+                padding-top: 35px;
+            }
+            h3{
+                .biggerLetter{
+                    font-size: 18px;
+                }
+                font-size: 15px;
+                color: #333333;
+                font-weight: normal;
+                margin-bottom: 15px;
+                @media only screen and (max-width: 767px){
+                    text-align: center;
+                }
+                @media only screen and (max-width: 468px){
+                    margin-bottom: 15px;
+                }
+            }
+            .socialMediaIcons{
+                text-align: left;
+                @media only screen and (max-width: 767px){
+                    text-align: center;
+                }
+                @media only screen and (max-width: 468px){
+                    margin-bottom: 30px;
+                }
+                a{
+                    margin-left: 2px;
+                    margin-right: 2px;
+                    img{
+                        width: 20px;
+                        @media only screen and (max-width: 767px){
+                            width: 40px;
+                        }
+                        @media only screen and (max-width: 468px){
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+            
+            .socialButtons{
+                text-align: left;
+                margin-top: 20px;
+                text-align: left;
+                margin-bottom: 20px;
+                @media only screen and (max-width: 767px){
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                }
+                @media only screen and (max-width: 468px){
+                    display: block;
+                }
+                .btn2 {
+                    width: 160px;
+                    height: 25px;
+                    line-height: 12px;
+                    color: #fff;
+                    border-radius: 3px;
+                    text-align: left;
+                    padding-left: 10px;
+                    font-size: 10px;
+                    margin-left: initial;
+                    margin-right: 15px;
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                    @media only screen and (max-width: 767px){
+                        width: 170px;
+                        height: 35px;
+                        font-size: 13px;
+                    }
+                    @media only screen and (max-width: 704px){
+                        margin-bottom: 15px;
+                    }
+                    @media only screen and (max-width: 468px){
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 220px;
+                        height: 50px;
+                        font-size: 20px;
+                        justify-content: center;
+                        margin-bottom: 20px;
+                    }
+                    span {
+                        font-style: normal;
+                        padding-left: 18px;
+                        font-size: 11px;
+                        position: relative;
+                        top: 0px;
+                        @media only screen and (max-width: 767px){
+                            font-size: 13px;
+                        }
+                        @media only screen and (max-width: 468px){
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .physicalAddrBox{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 35px;
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            border-bottom: 2px solid #dbdbdb;
+            width: 100%;
+            bottom: -30px;
+        }
+        @media only screen and (max-width: 468px){
+            padding-top: 20px;
+        }
+
+        .physicalAddr{
+            width: 70%;
+            @media only screen and (max-width: 590px){
+                margin-left: 15px;
+                width: 65%;
+            }
+            @media only screen and (max-width: 468px){
+                margin-left: 0;
+                width: 100%;
+                text-align: center;
+            }
+            h3{
+                font-size: 18px;
+                color: #333333;
+                font-weight: normal;
+                @media only screen and (max-width: 468px){
+                    margin-bottom: 15px;
+                }
+            }
+            p{
+                font-size: 18px;
+                color: #333333;
+                font-weight: normal;
+                margin-bottom: 0;
+                line-height: 24px;
+            }
+        }
+
+        .physicalAddrImg{
+            width: 25%;
+            text-align: center;
+            @media only screen and (max-width: 767px){
+                text-align: center;
+            }
+            @media only screen and (max-width: 590px){
+                width: 30%;
+            }
+            @media only screen and (max-width: 468px){
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+.letsGetConn{
+    padding-top: 70px;
+}
+
+
+.contactUsForm{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .contactUsSmallItalic{ 
+        p{
+        font-size: 13px;
+        font-weight: 300;
+        color: #1f1f1f;
+        font-style: italic;
+        margin-bottom: 0;
+        line-height: normal;
+        }
+    }
+
+    .contactUsInput{
+        padding-top: 35px;
+        padding-bottom: 5px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        .formPData{
+            .formFlex{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+    .contactUsInputContent{
+        margin-bottom: 20px;
+    }
+    .pdata{
+        width: 48%;
+        @media only screen and (max-width: 590px){
+            width: 100%;
+        }
+    }
+    label{
+        color: #1f1f1f;
+        span{
+            color: #fc423c;
+        }
+    }
+    input[type='text'], textarea{
+        width: 100%;
+    }
+    .contactUsFormLItem{
+        width: 100%;
+    }
+    input[type='email'],
+    input[type='text'], textarea{
+        background: #dbdbdb4f;
+        border: 1px solid #dbdbdb;
+        border-radius: 1px;
+    }
+    label{
+        margin-bottom: 0;
+    }
+
+
+    .selectOptionBox{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    
+        .selectOptLeft{
+            width: 45%;
+            @media only screen and (max-width: 767px){
+                width: 50%;
+            }
+            @media only screen and (max-width: 520px){
+                width: 100%;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            p{
+                margin-bottom: 10px;
+                font-size: 14px;
+                line-height: 24px;
+                color: #7a7979;
+                font-family: "Verdana";
+            }
+
+            }
+        }
+        a:hover {
+            // color: black;
+            text-decoration: none;
+        }
+        .selectOptRight{
+            width: 45%;
+            @media only screen and (max-width: 767px){
+                width: 50%;
+            }
+            @media only screen and (max-width: 520px){
+                width: 100%;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            p{
+                margin-bottom: 10px;
+                font-size: 14px;
+                line-height: 24px;
+                color: #7a7979;
+                font-family: "Verdana";
+            }
+        
+        }
+
+        .radioOpt{
+           label span{
+            padding-left: 5px;
+            color: #7a7979;
+           }
+           label + label{
+            padding-left: 5px;
+           }
+    }
+
+
+    .notarobotSubmit{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        @media only screen and (max-width: 468px){
+            padding-top: 10px;
+        }
+        .notarobot{
+            padding: 5px 5px 5px 5px;
+            border-radius: 5px;
+            width: 55%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            transition: all .25s linear;
+            @media only screen and (max-width: 767px){
+                margin-right: 25px;
+            }
+            @media only screen and (max-width: 680px){
+                margin-right: 0;
+                margin-bottom: 25px;
+                padding: 0;
+            }
+            
+            @media only screen and (max-width: 590px){
+                width: 85%;
+                margin-right: 0;
+            }
+            @media only screen and (max-width: 368px){
+                    width: 100%;
+            }
+            a:hover {
+                color: #57433b;
+                text-decoration: none;
+            }
+        }
+        .submit input[type="submit"] {
+            border: none;
+            width: 190px;
+            height: 40px;
+            border-radius: 5px;
+            background: #f9b411;
+            font-size: 18px;
+            letter-spacing: 0.9px;
+            color: #333333;
+            text-align: center;
+            font-weight: 900;
+            transition: all .25s linear;
+            padding-top: 4px;
+            &:hover{
+                color: #f9b411;
+                background: #2c231f;
+            }
+        }
+    }
+
+
+    .contactUsSmallItalic {
+        padding-top: 10px;
+        padding-left: 13px;
+        p{
+            @media only screen and (max-width: 468px){
+                text-align: center;
+            }
+        }
+    }
+    
+
+    .contactUsCallTollFree{
+        padding-top: 35px;
+        padding-bottom: 45px;
+    }
+}
+.contactBox{
+    display: flex;
+    flex-wrap: wrap;
+    .contactUsAddressWrap{
+        order: 4;
+        padding-bottom: 40px;
+        padding-top: 0;
+        .physicalAddrBox:after{
+            display: none;
+        }
+    }
+}
+
+/*contact_us.html END*/

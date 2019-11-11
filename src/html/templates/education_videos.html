@@ -3,7 +3,7 @@
 
     @@include('../partials/head/head.html')
 
-    <body>
+    <body class="noLeftSide">
         <div id="wrapper">
 
             @@include('../partials/globals/topBar.html')
@@ -16,6 +16,9 @@
                         @@include('../partials/globals/header.html')
                     
                         <div class="mainCols">
+
+                            @@include('../partials/globals/leftSideMenu.html')
+
                             <div class="centerCol">
                                 @@include('../partials/components/quickNavButtons.html',{
                     
@@ -51,39 +54,39 @@
                                 <div class="youtubeList">
                                     @@loop('../partials/components/youtubeElement.html', [
                                         {
-                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "ytsrc": "https://www.youtube.com/embed/05y8PV3TCDI",
                                             "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
                                         },
                                         {
-                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "ytsrc": "https://www.youtube.com/embed/_FrOQC-zEog",
                                             "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
                                         },
                                         {
-                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "ytsrc": "https://www.youtube.com/embed/yvPr9YV7-Xw",
                                             "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
                                         },
                                         {
-                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "ytsrc": "https://www.youtube.com/embed/05y8PV3TCDI",
                                             "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
                                         },
                                         {
-                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "ytsrc": "https://www.youtube.com/embed/05y8PV3TCDI",
                                             "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
                                         },
                                         {
-                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "ytsrc": "https://www.youtube.com/embed/05y8PV3TCDI",
                                             "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
                                         },
                                         {
-                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "ytsrc": "https://www.youtube.com/embed/05y8PV3TCDI",
                                             "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
                                         },
                                         {
-                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "ytsrc": "https://www.youtube.com/embed/05y8PV3TCDI",
                                             "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
                                         },
                                         {
-                                            "iframe": "<iframe src=\"https://www.youtube.com/embed/05y8PV3TCDI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                                            "ytsrc": "https://www.youtube.com/embed/05y8PV3TCDI",
                                             "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College" 
                                         }
                                     ])
@@ -93,12 +96,40 @@
                                     </a>
                                 </div>
                             </div>
+
+                            
                         </div>
-                    
                         
                     </div>
                 </div>
             </div>
+
+            <!-- The Modal -->
+            <!-- you can add the modal in other places on page, since it's position fixed -->
+            <div class="modal fade ytModal" id="ytModal">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <h4 class="modal-title">Name of the Video Being Viewed</h4>
+                            <iframe class="embed-responsive-item" src="a" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowscriptaccess="always"> </iframe>
+
+                            <div class="youtubeCaption">
+                                Say whatever you’d like to say here Brian...Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.    Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
 
             @@include('../partials/globals/footer.html')
             
@@ -107,6 +138,30 @@
         @@include('../partials/globals/bottomScripts.html')
 
         
+        <script>
+            $(document).ready(function() {
+
+                // Gets the video src from the data-src on each button
+                var $videoSrc;  
+                $('.ytClickToOpenModal').click(function() {
+                    $videoSrc = $(this).data( "src" );
+                });
+                console.log($videoSrc);
+                  
+                  
+                $('#ytModal').on('shown.bs.modal', function (e) {
+                    
+                $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" ); 
+                })
+                  
+                  
+                $('#ytModal').on('hide.bs.modal', function (e) {
+                    $("#video").attr('src',''); 
+                }) 
+
+            });
+
+        </script>
         
     </body>
 </html>

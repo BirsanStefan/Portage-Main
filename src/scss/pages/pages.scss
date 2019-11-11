@@ -5,6 +5,8 @@
     font-weight: bold;
     position: relative;
     left: -30px;
+    display: flex;
+    min-height: 30px;
     &:after {
         content: "";
         display: block;
@@ -13,9 +15,10 @@
         background-color: #f9b411;
         position: absolute;
         margin-top: 3px;
+        top: 100%;
     }
     .iconTitle {
-        margin-left: 5px;
+        margin-left: 15px;
     }
     .textTitle {
         margin-left: 8px;
@@ -30,7 +33,7 @@
         }
         .textTitle{
             display: inline-block;
-            width: calc(100% - 50px);
+            width: calc(100% - 60px);
         }
     }
     
@@ -38,6 +41,7 @@
 .textTitle {
     margin-left: 8px;
     text-transform: uppercase;
+    letter-spacing: 0.24px;
 }
 .capitalized {
     @extend .textTitle;
@@ -47,6 +51,9 @@
 .rightCol {
     position: relative;
 }
+.fullHeightOn{
+    min-height: 100%;
+}
 
 .italicDescription {
     font-size: 18px;
@@ -54,6 +61,8 @@
     font-weight: 600;
     text-align: center;
     font-style:italic;
+    letter-spacing: 0.18px;
+    line-height: 1.2;
     @media only screen and (max-width: 991px){
         br{
             display: none;
@@ -63,45 +72,25 @@
 .iSmall {
     @extend .italicDescription; 
     font-size:14px;
+    margin-bottom: 20px;
 }
 .textContent {
     font-size: 14px;
     color: #1f1f1f;
+    letter-spacing: 0.14px;
     ul{
         margin-top: 15px;
         margin-bottom: 20px;
+        line-height: 1.4;
+    }
+    .note{
+        font-size: 18px;
     }
 }
-.mt15 {
-    margin-top:15px;
-}
-.mt22 {
-    margin-top:22px;
-}
-.mt30 {
-    margin-top:30px;
-}
-.mt40 {
-    margin-top:40px;
-}
-.mb0 {
-    margin-bottom:0;
-}
-.mb20 {
-    margin-bottom:20px;
-}
-.mb30 {
-    margin-bottom:30px;
-}
-
-.mb40 {
-    margin-bottom:40px;
-}
-.mb78 {
-    margin-bottom:78px;
-}
-.ml20 {
-    margin-left:20px;
+.spacedList{
+    li{
+        margin-bottom: 15px;
+    }
 }
 .boldSpanBig {
     font-size: 17px;
@@ -128,3 +117,4 @@
         text-align: left;
     }
 }
+

@@ -55,7 +55,6 @@
     	<!-- END FONTS -->
 
     		<link media="all" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     		<!-- Our CSS -->
        		<link media="all" rel="stylesheet" href="assets/css/styles.min.css">
@@ -63,18 +62,19 @@
     	<!-- END CSS -->
     </head>
 
-    <body>
+    <body class="noLeftSide">
         <div id="wrapper">
 
             <div id="topBar">
                 <div class="customContainer">
                     <div class="topBarContainer">
-                        <div class="logo">
+                        <h2 class="logo">
                             <a href="/">
-                                <img src="./assets/images/logo.png" class="logoDesktop" alt="">
-                                <img src="./assets/images/logo-icon.png" class="logoMobile" alt="">
+                                <!-- <img src="./assets/images/logo.png" class="logoDesktop" alt=""> -->
+                                <img src="./assets/images/logo-icon.png" alt="">
+                                <span>Portage & Main - Outdoor Boilers</span>
                             </a>
-                        </div>
+                        </h2>
 
                         <div class="callTopBtn">
                             Call Toll Free: <a href="tel:1800561-0700"> 1 (800) 561-0700 </a>
@@ -119,7 +119,7 @@
             
                     <div class="mainBg">
 
-                        <header id="header" class="siteHeader">
+                        <header id="header" class="siteHeader" style="background-image: url(./assets/images/header-image.jpg);">
 
                             <div class="logoFull">
                                 <a href="/">
@@ -129,26 +129,26 @@
    
                             <nav class="mainNav" id="mainNav">
                                 <ul class="mainMenu">
-                                    <li class="mainMenuElement">
-                                        <a href="#" class="mainMenuElementLink"><i class="fas fa-home"></i></a>
-                                    </li>
-                                    <li class="mainMenuElement active">
-                                        <a href="#" class="mainMenuElementLink">Who We Are</a>
+                                    <li class="mainMenuElement homeButton active">
+                                        <a href="/" class="mainMenuElementLink"><i class="fas fa-home"></i></a>
                                     </li>
                                     <li class="mainMenuElement">
-                                        <a href="#" class="mainMenuElementLink">Our Products</a>
+                                        <a href="./about_us.html" class="mainMenuElementLink">Who We Are</a>
                                     </li>
                                     <li class="mainMenuElement">
-                                        <a href="#" class="mainMenuElementLink">Education</a>
+                                        <a href="./products.html" class="mainMenuElementLink">Our Products</a>
                                     </li>
                                     <li class="mainMenuElement">
-                                        <a href="#" class="mainMenuElementLink">NEWS/BLOG</a>
+                                        <a href="./education_videos.html" class="mainMenuElementLink">Education</a>
                                     </li>
                                     <li class="mainMenuElement">
-                                        <a href="#" class="mainMenuElementLink">EVENTS</a>
+                                        <a href="./blog.html" class="mainMenuElementLink">NEWS/BLOG</a>
                                     </li>
                                     <li class="mainMenuElement">
-                                        <a href="#" class="mainMenuElementLink">CONTACT US</a>
+                                        <a href="./events.html" class="mainMenuElementLink">EVENTS</a>
+                                    </li>
+                                    <li class="mainMenuElement">
+                                        <a href="./contact_us.html" class="mainMenuElementLink">CONTACT US</a>
                                     </li>
                                 </ul>
 
@@ -168,6 +168,68 @@
                     
                         <div class="mainCols">
                             <div class="centerCol">
+
+                                <aside class="leftCol">
+
+                                	<div class="leftBox">
+
+                                		<div id="quickNav">
+                                			<div class="leftBoxSection">
+                                				<h4 class="leftBoxTitle">
+                                					<span class="leftBoxTitleIcon"> <img src="./assets/images/compass.svg" alt="">  </span>
+                                					<span class="leftBoxTitleText"> Quick Nav </span>
+                                				</h4>
+
+                                				<div class="leftBoxTitleDecoration"></div>
+                                				<nav class="quickNav">
+                                					<ul class="quickNavList">
+                                						<li class="quickNavItem submenuActive">
+                                							<!-- use .opensSubmenu class if it has a submenu besides it -->
+                                							<a href="javascript:void(0);" class="quickNavItemLink opensSubmenu">Dealers</a>
+                                							<ul class="quickNavSubmenu">
+                                								<li class="quickNavSubmenuItem"><a href="./dealer_locations.html" class="quickNavSubmenuLink">Locations</a></li>
+                                								<li class="quickNavSubmenuItem"><a href="./purchase_shipping.html" class="quickNavSubmenuLink">purchase & shipping</a></li>
+                                								<li class="quickNavSubmenuItem"><a href="./faq.html" class="quickNavSubmenuLink">faq</a></li>
+                                							</ul>
+                                						</li>
+                                						<li class="quickNavItem">
+                                							<a href="./blog.html" class="quickNavItemLink">News / Blog</a>
+                                						</li>
+                                						<li class="quickNavItem">
+                                							<a href="./testimonials.html;" class="quickNavItemLink">Testim</a>
+                                						</li>
+                                					</ul>
+                                				</nav>
+                                			</div>
+
+                                			<div class="leftBoxSection">
+                                				<h4 class="leftBoxTitle">
+                                					<span class="leftBoxTitleIcon"> <img src="./assets/images/network.svg" alt=""> </span>
+                                					<span class="leftBoxTitleText"> follow Portage & main </span>
+                                				</h4>
+
+                                				<div class="leftBoxTitleDecoration"></div>
+
+                                				<div class="socialMediaIcons">
+                                					<a href="">
+                                						<img src="./assets/images/facebook-color.svg" alt="">
+                                					</a>
+                                					<a href="">
+                                						<img src="./assets/images/twitter-color.svg" alt="">
+                                					</a>
+                                					<a href="">
+                                						<img src="./assets/images/youtube-color.svg" alt="">
+                                					</a>
+                                					<a href="">
+                                						<img src="./assets/images/instagram-color.svg" alt="">
+                                					</a>
+                                				</div>
+                                			</div>
+                                		</div>
+		
+                                	</div>
+
+                                </aside>
                                 
                                 <!--Top Nav-->
                                 <div class="topNavBtnContent">
@@ -209,7 +271,7 @@
                                 </div>
 
 
-                                <div class="youtubeText">
+                                <div class="youtubeText rightBox">
                                     <div class="youtubeTextBox">
                                         <div class="iframe">
                                             <iframe src="https://www.youtube.com/embed/rRbyZ3eD-9M"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -237,6 +299,7 @@
                                     </div>
                                     
                                 </div>
+
 
                                 <!--Portage & Main Envirochip Benefits:-->
                                 <div class="textImage">
@@ -298,6 +361,32 @@
                 </div>
             </div>
 
+            <!-- The Modal -->
+            <!-- you can add the modal in other places on page, since it's position fixed -->
+            <div class="modal fade ytModal" id="ytModal">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <h4 class="modal-title">Name of the Video Being Viewed</h4>
+                            <iframe class="embed-responsive-item" src="a" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowscriptaccess="always"> </iframe>
+
+                            <div class="youtubeCaption">
+                                Say whatever you’d like to say here Brian...Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.    Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
             <footer id="footer" class="siteFooter">
             	<div class="customContainer">
             		<div class="footerLeft">
@@ -345,23 +434,18 @@
 
 
         <script>
-        	$(".opnesSubmenu").click(function(){
+        	$(".opensSubmenu").click(function(){
         		$(this).closest(".quickNavItem").toggleClass("submenuActive");
-        		$(this).next(".quickNavSubmenu").slideToggle();
         	});
 
         	$("#mobileButton").click(function(){
         		$("body").removeClass("quickNavMenuActive");
-        		$("#quickNav").fadeOut();
         		$("body").toggleClass("mobileMenuActive");
-        		$("#mainNav").fadeToggle();
         	});
 
         	$("#quickNavTrigger").click(function(){
         		$("body").removeClass("mobileMenuActive");
-        		$("#mainNav").fadeOut();
         		$("body").toggleClass("quickNavMenuActive");
-        		$("#quickNav").fadeToggle();
         	});
 
         	$("#wallpaperButton").click(function(){
@@ -370,8 +454,8 @@
 
         	$(window).click(function() {
 		
-        		$(".mobileMenuActive #mainNav").fadeOut();
-        		$(".quickNavMenuActive #quickNav").fadeOut();
+        		// $(".mobileMenuActive #mainNav").fadeOut();
+        		// $(".quickNavMenuActive #quickNav").fadeOut();
 
         		$("body").removeClass("mobileMenuActive");
         		$("body").removeClass("quickNavMenuActive");
@@ -381,6 +465,31 @@
         	    event.stopPropagation();
         	});
 	
+        </script>
+
+        <script>
+            $(document).ready(function() {
+
+                // Gets the video src from the data-src on each button
+                var $videoSrc;  
+                $('.ytClickToOpenModal').click(function() {
+                    $videoSrc = $(this).data( "src" );
+                });
+                console.log($videoSrc);
+                  
+                  
+                $('#ytModal').on('shown.bs.modal', function (e) {
+                    
+                $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" ); 
+                })
+                  
+                  
+                $('#ytModal').on('hide.bs.modal', function (e) {
+                    $("#video").attr('src',''); 
+                }) 
+
+            });
+
         </script>
 
     </body>

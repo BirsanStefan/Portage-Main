@@ -2,10 +2,8 @@
 <html lang="en">
     @@include('../partials/head/head.html')
 
-    <body>
-        <!--RE: START - 22.10.2019-->
+    <body class="noLeftSide">
         <div id="wrapper">
-        <!--RE: END - 22.10.2019-->   
             @@include('../partials/globals/topBar.html')
 
             <div class="mainPage">
@@ -15,6 +13,8 @@
 
                         <div class="mainCols">
                             <div class="centerCol">
+
+                                @@include('../partials/globals/leftSideMenu.html')
 
                                 @@include('../partials/components/quickNavButtons.html', {
                                     
@@ -94,9 +94,12 @@
                     </div>
                 </div>
             </div>
+
+            @@include('../partials/globals/footer.html')
+
         </div>
 
-        @@include('../partials/globals/footer.html')
+        @@include('../partials/globals/bottomScripts.html')
 
     </body>
 </html>

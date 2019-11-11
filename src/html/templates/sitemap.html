@@ -3,7 +3,7 @@
 
     @@include('../partials/head/head.html')
 
-    <body>
+    <body class="noLeftSide">
         <div id="wrapper">
 
             @@include('../partials/globals/topBar.html')
@@ -17,6 +17,9 @@
                     
                         <div class="mainCols">
                             <div class="centerCol">
+                                @@include('../partials/globals/leftSideMenu.html')
+
+                                
                                 @@include('../partials/components/quickNavButtons.html',{
                     
                                     "iconQNBBox": "<i class=\"fas fa-book-reader\"></i>",
